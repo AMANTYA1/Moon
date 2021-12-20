@@ -82,15 +82,15 @@ def get_readable_time(seconds: int) -> str:
 yurikorobot_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
-*👋 Hello {} !*
+**
 
-✗ *I'Aᴍ Aɴ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-✗ *Aᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ  Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ  I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ  Fᴇᴀᴛᴜʀᴇꜱ!*
-────────────────────────
-× *Uᴘᴛɪᴍᴇ:* `{}`
-× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-────────────────────────
-✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+ *Hᴇʏ Tʜᴇʀᴇ ! I Aᴍ 😈⃝ 𝙳ᴇᴠɪʟ✗✿‌᭄𝙰ɳɠɛƖ ➻❥✰༉࿐🧚‍♀️. Aᴅᴠᴀɴᴄᴇᴅ Tᴇʟᴇɢʀᴀᴍ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Wɪᴛʜ Lᴏᴛs Oꜰ Fᴇᴀᴛᴜʀᴇs.*
+ *[✪](https://telegra.ph/file/a01ef91bd802109bbcbc1.jpg) Bᴏᴛ Fᴏʀ Hᴇʟᴘ Yᴏᴜ Mᴀɴᴀɢᴇ & Pʀᴏᴛᴇᴄᴛ Yᴏᴜʀ Gʀᴏᴜᴘs.!*
+
+ ** ``
+ **
+
+   **
 """
 
 buttons = [
