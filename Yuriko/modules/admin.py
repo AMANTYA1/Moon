@@ -966,6 +966,8 @@ __help__ = """
 
 ✗ /clearrules - `clear the rules for this chat.`
 
+✗ /antichannel (on/off) - 'to ban channel in group`
+
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
 
