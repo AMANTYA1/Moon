@@ -1,4 +1,4 @@
-"# Taken From https://github.com/AASFCYBERKING/SerenaRobot/blob/Aasf/SerenaRobot/modules/alive.py
+
 import asyncio
 import os
 import requests
