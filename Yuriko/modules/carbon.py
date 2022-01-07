@@ -30,9 +30,9 @@ MEMEK = "https://telegra.ph/file/ceb116e569f2255fedb6d.jpg"
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Akki Robot** 
+        caption=f"""✨ **Hey I'm Yuriko Robot** 
 
-**Owner repo : [sena-ex](https://t.me/excrybaby)**
+**Owner repo : [Shubhanshu](https://t.me/Shubhanshutya)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -44,7 +44,7 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="t.me/piroXpower"), 
+                        "Owner", url="t.me/Shubhanshutya"), 
                     InlineKeyboardButton(
                         "Support", url="https://t.me/DeCodeSupport")
                 ]
