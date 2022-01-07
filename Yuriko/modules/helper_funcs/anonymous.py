@@ -6,7 +6,7 @@ from telegram.ext import CallbackContext
 from telegram.inline.inlinekeyboardbutton import InlineKeyboardButton
 from telegram.inline.inlinekeyboardmarkup import InlineKeyboardMarkup
 
-from Yuriko import DEV_USERS, SUDO_USERS, dispatcher
+from Yuriko import DEV_USERS, dispatcher
 from .decorators import emikocallback
 
 
