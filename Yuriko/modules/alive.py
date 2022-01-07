@@ -87,4 +87,4 @@ async def hmm(yes):
     ok8 = await borg.edit_message(yes.chat_id, ok7, file=file4, buttons=BUTTON)
     
     await asyncio.sleep(edit_time)
-    ok9 = await borg.edit_message(yes.chat_id, ok8, file=file5, buttons=BUTTON)"
+    ok9 = await borg.edit_message(yes.chat_id, ok8, file=file5, buttons=BUTTON)
