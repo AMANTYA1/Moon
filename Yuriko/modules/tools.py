@@ -51,11 +51,7 @@ __help__ = """
 
 ✗  /tgm - `Get Telegraph Link Of Replied Media`
 
-✗  /tgt - `Get Telegraph Link of Replied Text`
-
- *Tagger*
-
-✗  /tagall - `for tag everyone at least 100 member first.`
+✗  /tgt - `Get Telegraph Link of Replied Text` 
 
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
