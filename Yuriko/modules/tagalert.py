@@ -13,8 +13,7 @@ from Yuriko import pbot
 from Yuriko import BOT_ID, MONGO_DB_URI
 
 
-#from DaisyX.services.mongo2 import db
-#client = MongoClient()
+
 
 client = MongoClient(MONGO_DB_URI)
 dbd = client["missjuliarobot"]
