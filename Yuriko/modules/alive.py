@@ -16,11 +16,11 @@ from telethon.tl.types import ChannelParticipantsAdmins
 
 edit_time = 5
 """ =======================YURIKO====================== """
-file1 = "https://telegra.ph/file/1ad7188c8390b5c36b9a8.jpg"
-file2 = "https://telegra.ph/file/73fc670e1dc78d1857b67.jpg"
+file1 = "https://telegra.ph/file/2a18cc79b097a24092b72.jpg"
+file2 = "https://telegra.ph/file/852531fc7449660a017da.jpg"
 file3 = "https://telegra.ph/file/4b29739e7fd46b2111e55.jpg"
-file4 = "https://telegra.ph/file/956b7a50ec1f0a9802b8b.jpg"
-file5 = "https://telegra.ph/file/2fdff4fc6f3e015eb9a51.jpg"
+file4 = "https://telegra.ph/file/86a25345ea3b0dfe6cb45.jpg"
+file5 = "https://telegra.ph/file/d6c65813b5c8bbe1a4ec6.jpg"
 """ =======================YURIKO====================== """
 
 BUTTON = [[Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/DeCodeSupport"), Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/DeeCodeBots")]]
