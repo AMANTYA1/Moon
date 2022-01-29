@@ -10,8 +10,8 @@ from pymongo import MongoClient
 from datetime import datetime, timedelta
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
 
-from ERICA import telethn as pbot
-from ERICA.modules.helper_funcs.decorators import kigcmd
+from Yuriko import telethn as pbot
+from Yuriko.modules.helper_funcs.decorators import kigcmd
 BOT_ID = 5047622280
 MONGO_DB_URI = "mongodb+srv://ERICA:ERICA@cluster0.wuky0.mongodb.net/Cluster0?retryWrites=true&w=majority"
 #from DaisyX.services.mongo2 import db
