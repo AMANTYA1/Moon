@@ -5,15 +5,14 @@ import asyncio
 import pytz
 
 from pyrogram import filters
-from pyrogram import Client
 from pymongo import MongoClient
 from datetime import datetime, timedelta
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
 
-from ERICA import telethn as pbot
-from ERICA.modules.helper_funcs.decorators import kigcmd
-BOT_ID = 5047622280
-MONGO_DB_URI = "mongodb+srv://ERICA:ERICA@cluster0.wuky0.mongodb.net/Cluster0?retryWrites=true&w=majority"
+from Yuriko import pbot
+from Yuriko import BOT_ID, MONGO_DB_URI
+
+
 #from DaisyX.services.mongo2 import db
 #client = MongoClient()
 
@@ -31,7 +30,7 @@ def get_info(id):
     return nightmod.find_one({"id": id})
 
 
-@Client.on_message(filters.command(["tagalert"]) & filters.private)
+@pbot.on_message(filters.command(["tagalert"]) & filters.private)
 async def locks_dfunc(_, message):
    lol = await message.reply("Processing..")
    if len(message.command) != 2:
@@ -73,7 +72,7 @@ async def locks_dfunc(_, message):
 
 
      
-@Client.on_message(filters.incoming & ~filters.edited)
+@pbot.on_message(filters.incoming & ~filters.edited)
 async def mentioned_alert(client, message):
     try:
         if not message:
