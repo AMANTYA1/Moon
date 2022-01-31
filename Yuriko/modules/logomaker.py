@@ -44,10 +44,10 @@ def mediainfo(media):
 
 @register(pattern="^/logo ?(.*)")
 async def logo_gen(event):
-    xx = await event.reply("Preparing your logo...")
+    xx = await event.reply("`Bana raha hu roka todi ma bh insaan hu machine nahi😶...`")
     name = event.pattern_match.group(1)
     if not name:
-        await xx.edit("Provide some text to draw!\nExample: /logo <your name>!")
+        await xx.edit("`Kuch text dega tab na logo banoga 😏!\nExample: /logo <Chup Chap apne name likha>!`")
         return
     bg_, font_ = "", ""
     if event.reply_to_msg_id:
@@ -68,7 +68,7 @@ async def logo_gen(event):
             pics.append(i)
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
-        fpath_ = glob.glob("./Zaid/resources/fonts/*")
+        fpath_ = glob.glob("./Yuriko/resources/fonts/*")
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
@@ -79,7 +79,7 @@ async def logo_gen(event):
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
     if not font_:
-        fpath_ = glob.glob("./Zaid/resources/fonts/*")
+        fpath_ = glob.glob("./Yuriko/resources/fonts/*")
         font_ = random.choice(fpath_)
     if len(name) <= 8:
         fnt_size = 120
@@ -108,12 +108,12 @@ async def logo_gen(event):
               stroke_width=strke, stroke_fill="black")
     flnme = f"logo.png"
     img.save(flnme, "png")
-    await xx.edit("Downloading")
+    await xx.edit("`Uploading`")
     if os.path.exists(flnme):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Godfather](https://t.me/godfatherakkii)",
+            caption="Logo by [TeamDeeCode](https://t.me/TeamDeeCode)",
             force_document=False,
         )
         os.remove(flnme)
@@ -121,13 +121,13 @@ async def logo_gen(event):
     if os.path.exists(bg_):
         os.remove(bg_) 
     if os.path.exists(font_):
-        if not font_.startswith("./Zaid/resources/fonts"):
+        if not font_.startswith("./Yuriko/resources/fonts"):
             os.remove(font_)
 
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
-    xx = await event.reply("Preparing your logo...")
+    xx = await event.reply("`Bana raha hu roka todi ma bh insaan hu machine nahi😶...`")
     name = event.pattern_match.group(1)
     if not name:
         await xx.edit("`Provide some text to draw!\nExample: /wlogo <your name>!`")
@@ -151,7 +151,7 @@ async def logo_(event):
             pics.append(i)
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
-        fpath_ = glob.glob("./Zaid/resources/fonts/*")
+        fpath_ = glob.glob("./Yuriko/resources/fonts/*")
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
@@ -162,7 +162,7 @@ async def logo_(event):
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
     if not font_:
-        fpath_ = glob.glob("./Zaid/resources/fonts/*")
+        fpath_ = glob.glob("./Yuriko/resources/fonts/*")
         font_ = random.choice(fpath_)
     if len(name) <= 8:
         fnt_size = 105
@@ -196,7 +196,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Yuriko](https://t.me/YurikoRobot)",
+            caption="Logo by [TeamDeeCode](https://t.me/TeamDeeCode)",
             force_document=False,
         )
         os.remove(flnme)
@@ -208,7 +208,7 @@ async def logo_(event):
             os.remove(font_)
 
 
-__mod_name__ = "Logomaker"
+__mod_name__ = "LᴏɢᴏMᴀᴋᴇʀ"
 
 __help__ = """
 
