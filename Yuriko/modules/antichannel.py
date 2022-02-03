@@ -3,7 +3,7 @@ import asyncio
 from pymongo import MongoClient
 from pyrogram import filters
 
-from Yuriko.config import get_str_key
+from Yuriko.confing import get_str_key
 from Yuriko import pbot
 
 MONGO_DB_URI = get_str_key("MONGO_URI")
