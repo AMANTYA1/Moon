@@ -21,15 +21,16 @@ from telethon import *
 from telethon.tl import functions
 from telethon.tl.types import ChatBannedRights
 
-from Shadow import BOT_ID
-from Shadow.function.telethonbasics import is_admin
-from Shadow.services.sql.night_mode_sql import (
+from Yuriko import pbot as BOT_ID
+from Yuriko import telethn as tbot
+from Yuriko.modules.sql.night_mode_sql import (
     add_nightmode,
     get_all_chat_id,
     is_nightmode_indb,
     rmnightmode,
 )
-from Shadow.services.telethon import tbot
+from Yuriko.services.telethonbasics import is_admin
+
 
 CLEAN_GROUPS = False
 
