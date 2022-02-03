@@ -172,3 +172,15 @@ scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
 scheduler.add_job(job_close, trigger="cron", hour=0, minute=1)
 scheduler.add_job(job_open, trigger="cron", hour=6, minute=1)
 scheduler.start()
+
+__mod_name__ = "Nɪɢʜᴛ ᴍᴏᴅᴇ"
+
+__help__ = """
+<b>The Night mode</b>
+
+Close your group at 12.00 a.m. and open back at 6.00 a.m.(IST)
+
+✗ /nightmode `<code>[ON/OFF]</code>: Enable/Disable Night Mode.`
+
+<i>Only available for asian countries (India Standard time)</i>
+"""
