@@ -105,17 +105,19 @@ async def profanity(event):
         if event.is_group:
             if is_nightmode_indb(str(event.chat_id)):
                     await event.reply(
-                        "Night Mode is Already Turned ON for this Chat"
+                        "This Chat is Has Already Enabled Night Mode."
                     )
                     return
             add_nightmode(str(event.chat_id))
-            await event.reply("NightMode turned on for this chat.")
+            await event.reply(
+                f"**Added Chat {event.chat.title} With Id {event.chat_id} To Database. This Group Will Be Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
+            )
     if "off" in input:
         if event.is_group:
             if not is_nightmode_indb(str(event.chat_id)):
-                    await event.reply(
-                        "Night Mode is Already Off for this Chat"
-                    )
+                    event.reply(
+                f"**Removed Chat {event.chat.title} With Id {event.chat_id} From Database. This Group Will Be No Longer Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
+            )
                     return
         rmnightmode(str(event.chat_id))
         await event.reply("NightMode Disabled!")
@@ -131,7 +133,8 @@ async def job_close():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By @Shubhanshutya**"
+              int(warner.chat_id),
+                "**🌗 Night Mode Started !**\n\n`Group Is Closing Till 06:00. Only admins should be able to message`\n\n**Powered By @YurikoRobot**",
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -153,7 +156,8 @@ async def job_open():
     for pro in chats:
         try:
             await tbot.send_message(
-              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By @Shubhanshutya**"
+              int(warner.chat_id),
+                "**🌗 Night Mode Ended !**\n\n`Group Is Opening. Everyone should be able to message`\n\n**Powered By @YurikoRobot**",
             )
             await tbot(
             functions.messages.EditChatDefaultBannedRightsRequest(
@@ -165,5 +169,6 @@ async def job_open():
 
 # Run everyday at 06
 scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
-scheduler.add_job(job_open, trigger="cron", hour=5, minute=58)
+scheduler.add_job(job_close, trigger="cron", hour=0, minute=1)
+scheduler.add_job(job_open, trigger="cron", hour=6, minute=1)
 scheduler.start()
