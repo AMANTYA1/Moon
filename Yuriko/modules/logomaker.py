@@ -217,7 +217,7 @@ __help__ = """
 
 ✗ /logo - `<text/name> Create a logo with random view.`
 
-✗ /wlogo - `<text/name> Create a logo with wide view only.`
+✗ /logohq - `<text/name> Create a logo with wide view only.`
 
  *Image Editor :*
 
