@@ -4,7 +4,8 @@ import datetime
 from telethon.tl import functions, types
 
 from Yuriko.events import register
-from Yuriko import telethn as tbot, ubot
+from Yuriko import telethn as tbot
+from Yuriko import ubot2 as ubot
 
 async def is_register_admin(chat, user):
     if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
