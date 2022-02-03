@@ -210,3 +210,18 @@ async def logohq(client, message):
             )
         except:
             return
+
+__mod_name__ = "LᴏɢᴏMᴀᴋᴇʀ"
+
+__help__ = """
+
+✗ /logo - `<text/name> Create a logo with random view.`
+
+✗ /wlogo - `<text/name> Create a logo with wide view only.`
+
+ *Image Editor :*
+
+✗  /edit - `<reply photo> to edit image.`
+
+*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+"""
