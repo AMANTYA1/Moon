@@ -6,7 +6,7 @@ from pyrogram import filters
 from Yuriko.confing import get_str_key
 from Yuriko import pbot
 
-#MONGO_DB_URI = get_str_key("MONGO_URI")
+MONGO_DB_URI = get_str_key("MONGO_URI")
 client = MongoClient(MONGO_DB_URI)
 dbd = client["missjuliarobot"]
 approved_users = dbd.approve
