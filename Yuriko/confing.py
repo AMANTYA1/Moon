@@ -3,8 +3,6 @@ from Yuriko import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
-    "MONGODB_URI": "localhost",
-    "MONGO_DB": "Aman",
 }
 
 
