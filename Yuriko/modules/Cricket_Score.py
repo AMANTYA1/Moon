@@ -67,3 +67,14 @@ async def _(event):
         f"<b><u>Match information gathered successfully</b></u>\n\n<code>{Sed}</code>",
         parse_mode="HTML",
     )
+
+__mod_name__ = "Cʀɪᴄᴋᴇᴛ-Sᴄᴏʀᴇ"
+
+__help__ = """
+Help for Cricket Score Module:
+
+MATCH INFO     
+✗ /cs - `Gathers match information (globally).`
+
+*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+"""
