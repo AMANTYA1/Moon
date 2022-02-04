@@ -119,10 +119,10 @@ async def alive_function(answers):
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
-    )
+       )
 
-      msg = f"""
-**[Yuriko](https://github.com/AMANTYA1):**
+    msg = f"""
+**[Yuriko Robot ❤️](https://t.me/YurikoRobot):**
 +-------------------------+
 **System Stats:**
  **MainBot:** `{bot_state}`
