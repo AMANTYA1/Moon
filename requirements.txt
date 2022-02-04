@@ -3,6 +3,7 @@ emoji
 lxml
 wget
 gtts
+faker
 beautifulsoup4
 requests
 python-telegram-bot==13.11.0
