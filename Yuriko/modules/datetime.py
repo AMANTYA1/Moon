@@ -22,11 +22,11 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-#from Shadow.config import get_str_key
+from Yuriko.confing import get_str_key
 from Yuriko.events import register
 from Yuriko import telethn as tbot
 
-TIME_API_KEY = 7KH0ZPYX5HAJ
+TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
 
 
 async def is_register_admin(chat, user):
