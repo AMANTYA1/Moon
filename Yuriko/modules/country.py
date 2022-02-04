@@ -1,12 +1,24 @@
-from telethon.tl.functions.photos import GetUserPhotosRequest
-from telethon.tl.functions.users import GetFullUserRequest
-from telethon.tl.types import MessageEntityMentionName
-from telethon.utils import get_input_location
-import flag
-import html, os
+# Copyright (C) 2021 TeamOfShadow
+
+# This file is part of Shadow (Telegram Bot)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 from countryinfo import CountryInfo
-from Yuriko import telethn as borg
+
 from Yuriko.events import register
+from Yuriko import telethn as tbot
 
 
 @register(pattern="^/country (.*)")
@@ -55,8 +67,7 @@ async def msg(event):
         po = iSo.get(hitler)
         iso += po + ",  "
     fla = iSo.get("alpha2")
-    nox = fla.upper()
-    okie = flag.flag(nox)
+    fla.upper()
 
     languages = a.get("languages")
     lMAO = ""
@@ -79,16 +90,16 @@ async def msg(event):
 
     wiki = a.get("wiki")
 
-    caption = f"""<b><u>Information Gathered Successfully</b></u>
-<b>
-Country Name:- {name}
+    caption = f"""
+<b><u>Information Gathered Successfully</b></u>
+
+<b>Country Name:- {name}
 Alternative Spellings:- {hu}
 Country Area:- {area} square kilometers
 Borders:- {borders}
 Calling Codes:- {call}
 Country's Capital:- {capital}
 Country's currency:- {currencies}
-Country's Flag:- {okie}
 Demonym:- {HmM}
 Country Type:- {EsCoBaR}
 ISO Names:- {iso}
@@ -99,9 +110,9 @@ Region:- {reg}
 Sub Region:- {sub}
 Time Zones:- {tom}
 Top Level Domain:- {lanester}
-wikipedia:- {wiki}</b>
+Wikipedia:- {wiki}</b>
 
-Gathered By Emiko Robot ✨.</b>
+<b>Gathered By @YurikoRobot</b>
 """
 
     await borg.send_message(
@@ -110,4 +121,10 @@ Gathered By Emiko Robot ✨.</b>
         parse_mode="HTML",
     )
 
-    await event.delete()
+__mod_name__ = "Cᴏᴜɴᴛʀʏ"
+__help__ = """
+Commands
+✗ /country `[country name]*:* Gathering info about given country`
+
+*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+"""
