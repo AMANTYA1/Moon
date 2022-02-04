@@ -67,7 +67,7 @@ async def _(event):
         os.system("rm ./FRIDAYOT.jpg ")
 
 
-__mod_name__ = "Fᴀᴍᴇ-Iɴғᴏ"
+__mod_name__ = "Fᴀᴋᴇ-Iɴғᴏ"
 
 __help__ = """
 Commands:
