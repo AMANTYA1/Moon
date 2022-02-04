@@ -71,7 +71,6 @@ async def _(event):
 __mod_name__ = "Cʀɪᴄᴋᴇᴛ-Sᴄᴏʀᴇ"
 
 __help__ = """
-Help for Cricket Score Module:
 
 MATCH INFO     
 ✗ /cs - `Gathers match information (globally).`
