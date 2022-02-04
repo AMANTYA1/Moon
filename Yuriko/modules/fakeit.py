@@ -66,6 +66,7 @@ async def _(event):
         await event.delete()
         os.system("rm ./FRIDAYOT.jpg ")
 
+
 __mod_name__ = "Fᴀᴍᴇ-Iɴғᴏ"
 
 __help__ = """
