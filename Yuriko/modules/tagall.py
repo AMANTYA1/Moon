@@ -111,9 +111,9 @@ async def cancel_spam(event):
 
 __mod_name__ = "Tᴀɢ-Aʟʟ"
 __help__ = """
-Yuriko Can Be a Mention Bot for your group.
+`Yuriko Can Be a Mention Bot for your group.`
 
-Only admins can tag all.  here is a list of commands
+`Only admins can tag all.  here is a list of commands`
 
 ✗ /tagall or @all '(reply to message or add another message) To mention all members in your group, without exception.'
 
