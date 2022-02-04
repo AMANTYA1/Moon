@@ -121,20 +121,42 @@ async def alive_function(answers):
         ),
     )
 
-    msg = f"""
-**[Yuriko Robot ❤️](https://t.me/decodesupport):**
-**MainBot:** `{bot_state}`
-**UserBot:** `{ubot_state}`
-**Python:** `{pyver.split()[0]}`
-**Pyrogram:** `{pyrover}`
-**MongoDB:** `{mongover}`
-**Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/TeamDeeCode)
+      msg = f"""
+**[Yuriko](https://github.com/AMANTYA1):**
++-------------------------+
+**System Stats:**
+ **MainBot:** `{bot_state}`
+ **UserBot:** `Alive`
+ **Python:** `3.9`
+ **Pyrogram:** `{pyrover}`
+ **Telethon:** `1.23`
+ **Aiogram:** `2.14`
+ **MongoDB:** `{mongover}` 
+ **RedisDB:** `6.2.5`
+ **SQL:** `1.3.20`
+ **Platform:** `{sys.platform}`
+ **Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/TeamDeeCode)
++-------------------------+
+**Database Stats:**
+ **DB 1 [Main]**: `Running`
+ **DB 2 [Main]**: `Running`
+ **DB 3 [Backup]**: `Running`
+ **DB 4 [Autofilters]**: `Running`
+ **DB 5 [Temp]**: `Running`
+ **DB 6 [Temp]**: ´Running`
++-------------------------+
+**Status: Yuriko ready to use :-)**
+Note: Music Player and autofilters can be unstable sometimes
++-------------------------+
+**Bot:** @YurikoRobot
+**Support:** @DeCodeSupport
+**Updates:** @DeeCodeBots
++-------------------------+
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Bot's Stats",
+            description="Check Yuriko-2.0 System Stats",
             thumb_url="https://telegra.ph/file/dad7863c0db4ac921982d.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
