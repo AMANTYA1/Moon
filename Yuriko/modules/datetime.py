@@ -22,9 +22,9 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from Shadow.config import get_str_key
-from Shadow.services.events import register
-from Shadow.services.telethon import tbot
+#from Shadow.config import get_str_key
+from Yuriko.events import register
+from Yuriko import telethn as tbot
 
 TIME_API_KEY = 7KH0ZPYX5HAJ
 
