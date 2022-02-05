@@ -21,7 +21,9 @@ zalgo-text
 geopy
 nltk
 psutil
-aiohttp
+aiohttp[speedups]
+cryptg
+cryptography
 Pillow
 CurrencyConverter
 googletrans==4.0.0rc1
