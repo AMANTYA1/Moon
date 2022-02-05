@@ -26,7 +26,7 @@ from Yuriko.confing import get_int_key, get_str_key
 from Yuriko.events import register
 from Yuriko import telethn as tbot
 
-OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
+OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "7181b8a4580be607eddacd56777bf64b")
 OWNER_ID = get_int_key("OWNER_ID")
 
 
