@@ -22,11 +22,11 @@ import aiohttp
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from Yuriko.confing import get_int_key, get_str_key
+from Yuriko.confing import get_int_key
 from Yuriko.events import register
 from Yuriko import telethn as tbot
 
-OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "7181b8a4580be607eddacd56777bf64b")
+#OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "7181b8a4580be607eddacd56777bf64b")
 OWNER_ID = get_int_key("OWNER_ID")
 
 
@@ -68,7 +68,7 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     async with aiohttp.ClientSession() as session:
         response_api_zero = await session.get(
-            sample_url.format(input_str, OPENWEATHERMAP_ID)
+            sample_url.format(7181b8a4580be607eddacd56777bf64b)
         )
     response_api = await response_api_zero.json()
     if response_api["cod"] == 200:
