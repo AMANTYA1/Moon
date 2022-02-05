@@ -22,7 +22,7 @@ import aiohttp
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
-from Yuriko.confing import get_int_key
+from Yuriko.confing import get_int_key, get_str_key
 from Yuriko.events import register
 from Yuriko import telethn as tbot
 
@@ -51,7 +51,7 @@ async def is_register_admin(chat, user):
         return True
 
 
-@register(pattern="^/weather (.*)")
+@register(pattern="^/not (.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -68,7 +68,7 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     async with aiohttp.ClientSession() as session:
         response_api_zero = await session.get(
-            sample_url.format(7181b8a4580be607eddacd56777bf64b)
+            sample_url.format(input_str, OPENWEATHERMAP_ID)
         )
     response_api = await response_api_zero.json()
     if response_api["cod"] == 200:
@@ -128,8 +128,6 @@ __mod_name__ = "Wᴇᴀᴛʜᴇʀ"
 
 __help__ = """
 Available Commands:
-
-✗ /weather (city name) - `Gives weather forcast`
 
 ✗ /weatherimg (city name) - `Gives weather image`
 
