@@ -1,186 +1,276 @@
-import os
-from Yuriko.modules.sql.night_mode_sql import (
-    add_nightmode,
-    rmnightmode,
-    get_all_chat_id,
-    is_nightmode_indb,
-)
-from telethon.tl.types import ChatBannedRights
-from apscheduler.schedulers.asyncio import AsyncIOScheduler 
-from telethon import functions
-from Yuriko.events import register
-from Yuriko import telethn as tbot, OWNER_ID
-from telethon import Button, custom, events
+# ---------- NIGHTMODE v2.0 ----------------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------- NIGHTMODE v2.0 ------------------------------------------------------------------
+# ---------- NIGHTMODE v2.0 ----------------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------- NIGHTMODE v2.0 ------------------------------------------------------------------
 
-hehes = ChatBannedRights(
-    until_date=None,
-    send_messages=True,
-    send_media=True,
-    send_stickers=True,
-    send_gifs=True,
-    send_games=True,
-    send_inline=True,
-    send_polls=True,
-    invite_users=True,
-    pin_messages=True,
-    change_info=True,
-)
+import asyncio
+from datetime import timedelta
 
-openhehe = ChatBannedRights(
-    until_date=None,
-    send_messages=False,
-    send_media=False,
-    send_stickers=False,
-    send_gifs=False,
-    send_games=False,
-    send_inline=False,
-    send_polls=False,
-    invite_users=True,
-    pin_messages=True,
-    change_info=True,
-)
+import dateparser
+from pymongo import MongoClient
+from pyrogram import filters
+from pyrogram.types import ChatPermissions
 
-from telethon.tl.types import (
-    ChannelParticipantsAdmins,
-    ChatAdminRights,
-    MessageEntityMentionName,
-    MessageMediaPhoto,
-)
+from Yuriko.confing import get_str_key
+from Yuriko import pbot
 
-from telethon.tl.functions.channels import (
-    EditAdminRequest,
-    EditBannedRequest,
-    EditPhotoRequest,
-)
+MONGO_DB_URI = get_str_key("MONGO_DB_URI")
 
-async def is_register_admin(chat, user):
-    if isinstance(chat, (types.InputPeerChannel, types.InputChannel)):
-        return isinstance(
-            (
-                await tbot(functions.channels.GetParticipantRequest(chat, user))
-            ).participant,
-            (types.ChannelParticipantAdmin, types.ChannelParticipantCreator),
-        )
-    if isinstance(chat, types.InputPeerUser):
-        return True
+# Setting Up Mongo 🤣
+client = MongoClient()
+client = MongoClient(MONGO_DB_URI)
+db = client["daisyxbot"]
+nightmod = db.nightmode3
 
-async def can_change_info(message):
-    result = await tbot(
-        functions.channels.GetParticipantRequest(
-            channel=message.chat_id,
-            user_id=message.sender_id,
-        )
-    )
-    p = result.participant
-    return isinstance(p, types.ChannelParticipantCreator) or (
-        isinstance(p, types.ChannelParticipantAdmin) and p.admin_rights.change_info
-    )
 
-@register(pattern="^/(nightmode|Nightmode|NightMode|kontolmode|KONTOLMODE) ?(.*)")
-async def profanity(event):
-    if event.fwd_from:
+def get_info(id):
+    return nightmod.find_one({"id": id})
+
+
+@pbot.on_message(filters.command(["setnightmode"]))
+async def customize_night(_, message):
+
+    lol = await message.reply("Processing...")
+
+    if message.chat.type == "private":
+        return await lol.edit("**You can set nightmode only in groups :(**")
+
+    if message.chat.type == "channel":
         return
-    if event.is_private:
-        return
-    input = event.pattern_match.group(2)
-    if not event.sender_id == OWNER_ID:
-        if not await is_register_admin(event.input_chat, event.sender_id):
-           await event.reply("Only admins can execute this command!")
-           return
+
+    else:
+        if len(message.command) != 2:
+            return await lol.edit("Give other parameters too 👀")
+
+        parameter = message.text.split(None, 1)[1]
+
+        if "|" in parameter:
+            zone, ctime, otime = parameter.split("|")
+
         else:
-          if not await can_change_info(message=event):
-            await event.reply("You are missing the following rights to use this command:CanChangeinfo")
-            return
-    if not input:
-        if is_nightmode_indb(str(event.chat_id)):
-                await event.reply(
-                    "Currently NightMode is Enabled for this Chat"
+            return await lol.edit("Invalid Syntax..!")
+
+        zone = zone.strip()
+        ctime = ctime.strip()
+        otime = otime.strip()
+
+        if len(ctime) != 11:
+            return await lol.edit("Please enter valid date and time...!")
+
+        if len(otime) != 11:
+            return await lol.edit("Please enter valid date and time...!")
+
+        if not zone and ctime and otime:
+            return await lol.edit("Missing some parameters.!")
+
+        ttime = dateparser.parse(
+            "now", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "YMD"}
+        )
+
+        if ttime is None or otime is None or ctime is None:
+            return await lol.edit("Please enter valid `date`, `time` & `zone`")
+
+        cctime = dateparser.parse(
+            f"{ctime}", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "DMY"}
+        ) + timedelta(days=1)
+
+        ootime = dateparser.parse(
+            f"{otime}", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "DMY"}
+        ) + timedelta(days=1)
+
+        if cctime == ootime:
+            return await lol.edit("Chat opening and closing time can not be same..!")
+
+        if not ootime > cctime and not cctime < ootime:
+            return await lol.edit("Chat opening time must be greater than closing time")
+
+        if cctime > ootime:
+            return await lol.edit(
+                "Chat closing time can't be greater than opening time"
+            )
+
+        chats = nightmod.find({})
+        for c in chats:
+            if message.chat.id == c["id"] and c["valid"] is True:
+                to_check = get_info(id=message.chat.id)
+                nightmod.update_one(
+                    {
+                        "_id": to_check["_id"],
+                        "id": to_check["id"],
+                        "valid": to_check["valid"],
+                        "zone": to_check["zone"],
+                        "ctime": to_check["ctime"],
+                        "otime": to_check["otime"],
+                    },
+                    {"$set": {"zone": zone, "ctime": cctime, "otime": ootime}},
                 )
-                return
-        await event.reply(
-            "Currently NightMode is Disabled for this Chat"
+                await lol.edit(
+                    "**Nightmode already set**\n\n__I am updating the zone, closing time and opening time with the new zone, closing time and opening time__"
+                )
+                await asyncio.sleep(5)
+                return await lol.edit(
+                    f"**Nightmode Updated Successfully in {message.chat.title} chat**"
+                )
+        nightmod.insert_one(
+            {
+                "id": message.chat.id,
+                "valid": True,
+                "zone": zone,
+                "ctime": cctime,
+                "otime": ootime,
+            }
         )
-        return
-    if "on" in input:
-        if event.is_group:
-            if is_nightmode_indb(str(event.chat_id)):
-                    await event.reply(
-                        "This Chat is Has Already Enabled Night Mode."
+        await lol.edit(f"**Nightmode set successfully in {message.chat.title} chat !**")
+
+
+@pbot.on_message(filters.incoming & ~filters.edited)
+async def night_mode(client, message):
+    try:
+        if not message:
+            return message.continue_propagation()
+        if not message.from_user:
+            return message.continue_propagation()
+
+        chats = nightmod.find({})
+
+        for c in chats:
+            id = c["id"]
+            valid = c["valid"]
+            zone = c["zone"]
+            c["ctime"]
+            otime = c["otime"]
+            present = dateparser.parse(
+                "now", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "YMD"}
+            )
+            try:
+                if present > otime and valid:
+                    newtime = otime + timedelta(days=1)
+                    to_check = get_info(id=id)
+                    if not to_check:
+                        return message.continue_propagation()
+                    if not newtime:
+                        return message.continue_propagation()
+                    nightmod.update_one(
+                        {
+                            "_id": to_check["_id"],
+                            "id": to_check["id"],
+                            "valid": to_check["valid"],
+                            "zone": to_check["zone"],
+                            "ctime": to_check["ctime"],
+                            "otime": to_check["otime"],
+                        },
+                        {"$set": {"otime": newtime}},
                     )
-                    return
-            add_nightmode(str(event.chat_id))
-            await event.reply(
-                f"**Added Chat {event.chat.title} With Id {event.chat_id} To Database. This Group Will Be Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
+
+                    sed = await client.send_message(
+                        id,
+                        "🌗 Night Mode Ending :)\n\n `Chat Opening...`",
+                    )
+                    await client.set_chat_permissions(
+                        id,
+                        ChatPermissions(
+                            can_send_messages=True,
+                            can_send_media_messages=True,
+                            can_send_stickers=True,
+                            can_send_animations=True,
+                        ),
+                    )
+
+                    await sed.edit(
+                        "**🌗Night Mode Ended**\n\n`Chat opened`: __EveryOne Should Be Able To Send Messages__\n\n**Powered by @YurikoRobot**"
+                    )
+                    message.continue_propagation()
+                    break
+                    return message.continue_propagation()
+            except:
+                print("Chat open error in nightbot")
+                return message.continue_propagation()
+            continue
+
+        chats = nightmod.find({})
+
+        for c in chats:
+            id = c["id"]
+            valid = c["valid"]
+            zone = c["zone"]
+            ctime = c["ctime"]
+            c["otime"]
+            c["otime"]
+            present = dateparser.parse(
+                "now", settings={"TIMEZONE": f"{zone}", "DATE_ORDER": "YMD"}
             )
-    if "off" in input:
-        if event.is_group:
-            if not is_nightmode_indb(str(event.chat_id)):
-                    event.reply(
-                f"**Removed Chat {event.chat.title} With Id {event.chat_id} From Database. This Group Will Be No Longer Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
-            )
-                    return
-        rmnightmode(str(event.chat_id))
-        await event.reply("NightMode Disabled!")
-    if not "off" in input and not "on" in input:
-        await event.reply("Please Specify On or Off!")
+            try:
+                if present > ctime and valid:
+                    newtime = ctime + timedelta(days=1)
+                    to_check = get_info(id=id)
+
+                    if not to_check:
+                        return message.continue_propagation()
+                    if not newtime:
+                        return message.continue_propagation()
+
+                    nightmod.update_one(
+                        {
+                            "_id": to_check["_id"],
+                            "id": to_check["id"],
+                            "valid": to_check["valid"],
+                            "zone": to_check["zone"],
+                            "ctime": to_check["ctime"],
+                            "otime": to_check["otime"],
+                        },
+                        {"$set": {"ctime": newtime}},
+                    )
+                    sed = await client.send_message(
+                        id,
+                        "🌗 Night Mode Starting :)\n\n`Chat closing...`",
+                    )
+                    await client.set_chat_permissions(
+                        id,
+                        ChatPermissions(
+                            can_send_messages=False,
+                        ),
+                    )
+                    await sed.edit(
+                        "**🌗Night Mode Started**\n\n `Chat close initiated`: __Only Admins Should Be Able To Send Messages__\n\n**Powered by @YurikoRobot**"
+                    )
+                    message.continue_propagation()
+                    break
+                    return message.continue_propagation()
+            except:
+                print("Chat close error")
+                return message.continue_propagation()
+            continue
+        return message.continue_propagation()
+    except:
         return
 
 
-async def job_close():
-    chats = get_all_chat_id()
-    if len(chats) == 0:
-        return
-    for pro in chats:
-        try:
-            await tbot.send_message(
-              int(warner.chat_id),
-                "**🌗 Night Mode Started !**\n\n`Group Is Closing Till 06:00. Only admins should be able to message`\n\n**Powered By @YurikoRobot**",
-            )
-            await tbot(
-            functions.messages.EditChatDefaultBannedRightsRequest(
-                peer=int(pro.chat_id), banned_rights=hehes
-            )
-            )
-        except Exception as e:
-            logger.info(f"Unable To Close Group {chat} - {e}")
+# --------------------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------------------
 
-#Run everyday at 12am
-scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
-scheduler.add_job(job_close, trigger="cron", hour=23, minute=59)
-scheduler.start()
+# __mod_name__ = "Nɪɢʜᴛ ᴍᴏᴅᴇ"
 
-async def job_open():
-    chats = get_all_chat_id()
-    if len(chats) == 0:
-        return
-    for pro in chats:
-        try:
-            await tbot.send_message(
-              int(warner.chat_id),
-                "**🌗 Night Mode Ended !**\n\n`Group Is Opening. Everyone should be able to message`\n\n**Powered By @YurikoRobot**",
-            )
-            await tbot(
-            functions.messages.EditChatDefaultBannedRightsRequest(
-                peer=int(pro.chat_id), banned_rights=openhehe
-            )
-        )
-        except Exception as e:
-            logger.info(f"Unable To Open Group {pro.chat_id} - {e}")
+# __help__ =
+"""
+<b>The Night Mode</b>
 
-# Run everyday at 06
-scheduler = AsyncIOScheduler(timezone="Asia/Jakarta")
-scheduler.add_job(job_close, trigger="cron", hour=0, minute=1)
-scheduler.add_job(job_open, trigger="cron", hour=6, minute=1)
-scheduler.start()
+Tired managing group all time
+Close your group at at a given time and open back at a given time
 
-__mod_name__ = "Nɪɢʜᴛ ᴍᴏᴅᴇ"
+<b>Available Commands</b>
+✗ /nightmode [ON/OFF] - `Enable/Disable Night Mode` (Default settings*)
 
-__help__ = """
-<b>The Night mode</b>
+✗ /setnightmode `[TIME ZONE] | [Start time] | [End time]: Set nightmode` (See example)
 
-Close your group at 12.00 a.m. and open back at 6.00 a.m.(IST)
+<u>Example:</u>
 
-✗ /nightmode `<code>[ON/OFF]</code>: Enable/Disable Night Mode.`
+✗ /setnightmode `Asia/kolkata | 01:30:00 AM | 02:35:00 AM`
+    
+<i>Note -`Remember chat permissions messages,gifs,games,inline,invites will be allowed when opening chat`</i>
 
-<i>Only available for asian countries (India Standard time)</i>
+`Default settings: Close your group at 12.00 AM. and open back at 6.00 AM.(IST)`
+
+**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!**
 """
