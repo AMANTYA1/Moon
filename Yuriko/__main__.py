@@ -27,7 +27,6 @@ from Yuriko.utils.logger import log
 
 if get_bool_key("DEBUG_MODE"):
     log.debug("Enabling logging middleware.")
-    dp.middleware.setup(LoggingMiddleware())
 
 LOAD = get_list_key("LOAD")
 DONT_LOAD = get_list_key("DONT_LOAD")
