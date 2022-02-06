@@ -21,7 +21,7 @@ from aiogram import executor
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 
 from Yuriko import TOKEN
-from Yuriko.config import get_bool_key, get_list_key
+from Yuriko.confing import get_bool_key, get_list_key
 from Yuriko.modules import ALL_MODULES, LOADED_MODULES, MOD_HELP
 from Yuriko.utils.logger import log
 
