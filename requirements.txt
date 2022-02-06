@@ -3,6 +3,7 @@ emoji
 aiogram
 lxml
 wget
+loguru
 gtts
 faker
 beautifulsoup4
