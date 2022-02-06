@@ -22,7 +22,7 @@ from aiogram.contrib.middlewares.logging import LoggingMiddleware
 
 from Yuriko import TOKEN
 from Yuriko.confing import get_bool_key, get_list_key
-from Yuriko.modules import ALL_MODULES, LOADED_MODULES, MOD_HELP
+from Yuriko.modules import ALL_MODULES
 from Yuriko.utils.logger import log
 
 if get_bool_key("DEBUG_MODE"):
@@ -52,7 +52,7 @@ if get_bool_key("LOAD_MODULES"):
                 MOD_HELP[imported_module.__mod_name__] = imported_module.__help__
             else:
                 MOD_HELP[imported_module.__name__] = imported_module.__help__
-        LOADED_MODULES.append(imported_module)
+        ALL_MODULES.append(imported_module)
     log.info("Modules loaded!")
 else:
     log.warning("Not importing modules!")
@@ -61,7 +61,7 @@ loop = asyncio.get_event_loop()
 
 
 async def before_srv_task(loop):
-    for module in [m for m in LOADED_MODULES if hasattr(m, "__before_serving__")]:
+    for module in [m for m in ALL_MODULES if hasattr(m, "__before_serving__")]:
         log.debug("Before serving: " + module.__name__)
         loop.create_task(module.__before_serving__(loop))
 
