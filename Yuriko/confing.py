@@ -1,5 +1,6 @@
 from envparse import env
 from Yuriko import LOGGER
+from Yuriko.utils.logger import log
 
 DEFAULTS = {
     "DEBUG_MODE": True,
