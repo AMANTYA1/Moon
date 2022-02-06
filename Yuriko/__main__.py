@@ -48,9 +48,9 @@ if get_bool_key("LOAD_MODULES"):
         imported_module = import_module("Yuriko.modules." + module_name)
         if hasattr(imported_module, "__help__"):
             if hasattr(imported_module, "__mod_name__"):
-                MOD_HELP[imported_module.__mod_name__] = imported_module.__help__
+                ALL_MODULES[imported_module.__mod_name__] = imported_module.__help__
             else:
-                MOD_HELP[imported_module.__name__] = imported_module.__help__
+                ALL_MODULES[imported_module.__name__] = imported_module.__help__
         ALL_MODULES.append(imported_module)
     log.info("Modules loaded!")
 else:
