@@ -1,5 +1,6 @@
 future
 emoji
+aiogram
 lxml
 wget
 gtts
