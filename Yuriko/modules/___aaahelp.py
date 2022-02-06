@@ -25,8 +25,8 @@ from pyrogram.types import (
 )
 from Yuriko import pbot
 
-from Yuriko.modules.dev.messages import Messages as MSG
-from Yuriko.modules.dev.buttons import Buttons as BTN
+from Yuriko.modules.resources.messages import Messages as MSG
+from Yuriko.modules.resources.buttons import Buttons as BTN
 
 # ----------------------------- TEXT ----------------------------------------------------------------------------------------
 # ----------------------------------------------------------- TEXT ----------------------------------------------------------
