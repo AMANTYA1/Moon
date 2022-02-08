@@ -23,7 +23,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     Message,
 )
-from Yuriko.services.pyrogram import pbot
+from Yuriko import pbot
 
 from Yuriko.modules.resources.messages import Messages as MSG
 from Yuriko.modules.resources.buttons import Buttons as BTN
