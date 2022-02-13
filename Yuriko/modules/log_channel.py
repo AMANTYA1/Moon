@@ -187,7 +187,7 @@ if is_module_loaded(FILENAME):
             return f"This group has all it's logs sent to: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
         return "No log channel is set for this group!"
 
-
+__mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
     __help__ = """
 ──「 Log channel 」──
 
@@ -207,8 +207,6 @@ if is_module_loaded(FILENAME):
 """
 
 __lovely_advance__ = __help__
-
-    __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
 
     LOG_HANDLER = CommandHandler("logchannel", logging, run_async=True)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog, run_async=True)
