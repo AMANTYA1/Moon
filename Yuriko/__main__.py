@@ -94,19 +94,18 @@ LOVELY_MENU = """
 """
 
 Lovelybuttons = [
-    [
-        InlineKeyboardButton(
-            text=="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="Help", callback_data="lovelyx_"),         
+     [
+        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="https://t.me/Yurikorobot?startgroup=true"),
+     ]
+        InlineKeyboardButton(text="❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="lovelyx_"),         
      ],
      [  
-        InlineKeyboardButton(text="Support", url="https://t.me/PmPermit"),
-        InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),
-        InlineKeyboardButton(text="Update", url="https://t.me/BotDuniya"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PmPermit"),
+        InlineKeyboardButton(text="Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_tutorials"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ", url="https://t.me/BotDuniya"),
      ], 
 ]
+
 
 
 LOVELYX_VIDAA = """https://telegra.ph/file/c8994e597d83de768f1ba.mp4"""
@@ -157,7 +156,7 @@ USER_SETTINGS = {}
 
 LOVELY_CMDS =  [
        [
-           InlineKeyboardButton(text="Bᴀsɪᴄ", callback_data="lovelybasic_back"),           
+           InlineKeyboardButton(text="👥 Bᴀꜱɪᴄ Cᴏᴍᴍᴀɴᴅꜱ", callback_data="lovelybasic_back"),           
            InlineKeyboardButton(text="Aᴅᴠᴀɴsᴇᴅ", callback_data="lovelyadvance_back"),
        ],      
        [
@@ -165,7 +164,7 @@ LOVELY_CMDS =  [
            InlineKeyboardButton(text="Iɴʟɪɴᴇ", switch_inline_query_current_chat=""),
        ],
        [ 
-           InlineKeyboardButton(text="Aʟʟ Cᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+           InlineKeyboardButton(text="➕ Aʟʟ Cᴏᴍᴍᴀɴᴅꜱ ➕", callback_data="help_back"),
            InlineKeyboardButton(text="Mᴀɪɴ Mᴇɴᴜ", callback_data="lovelyx_back"),
        ],
 ]
