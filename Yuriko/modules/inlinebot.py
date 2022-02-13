@@ -29,7 +29,7 @@ from Yuriko.function.inlinehelper import *
 from Yuriko.function.pluginhelpers import fetch, json_prettify
 from Yuriko import pbot as app
 
-OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "7181b8a4580be607eddacd56777bf64b")
+OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
 TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
 
 dictionary = PyDictionary()
