@@ -745,13 +745,14 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
             ),
         )
     elif query.data == "lovelyx_helpe":
-        query.message.edit_text(
-            text="""So now you are at the end of basic tour. But this is not all I can do.
+        query.message.reply_video(
+            LOVELYX_VIDAA,
+              caption="""So now you are at the end of basic tour. But this is not all I can do.
 Send /help in bot pm to access help menu
 There are many handy tools to try out. 
 And also if you have any suggessions about me, Don't forget to tell them to devs
 Again thanks for using me
-✗ By using @LOVELYR\_OBOT you are agreed to our terms & conditions""",
+✗ By using @YurikoRobot you are agreed to our terms & conditions""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
