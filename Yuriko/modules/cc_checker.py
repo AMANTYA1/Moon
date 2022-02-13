@@ -279,3 +279,4 @@ Note: Format of cc is ccnum|mm|yy|cvv
 
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
+__lovely_basic__ = __help__
