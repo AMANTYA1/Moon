@@ -399,6 +399,8 @@ def __chat_settings__(chat_id, user_id):
 
 __mod_name__ = "Fʟᴏᴏᴅ"
 
+__lovely_tools__ = __help__
+
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.chat_type.groups,
     check_flood,
