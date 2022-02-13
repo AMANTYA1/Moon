@@ -100,4 +100,11 @@ async def quotly_func(client, message: Message):
         print(e)
 
 
-__mod_name__ = "Quotly"
+__mod_name__ = "Qᴜᴏᴛʟʏ"
+
+__help__ = """
+✗ /q `<reply to text> - create quote`
+✗ /qr `<reply to text> - Create quote but different from /q` 
+"""
+
+__lovely_tools__ = __help__
