@@ -1,6 +1,7 @@
 future
 emoji
 aiogram
+tswift
 lxml
 wget
 loguru
@@ -62,6 +63,7 @@ dnspython
 secureme
 apscheduler
 emoji-country-flag
+search_engine_parser
 countryinfo
 html2text
 bs4
