@@ -50,6 +50,7 @@ vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 
 __mod_name__ = "Tʀᴀɴꜱʟᴀᴛᴏʀ"
 
+__lovely_advance__ = __help__
 
 trans = Translator()
 
