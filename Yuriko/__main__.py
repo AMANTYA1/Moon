@@ -105,7 +105,7 @@ Lovelybuttons = [
 ]
 
 
-LOVELYX_VIDAA = """https://telegra.ph/file/34f30bd06c6f62778f075.mp4"""
+LOVELYX_VIDAA = """https://telegra.ph/file/c8994e597d83de768f1ba.mp4"""
 
 
 LOVELY_HELP = """
