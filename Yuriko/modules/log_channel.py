@@ -1,7 +1,7 @@
 from datetime import datetime
 from functools import wraps
 from telegram.ext import CallbackContext
-from Yuriko.modules.helper_funcs.misc import is_module_loaded
+from Zaid.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -11,9 +11,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from Yuriko import EVENT_LOGS, LOGGER, dispatcher
-    from Yuriko.modules.helper_funcs.chat_status import user_admin
-    from Yuriko.modules.sql import log_channel_sql as sql
+    from Zaid import EVENT_LOGS, LOGGER, dispatcher
+    from Zaid.modules.helper_funcs.chat_status import user_admin
+    from Zaid.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
@@ -187,7 +187,7 @@ if is_module_loaded(FILENAME):
             return f"This group has all it's logs sent to: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
         return "No log channel is set for this group!"
 
-__mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
+
     __help__ = """
 ──「 Log channel 」──
 
@@ -205,8 +205,8 @@ __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
 
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
-
-__lovely_advance__ = __help__
+    __lovely_advance__ = __help__
+    __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
 
     LOG_HANDLER = CommandHandler("logchannel", logging, run_async=True)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog, run_async=True)
