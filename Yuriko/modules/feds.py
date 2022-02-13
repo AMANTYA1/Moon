@@ -2406,8 +2406,6 @@ def fed_user_help(update: Update, context: CallbackContext):
 
 __mod_name__ = "Fᴇᴅᴇʀᴀᴛɪᴏɴ"
 
-__lovely_tools__ = __help__
-
 
 NEW_FED_HANDLER = CommandHandler("newfed", new_fed, run_async=True)
 DEL_FED_HANDLER = CommandHandler("delfed", del_fed, run_async=True)
