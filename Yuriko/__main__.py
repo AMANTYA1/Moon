@@ -278,8 +278,8 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text(
-            "*Yuriko is alive* use below buttons to explore my features in group or pm!",
+        update.effective_message.reply_photo(
+            yurikorobot_IMG, caption= "*Yuriko is alive* use below buttons to explore my features in group or pm!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -630,8 +630,8 @@ def lovelyx_about_callback(update, context):
         )
 
     elif query.data == "lovelyx_tutorials":
-        query.message.reply_photo(
-            yurikorobot_IMG, caption="**Hi I'm Yuriko, one of the fastest and most features for your groups"
+        query.message.reply_text(
+            text="**Hi I'm Yuriko, one of the fastest and most features for your groups"
                  "\n\nYou can also Play Music groups by using me!**",
         parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
