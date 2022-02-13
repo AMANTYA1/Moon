@@ -512,6 +512,8 @@ __help__ = """
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
 
+__lovely_basic__ = __help__
+
 __mod_name__ = "Wᴀʀɴɪɴɢ"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
