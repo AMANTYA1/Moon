@@ -11,7 +11,7 @@ from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
 from platform import python_version as memek
-from Zaid import (
+from Yuriko import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
