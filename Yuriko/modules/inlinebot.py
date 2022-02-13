@@ -1,12 +1,3 @@
-# Copyright (C) 2021 TheHamkerCat & TeamDaisyX
-
-# Ported some parts From WilliamButcherBot.
-# Pokedex Inline Credit Red-Aura[Madepranav]
-# Credits Goes to WilliamButcherBot
-
-# This file is part of Daisy (Telegram Bot)
-
-
 import datetime
 import re
 import time
