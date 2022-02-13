@@ -225,3 +225,5 @@ __help__ = """
 
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
+
+__lovely_advance__ = __help__
