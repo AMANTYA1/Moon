@@ -94,13 +94,16 @@ LOVELY_MENU = """
 """
 
 Lovelybuttons = [
-     [
-        InlineKeyboardButton(text="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true"),
-        InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
+    [
+        InlineKeyboardButton(
+            text=="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true"),
+    ],
+    [
+        InlineKeyboardButton(text="Help", callback_data="lovelyx_"),         
      ],
      [  
         InlineKeyboardButton(text="Support", url="https://t.me/PmPermit"),
-        InlineKeyboardButton(text="Help", callback_data="lovelyx_"),
+        InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),
         InlineKeyboardButton(text="Update", url="https://t.me/BotDuniya"),
      ], 
 ]
