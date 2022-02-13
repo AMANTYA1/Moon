@@ -24,7 +24,7 @@ from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
 
-from Yuriko.config import get_str_key
+from Yuriko.confing import get_str_key
 from Yuriko.function.inlinehelper import *
 from Yuriko.function.pluginhelpers import fetch, json_prettify
 from Yuriko import pbot as app
