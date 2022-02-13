@@ -97,6 +97,7 @@ Lovelybuttons = [
      [
         InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="https://t.me/Yurikorobot?startgroup=true"),
      ]
+     [
         InlineKeyboardButton(text="❔ Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="lovelyx_"),         
      ],
      [  
