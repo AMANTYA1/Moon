@@ -98,9 +98,9 @@ Lovelybuttons = [
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
      [  
-        InlineKeyboardButton(text="Support", url="https://t.me/LOVELYAPPEAL"),
+        InlineKeyboardButton(text="Support", url="https://t.me/PmPermit"),
         InlineKeyboardButton(text="Help", callback_data="lovelyx_"),
-        InlineKeyboardButton(text="Update", url="https://t.me/ABOUTVEDMAT"),
+        InlineKeyboardButton(text="Update", url="https://t.me/BotDuniya"),
      ], 
 ]
 
