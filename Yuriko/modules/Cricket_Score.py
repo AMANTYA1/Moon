@@ -77,3 +77,4 @@ MATCH INFO
 
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
+__lovely_tools__ = __help__
