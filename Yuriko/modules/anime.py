@@ -582,6 +582,7 @@ __help__ = """
 
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
  """
+__lovely_basic__ = __help__
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime, run_async=True)
 AIRING_HANDLER = DisableAbleCommandHandler("airing", airing, run_async=True)
