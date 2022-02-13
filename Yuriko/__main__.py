@@ -79,6 +79,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+yurikorobot_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg
 
 LOVELY_MENU = """
 *👋 Hello {} !*
@@ -629,9 +630,9 @@ def lovelyx_about_callback(update, context):
         )
 
     elif query.data == "lovelyx_tutorials":
-        query.message.reply_text(
-            text="Hi I'm Yuriko, one of the fastest and most features for your groups"
-                 "\n\nYou can also Play Music groups by using me!",
+        query.message.reply_photo(
+            yurikorobot_IMG, caption="**Hi I'm Yuriko, one of the fastest and most features for your groups"
+                 "\n\nYou can also Play Music groups by using me!**",
         parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -657,7 +658,7 @@ def lovelyx_about_callback(update, context):
 Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
 2) Go to Administrators and add</b> @YurikoRobot <b>as Admin
-3) Giving full permissions make Lovely fully useful</b>""",
+3) Giving full permissions make Yuriko fully useful</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
               [[InlineKeyboardButton(text="previous", callback_data="lovelyx_tutorials"),
@@ -669,7 +670,7 @@ Before we go, I need admin permissions in this chat to work properly
     elif query.data == "lovelyx_help":
         query.message.edit_text(
             text="""*Let's make your group bit effective now
-Congragulations, Lovely now ready to manage your group
+Congragulations, Yuriko now ready to manage your group
 Here are some essentialt to try on
 ✗ Admin tools
 Basic Admin tools help you to protect and powerup your group
@@ -697,7 +698,7 @@ Bot will reply as 'hi' when someone say 'hello'
 You can add filters by sending /filter [filter name]
 ✗ *AI Chatbot*
 Want someone to chat in group?
-Tiana has an intelligent chatbot with multilang support
+Yuriko has an intelligent chatbot with multilang support
 Let's try it,
 Send /chatbot on and reply to any of my messages to see the magic""",
             parse_mode=ParseMode.MARKDOWN,
@@ -745,9 +746,8 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
             ),
         )
     elif query.data == "lovelyx_helpe":
-        query.message.reply_video(
-            LOVELYX_VIDAA,
-              caption="""So now you are at the end of basic tour. But this is not all I can do.
+        query.message.edit_text(
+       text="""So now you are at the end of basic tour. But this is not all I can do.
 Send /help in bot pm to access help menu
 There are many handy tools to try out. 
 And also if you have any suggessions about me, Don't forget to tell them to devs
