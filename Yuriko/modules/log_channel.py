@@ -206,6 +206,8 @@ if is_module_loaded(FILENAME):
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
 
+__lovely_advance__ = __help__
+
     __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
 
     LOG_HANDLER = CommandHandler("logchannel", logging, run_async=True)
