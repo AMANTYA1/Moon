@@ -155,7 +155,6 @@ dispatcher.add_handler(AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
-__lovely_basic__ = __help__
 __mod_name__ = "ᴀfᴋ"
 __command_list__ = ["afk"]
 __handlers__ = [
