@@ -35,6 +35,8 @@ from Yuriko import (
 from Yuriko.modules import ALL_MODULES
 from Yuriko.modules.helper_funcs.chat_status import is_user_admin
 from Yuriko.modules.helper_funcs.misc import paginate_modules
+from Yuriko.modules.resources.messages import Messages as MSG
+from Yuriko.modules.resources.buttons import Buttons as BTN
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -766,8 +768,10 @@ Again thanks for using me
             
     
     elif query.data == "lovelyx_vida":
-        query.message.reply_video(
-            LOVELYX_VIDAA,
+        query.message.reply_animation(
+          chat_id = chat_id,
+          animation=MSG.TUTORIAL_GIFS[1],
+          caption = MSG.LOL_TUTORIAL_TEXT[1],
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
