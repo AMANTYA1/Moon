@@ -1,6 +1,6 @@
 future
 emoji
-aiogram
+aiogram<3.0
 tswift
 lxml
 datetime
@@ -11,7 +11,7 @@ faker
 beautifulsoup4
 requests
 python-telegram-bot==13.11.0
-SQLAlchemy==1.4.31
+sqlalchemy==1.4.29
 psycopg2-binary
 feedparser
 faker
