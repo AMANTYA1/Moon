@@ -581,6 +581,8 @@ __help__ = """
 
 ✗ /locks - `The current list of locks in this chat.`
 
+✗ /urllock - `To lock url in Your Group`
+
 *Locks can be used to restrict a group's users.*
 
 eg:
