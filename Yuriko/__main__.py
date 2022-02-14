@@ -768,10 +768,8 @@ Again thanks for using me
             
     
     elif query.data == "lovelyx_vida":
-        query.message.send_animation(
-          chat_id = chat_id,
-          animation=MSG.TUTORIAL_GIFS[1],
-          caption = MSG.LOL_TUTORIAL_TEXT[1],
+        query.message.reply_video(
+            LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
