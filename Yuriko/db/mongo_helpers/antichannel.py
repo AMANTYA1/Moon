@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-from Shadow.confing import get_str_key
+from Yuriko.confing import get_str_key
 
 MONGO_DB_URI = get_str_key("MONGO_URI")
 client = MongoClient(MONGO_DB_URI)
