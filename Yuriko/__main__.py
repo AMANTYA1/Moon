@@ -768,7 +768,7 @@ Again thanks for using me
             
     
     elif query.data == "lovelyx_vida":
-        query.message.reply_animation(
+        query.message.send_animation(
           chat_id = chat_id,
           animation=MSG.TUTORIAL_GIFS[1],
           caption = MSG.LOL_TUTORIAL_TEXT[1],
