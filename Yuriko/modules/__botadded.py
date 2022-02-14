@@ -8,7 +8,7 @@ from pyrogram.types import (
   InputMediaAnimation
 )
 from pyrogram import filters
-from Yuriko import pbot as Client
+from Yuriko import telethn as client
 from Yuriko.function.pluginhelpers import member_permissions
 from Yuriko import BOT_ID
 
