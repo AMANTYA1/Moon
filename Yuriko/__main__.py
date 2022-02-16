@@ -81,8 +81,6 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-yurikorobot_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
-
 LOVELY_MENU = """
 *👋 Hello {} !*
 
@@ -120,7 +118,7 @@ LOVELY_HELP = """
 ✗ /settings - `in PM: will send you your settings for all supported modules.`
 ✗ *In A Group: Will Redirect You To Pm With All That Chats Settings.*)"""
 
-LOVELY_BASICC = """This are some *Basic commands* which will help you to manage group easily by Lovely"""
+LOVELY_BASICC = """This are some *Basic commands* which will help you to manage group easily by Yuriko"""
 
 LOVELY_ADVANCEE = """*Advanced commands*
 Advanced commands will help you to secure your group easily and also you will know here some awesome features"""
@@ -281,8 +279,8 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_photo(
-            yurikorobot_IMG, caption= "*Yuriko is alive* use below buttons to explore my features in group or pm!",
+        update.effective_message.reply_text(
+            "**Yuriko is alive use below buttons to explore my features in group or pm!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
