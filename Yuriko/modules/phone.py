@@ -49,15 +49,12 @@ async def phone(event):
     output = requests.get(api)
     content = output.text
     obj = json.loads(content)
-    country_name = obj["country_name"]
     location = obj["location"]
     carrier = obj["carrier"]
     line_type = obj["line_type"]
     validornot = obj["valid"]
     aa = "Valid: " + str(validornot)
     a = "Phone number: " + str(number)
-    b = "Country: " + str(country_code)
-    c = "Country Name: " + str(country_name)
     d = "Location: " + str(location)
     e = "Carrier: " + str(carrier)
     f = "Device: " + str(line_type)
