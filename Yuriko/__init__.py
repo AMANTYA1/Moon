@@ -20,7 +20,7 @@ flag = """
 
 def get_user_list(key):
     # Import here to evade a circular import
-    from ERICA.modules.sql import nation_sql
+    from Yuriko.modules.sql import nation_sql
     royals = nation_sql.get_royals(key)
     return [a.user_id for a in royals]
 
@@ -139,7 +139,7 @@ CF_API_KEY = KInit.CF_API_KEY
 # SpamWatch
 sw = KInit.init_sw()
 
-from ERICA.modules.sql import SESSION
+from Yuriko.modules.sql import SESSION
 
 if not KInit.DROP_UPDATES:
     updater = tg.Updater(token=TOKEN, base_url=KInit.BOT_API_URL, base_file_url=KInit.BOT_API_FILE_URL, workers=min(32, os.cpu_count() + 4), request_kwargs={"read_timeout": 10, "connect_timeout": 10}, persistence=PostgresPersistence(session=SESSION))
@@ -153,7 +153,7 @@ dispatcher = updater.dispatcher
 
 
 # Load at end to ensure all prev variables have been set
-from ERICA.modules.helper_funcs.handlers import CustomCommandHandler
+from Yuriko.modules.helper_funcs.handlers import CustomCommandHandler
 
 if CUSTOM_CMD and len(CUSTOM_CMD) >= 1:
     tg.CommandHandler = CustomCommandHandler
