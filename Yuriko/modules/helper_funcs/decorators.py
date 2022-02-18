@@ -1,7 +1,7 @@
-from ERICA.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from Yuriko.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from telegram.ext import CommandHandler, MessageHandler, CallbackQueryHandler, InlineQueryHandler
 from telegram.ext.filters import BaseFilter
-from ERICA import dispatcher as d, log
+from Yuriko import dispatcher as d, log
 from typing import Optional, Union, List
 
 
