@@ -1,4 +1,4 @@
-from ERICA.langs.language import langs
+from Yuriko.langs.language import langs
 
 get_string = langs.get_string
 reload_strings = langs.reload_strings
