@@ -98,7 +98,6 @@ LOVELY_MENU = """
 Lovelybuttons = [
      [
         InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Yurikorobot?startgroup=true"),
-        InlineKeyboardButton(text="𝐒𝐲𝐬𝐭𝐞𝐦 𝐒𝐭𝐚𝐭𝐬 🖥",callback_data="stats_callback"),
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
      [  
