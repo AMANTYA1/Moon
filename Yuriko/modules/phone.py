@@ -4,7 +4,7 @@ import requests
 from telethon import types
 
 from Yuriko.events import register
-from Yuriko import telethn as tbot as client
+from Yuriko import telethn as client
 
 
 async def is_register_admin(chat, user):
