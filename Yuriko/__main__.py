@@ -96,6 +96,7 @@ LOVELY_MENU = """
 Lovelybuttons = [
      [
         InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Yurikorobot?startgroup=true"),
+        InlineKeyboardButton(text="𝐒𝐲𝐬𝐭𝐞𝐦 𝐒𝐭𝐚𝐭𝐬 🖥",callback_data="stats_callback"),
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
      [  
@@ -629,6 +630,11 @@ def lovelyx_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
+
+@app.on_callback_query(filters.regex("stats_callback"))
+async def stats_callbacc(_, CallbackQuery):
+    text = await bot_sys_stats()
+    await app.answer_callback_query(CallbackQuery.id, text, show_alert=True)
 
     elif query.data == "lovelyx_tutorials":
         query.message.reply_text(
