@@ -8,6 +8,7 @@ import sys
 import traceback
 import Yuriko.modules.sql.users_sql as sql
 from sys import argv
+from pyrogram import filters
 from typing import Optional
 from telegram import __version__ as peler
 from Yuriko import pbot as app
