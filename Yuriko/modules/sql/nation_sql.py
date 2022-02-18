@@ -2,7 +2,7 @@ import threading
 import traceback
 
 from sqlalchemy.sql.sqltypes import BigInteger
-from ERICA.modules.sql import BASE, SESSION
+from Yuriko.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String
 from sqlalchemy.dialects import postgresql
 
