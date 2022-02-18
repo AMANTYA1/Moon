@@ -10,6 +10,7 @@ import Yuriko.modules.sql.users_sql as sql
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
+from Yuriko import pbot as app
 from platform import python_version as memek
 from Yuriko import (
     ALLOW_EXCL,
