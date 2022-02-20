@@ -770,6 +770,8 @@ Again thanks for using me
             ),
     
         )
+
+
      elif query.data == "lovelyx_vida":
         query.message.reply_video(
             LOVELYX_VIDAA,
@@ -781,7 +783,6 @@ Again thanks for using me
                 ]
             ),
         )
-
      elif query.data == "lovelyx_vidu":
         query.message.reply_video(
             LOVELYX_VIDAA,
