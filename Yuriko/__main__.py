@@ -770,8 +770,22 @@ Again thanks for using me
             ),
     
        )
-            
+     elif query.data == "lovelyx_shu":
+        query.message.reply_text(
+            text="You have came back from the video tutorial!",
+        parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,       
+          reply_markup=InlineKeyboardMarkup(
+              [
+                [InlineKeyboardButton("Go Tutorial Again", callback_data="lovelyx_vida"),],
+                [InlineKeyboardButton(text="Main Menu", callback_data="lovelyx_tutorials"),],
+                ]
+            ),
     
+       ) 
+
+            
+
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
             LOVELYX_VIDA, caption="""**Hey, Welcome to Yuriko configuration Tutorial**
@@ -802,7 +816,10 @@ See the image..
 You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
+                [
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_shu"),],
+                [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
+                ]
             ),             
         )             
         query.message.delete()
