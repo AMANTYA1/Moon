@@ -111,6 +111,7 @@ Lovelybuttons = [
 
 LOVELYX_VIDAA = """https://telegra.ph/file/c8994e597d83de768f1ba.mp4"""
 
+LOVELYX_VIDA = """https://telegra.ph/file/c8994e597d83de768f1ba.mp4"""
 
 LOVELY_HELP = """
 *✗ MAIN COMMANDS ✗*
@@ -770,16 +771,26 @@ Again thanks for using me
             ),
     
         )
-            
-    
+           
+
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
             LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Next", callback_data="null_1")],
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
             ),             
         )
+
+
+    elif query.data == "null_1":
+        query.message.reply_video(
+            LOVELYX_VIDA,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
+            ),             
         query.message.delete()
                   
 #🤣🤣🤣🤣
@@ -1159,7 +1170,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Ommfo**
+                f"""**Omfo**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
