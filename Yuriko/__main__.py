@@ -769,10 +769,10 @@ Again thanks for using me
                 InlineKeyboardButton(text="Main menu", callback_data="lovelyx_tutorials")]]
             ),
     
-        )
-
-
-     elif query.data == "lovelyx_vida":
+       )
+            
+    
+    elif query.data == "lovelyx_vida":
         query.message.reply_video(
             LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
