@@ -802,7 +802,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidm"),],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidk"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
                 ]
             ),             
@@ -811,20 +811,23 @@ You can also set buttons for notes and filters (refer help menu)""",
 
 
 
-    elif query.data == "lovelyx_vidm":
-        query.message.edit_text(
-            text="""<b>Hey, Welcome to Yuriko configuration Tutorial
-Before we go, I need admin permissions in this chat to work properly
-1) Click Manage Group
-2) Go to Administrators and add</b> @YurikoRobot <b>as Admin
-3) Giving full permissions make Yuriko fully useful</b>""",
-            parse_mode=ParseMode.HTML,
+    elif query.data == "lovelyx_vidk":
+        query.message.reply_video(
+            LOVELYX_VIDAA, caption="""Setting up notes
+You can save message/media/audio or anything as notes
+to get a note simply use # at the beginning of a word
+See the image..
+You can also set buttons for notes and filters (refer help menu)""",
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-              [[InlineKeyboardButton(text="previous", callback_data="lovelyx_tutorials"),
-                InlineKeyboardButton(text="next", callback_data="lovelyx_help")],               
-              ]
-            ),
-        )
+                [
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidm"),],
+                [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
+                ]
+            ),             
+        )             
+        query.message.delete()
+
                   
 #🤣🤣🤣🤣
 
