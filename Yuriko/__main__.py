@@ -110,7 +110,7 @@ Lovelybuttons = [
 
 
 LOVELYX_VIDAA = """https://telegra.ph/file/107b8b2f759c6b5dc4058.mp4"""
-LOVELYX_VIDA = """https://telegra.ph/file/34f30bd06c6f62778f075.mp4"""
+LOVELYX_VIDA = """https://telegra.ph/file/f761ac6d2be8bb44d01ce.mp4"""
 
 LOVELY_HELP = """
 *✗ MAIN COMMANDS ✗*
@@ -779,11 +779,13 @@ Again thanks for using me
             reply_markup=InlineKeyboardMarkup(
               [
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"),
-                 InlineKeyboardButton(text="next", callback_data="lovelyx_vidu")]
+                 InlineKeyboardButton("▶️", callback_data="lovelyx_vidu")]
                 ]
             ),
     
-       )
+       )             
+        query.message.delete()
+      
             
     
     elif query.data == "lovelyx_vidu":
