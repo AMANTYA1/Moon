@@ -774,12 +774,18 @@ Again thanks for using me
     
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
-            LOVELYX_VIDA, caption="""Testing""", 
+            LOVELYX_VIDA, caption=f
+"""**Hey, Welcome to Yuriko configuration Tutorial**
+
+**Before we go, I need admin permissions in this chat to work properly**
+1) Click Manage Group
+2) Goto Administrators and add @YurikoRobot as Admin
+3) Giving full permissions make Yuriko fully useful""", 
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"),
-                 InlineKeyboardButton("▶️", callback_data="lovelyx_vidu")]
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidu")],
+                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"]
                 ]
             ),
     
