@@ -795,6 +795,7 @@ Again thanks for using me
         query.message.delete()
                   
 #🤣🤣🤣🤣
+#null
 
 def get_basic(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
