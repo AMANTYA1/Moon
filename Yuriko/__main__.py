@@ -782,7 +782,8 @@ Again thanks for using me
                  InlineKeyboardButton(text="next", callback_data="lovelyx_vidu")]
                 ]
             ),
-        )
+    
+       )
      elif query.data == "lovelyx_vidu":
         query.message.reply_video(
             LOVELYX_VIDAA,
