@@ -784,7 +784,7 @@ Again thanks for using me
             reply_markup=InlineKeyboardMarkup(
               [
                 [InlineKeyboardButton("▶️", callback_data="lovelyx_vidu")],
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"]
+                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"],
                 ]
             ),
     
