@@ -777,9 +777,21 @@ Again thanks for using me
             LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Next", callback_data="null_1")],
+                [InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
+           ),     
+        
+        )
+
+
+    elif query.data == "null_1":
+        query.message.reply_video(
+            LOVELYX_VIDA,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
             ),             
-        )
+        )             
         query.message.delete()
                   
 #🤣🤣🤣🤣
