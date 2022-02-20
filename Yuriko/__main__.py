@@ -768,12 +768,11 @@ Again thanks for using me
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_helpd"),
                 InlineKeyboardButton(text="Main menu", callback_data="lovelyx_tutorials")]]
             ),
-    
        )
-     elif query.data == "lovelyx_shu":
+     elif query.data == "lovelyx_hee":
         query.message.reply_text(
             text="You have came back from the video tutorial!",
-        parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,       
           reply_markup=InlineKeyboardMarkup(
               [
@@ -817,7 +816,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_shu"),],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_hee"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
                 ]
             ),             
