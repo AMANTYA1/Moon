@@ -770,22 +770,19 @@ Again thanks for using me
             ),
     
         )
-            
-    
-    elif query.data == "lovelyx_vida":
+     elif query.data == "lovelyx_vida":
         query.message.reply_video(
             LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"),
-                 InlineKeyboardButton(text="next", callback_data="null_1")]
+                 InlineKeyboardButton(text="next", callback_data="lovelyx_vidu")]
                 ]
             ),
         )
 
-
-    elif query.data == "null_1":
+     elif query.data == "lovelyx_vidu":
         query.message.reply_video(
             LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
