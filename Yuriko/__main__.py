@@ -109,8 +109,8 @@ Lovelybuttons = [
 
 
 
-LOVELYX_VIDAA = """https://telegra.ph/file/c8994e597d83de768f1ba.mp4"""
-
+LOVELYX_VIDAA = """https://telegra.ph/file/107b8b2f759c6b5dc4058.mp4"""
+LOVELYX_VIDA = """https://telegra.ph/file/34f30bd06c6f62778f075.mp4"""
 
 LOVELY_HELP = """
 *✗ MAIN COMMANDS ✗*
@@ -774,7 +774,7 @@ Again thanks for using me
     
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption="""Testing""", 
+            LOVELYX_VIDA, caption="""Testing""", 
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
@@ -788,7 +788,11 @@ Again thanks for using me
     
     elif query.data == "lovelyx_vidu":
         query.message.reply_video(
-            LOVELYX_VIDAA,
+            LOVELYX_VIDAA, caption="""Setting up notes
+You can save message/media/audio or anything as notes
+to get a note simply use # at the beginning of a word
+See the image..
+You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
