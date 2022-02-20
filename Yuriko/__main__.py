@@ -777,8 +777,10 @@ Again thanks for using me
             LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Next", callback_data="null_1")],
-                [InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
+               [
+                [InlineKeyboardButton(text="Next", callback_data="null_1")],
+                 InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]
+                ]
            ),     
         
         )
