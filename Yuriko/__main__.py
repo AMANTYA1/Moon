@@ -784,7 +784,9 @@ Again thanks for using me
             ),
     
        )
-     elif query.data == "lovelyx_vidu":
+            
+    
+    elif query.data == "lovelyx_vidu":
         query.message.reply_video(
             LOVELYX_VIDAA,
             parse_mode=ParseMode.MARKDOWN,
