@@ -825,7 +825,6 @@ Before we go, I need admin permissions in this chat to work properly
               ]
             ),
         )
-         query.message.delete()
                   
 #🤣🤣🤣🤣
 
