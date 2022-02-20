@@ -779,8 +779,9 @@ Again thanks for using me
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Next", callback_data="null_1")],
-                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
-            ),             
+                [InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
+           ),     
+        
         )
 
 
