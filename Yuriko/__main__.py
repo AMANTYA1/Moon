@@ -783,8 +783,8 @@ Again thanks for using me
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidu")],
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidu"),],
+                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"),],
                 ]
             ),
     
