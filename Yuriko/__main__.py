@@ -769,21 +769,6 @@ Again thanks for using me
                 InlineKeyboardButton(text="Main menu", callback_data="lovelyx_tutorials")]]
             ),
        )
-     elif query.data == "lovelyx_po":
-        query.message.edit_text(
-            text="""<b>Hey, Welcome to Yuriko configuration Tutorial
-Before we go, I need admin permissions in this chat to work properly
-1) Click Manage Group
-2) Go to Administrators and add</b> @YurikoRobot <b>as Admin
-3) Giving full permissions make Yuriko fully useful</b>""",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-              [[InlineKeyboardButton(text="previous", callback_data="lovelyx_tutorials"),
-                InlineKeyboardButton(text="next", callback_data="lovelyx_help")],               
-              ]
-            ),
-        )
-         query.message.delete()
             
 
     elif query.data == "lovelyx_vida":
@@ -817,12 +802,30 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_po"),],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidm"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
                 ]
             ),             
         )             
         query.message.delete()
+
+
+
+    elif query.data == "lovelyx_vidm":
+        query.message.edit_text(
+            text="""<b>Hey, Welcome to Yuriko configuration Tutorial
+Before we go, I need admin permissions in this chat to work properly
+1) Click Manage Group
+2) Go to Administrators and add</b> @YurikoRobot <b>as Admin
+3) Giving full permissions make Yuriko fully useful</b>""",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+              [[InlineKeyboardButton(text="previous", callback_data="lovelyx_tutorials"),
+                InlineKeyboardButton(text="next", callback_data="lovelyx_help")],               
+              ]
+            ),
+        )
+         query.message.delete()
                   
 #🤣🤣🤣🤣
 
