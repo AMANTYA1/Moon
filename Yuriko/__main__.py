@@ -802,7 +802,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_helpe"),],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidk"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
                 ]
             ),             
@@ -821,7 +821,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidm"),],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vida"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
                 ]
             ),             
