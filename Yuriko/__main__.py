@@ -97,7 +97,7 @@ LOVELY_MENU = """
 
 Lovelybuttons = [
      [
-        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Yurikorobot?startgroup=true"),
+        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="https://t.me/Yurikorobot?startgroup=true"),
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
      [  
@@ -282,7 +282,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "**Yuriko is alive use below buttons to explore my features in group or pm!**",
+            "𝙔𝙪𝙧𝙞𝙠𝙤 𝙞𝙨 𝙖𝙡𝙞𝙫𝙚 𝙪𝙨𝙨 𝙗𝙚𝙡𝙤𝙬 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙩𝙤 𝙚𝙭𝙥𝙡𝙤𝙧𝙚 𝙢𝙮 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙤𝙧 𝙥𝙢!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -381,7 +381,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="help_back")]]
                 ),
             )
 
@@ -446,7 +446,7 @@ def lovelybasic_button(update, context):
                 reply_markup=InlineKeyboardMarkup(
                   [
                     [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true")]
+                    [InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true")]
                   ]
                 ),
             )
@@ -513,7 +513,7 @@ def lovelyadvance_button(update, context):
                 reply_markup=InlineKeyboardMarkup(
                   [
                     [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back")]
+                    [InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="lovelyadvance_back")]
                   ]
                 ),
             )
@@ -646,14 +646,14 @@ def lovelyx_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Add me to Group", url="http://t.me/YurikoRobot?startgroup=true"),
+                    InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/YurikoRobot?startgroup=true"),
                  ],
                  [
                     InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vida"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="lovelyx_back"),
-                    InlineKeyboardButton(text="Next", callback_data="lovelyx_pro"),
+                    InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="lovelyx_back"),
+                    InlineKeyboardButton(text="Next ☞︎︎︎", callback_data="lovelyx_pro"),
                  ]
                 ]
             ),
@@ -812,17 +812,13 @@ You can also set buttons for notes and filters (refer help menu)""",
 
 
     elif query.data == "lovelyx_vidk":
-        query.message.reply_video(
-            LOVELYX_VIDA, caption="""Setting up notes
-You can save message/media/audio or anything as notes
-to get a note simply use # at the beginning of a word
-See the image..
-You can also set buttons for notes and filters (refer help menu)""",
+        query.message.reply_text(
+            text="""You have came back from the basic tour""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_vida"),],
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
+                [InlineKeyboardButton("Go Video Tutorial Again", callback_data="lovelyx_vida"),],
+                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"),],
                 ]
             ),             
         )             
@@ -951,7 +947,7 @@ def get_help(update: Update, context: CallbackContext):
 
             return
         update.effective_message.reply_text(
-            "Use below buttons to explore my awesome features in pm or group.",
+            "𝙐𝙨𝙚 𝙗𝙚𝙡𝙤𝙬 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙩𝙤 𝙚𝙭𝙥𝙡𝙤𝙧𝙚 𝙢𝙮 𝙖𝙬𝙨𝙤𝙢𝙚 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨 𝙞𝙣 𝙥𝙢 𝙤𝙧 𝙜𝙧𝙤𝙪𝙥.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
