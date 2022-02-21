@@ -802,7 +802,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidk"),],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_helpe"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
                 ]
             ),             
@@ -813,7 +813,7 @@ You can also set buttons for notes and filters (refer help menu)""",
 
     elif query.data == "lovelyx_vidk":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption="""Setting up notes
+            LOVELYX_VIDA, caption="""Setting up notes
 You can save message/media/audio or anything as notes
 to get a note simply use # at the beginning of a word
 See the image..
