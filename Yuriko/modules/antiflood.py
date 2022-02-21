@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from AliciaRobot import TIGERS, WOLVES, dispatcher
-from AliciaRobot.modules.helper_funcs.chat_status import (
+from Yuriko import TIGERS, WOLVES, dispatcher
+from Yuriko.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from AliciaRobot.modules.log_channel import loggable
-from AliciaRobot.modules.sql import antiflood_sql as sql
+from Yuriko.modules.log_channel import loggable
+from Yuriko.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from AliciaRobot.modules.helper_funcs.string_handling import extract_time
-from AliciaRobot.modules.connection import connected
-from AliciaRobot.modules.helper_funcs.alternate import send_message
-from AliciaRobot.modules.sql.approve_sql import is_approved
+from Yuriko.modules.helper_funcs.string_handling import extract_time
+from Yuriko.modules.connection import connected
+from Yuriko.modules.helper_funcs.alternate import send_message
+from Yuriko.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
@@ -425,10 +425,7 @@ def __chat_settings__(chat_id, user_id):
 #  `1w` = 1 week
 #  """
 
-__mod_name__ = "Control"
-
-__button__ = ""
-__buttons__ = ""
+__mod_name__ = "Fʟᴏᴏᴅ"
 
 FLOOD_BAN_HANDLER = MessageHandler(
     Filters.all & ~Filters.status_update & Filters.chat_type.groups, check_flood, run_async=True
