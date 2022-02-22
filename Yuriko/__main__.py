@@ -863,7 +863,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🤷 Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_tutorials")
+                    InlineKeyboardButton(text="🤷 Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_tutorials"),
                     InlineKeyboardButton(text="Aʙᴏᴜᴛ Mᴇ 👩‍💻", callback_data="lovelyx_um"),
                  ],
                  [
