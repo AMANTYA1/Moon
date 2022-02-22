@@ -100,7 +100,7 @@ Lovelybuttons = [
         InlineKeyboardButton(text="Hᴇʟᴘ", callback_data="lovelyx_")
      ],
      [
-        InlineKeyboardButton(text="Iɴғᴏ & Aʙᴏᴜᴛ", callback_data="lovelyx_tutorials"),         
+        InlineKeyboardButton(text="Iɴғᴏ & Aʙᴏᴜᴛ", callback_data="lovelyx_umm"),         
      ],
      [  
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/PmPermit"),
@@ -849,6 +849,60 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
                 [
                 [InlineKeyboardButton("▶️", callback_data="lovelyx_vidk"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vidu"),],
+                ]
+            ),             
+        )             
+        query.message.delete()
+
+
+
+    elif query.data == "lovelyx_umm":
+        query.message.reply_text(
+            text="""You have came back from the basic tour""",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton("🤷Hᴏᴡ Tᴏ Usᴇ Mᴇ", callback_data="lovelyx_tutorials"),
+                  InlineKeyboardButton(text="Aʙᴏᴜᴛ", callback_data="lovelyx_um"),],
+                 [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back"),],
+                ]
+            ),             
+        )             
+        query.message.delete()
+
+
+
+    elif query.data == "lovelyx_um":
+        query.message.reply_text(
+            text="""About Me
+
+@YurikoRobot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
+
+Yuriko project is developed by @BotDuniya with the help of many open source projects
+
+Yuriko was online since 2020 and helped many admins to keep their groups effectively 
+
+Why YURIKO:
+   - Simple: Yuriko brings you the best tools with a simple easy to use manner
+   - Featured: Yuriko is the most featured group management bot ever made
+   - Fast: Yuriko can do things faster in groups
+   - Independent: Yuriko is Maintained by You, No gbans, No sudo powers. All power belongs to you.
+
+[♚ Special Credits](https://telegra.ph/Unsupported-User-02-22-2)
+
+[Source 💫 Code](https://github.com/FriDayXD/yuriko)
+
+[♕ TeamFriday](https://t.me/FriDayNetwork)
+
+📄 Terms And Conditions
+
+Licensed under the GNU Affero General Public Lisence v3.0
+
+© 2021 - 2022 @BotDuniya. All Rights Reserved""",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                  InlineKeyboardButton("☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_umm")]]
+                 
                 ]
             ),             
         )             
