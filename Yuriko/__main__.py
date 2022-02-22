@@ -856,22 +856,14 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
 
 
 
-    elif query.data == "lovelyx_umm":
+    elif query.data == "lovelyx_tutorials":
         query.message.edit_text(
             text="""You have came back from the basic tour""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="🤷 Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_tutorials"),
-                    InlineKeyboardButton(text="Aʙᴏᴜᴛ Mᴇ 👩‍💻", callback_data="lovelyx_um"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="📡 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ" url = "https://t.me/BotDuniya"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back"),
-                 ]
+              [
+                [InlineKeyboardButton(text="🤷 Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_pro"),
+                 InlineKeyboardButton(text="Aʙᴏᴜᴛ Mᴇ 👩‍💻", callback_data="lovelyx_um")]
                 ]
             ),
         )
