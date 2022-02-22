@@ -899,7 +899,7 @@ Licensed under the GNU Affero General Public Lisence v3.0
 
 © 2021 - 2022 @BotDuniya. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
             ),             
