@@ -788,7 +788,7 @@ Again thanks for using me
             reply_markup=InlineKeyboardMarkup(
               [
                 [InlineKeyboardButton("▶️", callback_data="lovelyx_vidu"),],
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"),],
+                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_tutorials"),],
                 ]
             ),
     
@@ -808,7 +808,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             reply_markup=InlineKeyboardMarkup(
                 [
                 [InlineKeyboardButton("▶️", callback_data="lovelyx_lund"),],
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
+                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_vida"),],
                 ]
             ),             
         )             
@@ -823,7 +823,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             reply_markup=InlineKeyboardMarkup(
                 [
                 [InlineKeyboardButton("Go Video Tutorial Again", callback_data="lovelyx_vida"),],
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_tutorials"),],
+                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_tutorials"),],
                 ]
             ),             
         )             
@@ -848,7 +848,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
             reply_markup=InlineKeyboardMarkup(
                 [
                 [InlineKeyboardButton("▶️", callback_data="lovelyx_vidk"),],
-                [InlineKeyboardButton(text="back", callback_data="lovelyx_vidu"),],
+                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_vidu"),],
                 ]
             ),             
         )             
@@ -864,6 +864,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
               [
                 [InlineKeyboardButton(text="🤷 Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_pro"),
                  InlineKeyboardButton(text="Aʙᴏᴜᴛ Mᴇ 👩‍💻", callback_data="lovelyx_um")]
+                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back")]
                 ]
             ),
         )
