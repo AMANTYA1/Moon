@@ -657,7 +657,7 @@ def lovelyx_about_callback(update, context):
                     InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vida"),
                  ],
                  [
-                    InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="lovelyx_back"),
+                    InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_umm"),
                     InlineKeyboardButton(text="Next ☞︎︎︎", callback_data="lovelyx_pro"),
                  ]
                 ]
@@ -873,7 +873,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
 
     elif query.data == "lovelyx_um":
         query.message.reply_text(
-            text="""About Me
+            text="""*About Me*
 
 @YurikoRobot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
 
@@ -881,7 +881,7 @@ Yuriko project is developed by @BotDuniya with the help of many open source proj
 
 Yuriko was online since 2020 and helped many admins to keep their groups effectively 
 
-Why YURIKO:
+*Why YURIKO:*
    - Simple: Yuriko brings you the best tools with a simple easy to use manner
    - Featured: Yuriko is the most featured group management bot ever made
    - Fast: Yuriko can do things faster in groups
@@ -893,12 +893,13 @@ Why YURIKO:
 
 [♕ TeamFriday](https://t.me/FriDayNetwork)
 
-📄 Terms And Conditions
+[📄 Terms And Conditions](https://telegra.ph/Terms-And-Conditions-02-22)
 
 Licensed under the GNU Affero General Public Lisence v3.0
 
 © 2021 - 2022 @BotDuniya. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
             ),             
