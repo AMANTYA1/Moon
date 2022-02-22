@@ -900,12 +900,9 @@ Licensed under the GNU Affero General Public Lisence v3.0
 © 2021 - 2022 @BotDuniya. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[
-                  InlineKeyboardButton("☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_umm")]]
-                 
-                ]
+                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
             ),             
-        )             
+        )
         query.message.delete()
                 
 #🤣🤣🤣🤣
