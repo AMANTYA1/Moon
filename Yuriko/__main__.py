@@ -857,7 +857,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
 
 
     elif query.data == "lovelyx_umm":
-        query.message.reply_text(
+        query.message.edit_text(
             text="""You have came back from the basic tour""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -866,13 +866,12 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
                  [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back"),],
                 ]
             ),             
-        )             
-        query.message.delete()
+        )           
 
 
 
     elif query.data == "lovelyx_um":
-        query.message.reply_text(
+        query.message.edit_text(
             text="""*About Me*
 
 @YurikoRobot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
@@ -904,7 +903,6 @@ Licensed under the GNU Affero General Public Lisence v3.0
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
             ),             
         )
-        query.message.delete()
                 
 #🤣🤣🤣🤣
 
