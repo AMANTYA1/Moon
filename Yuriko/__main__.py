@@ -867,8 +867,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
                     InlineKeyboardButton(text="Aʙᴏᴜᴛ Mᴇ 👩‍💻", callback_data="lovelyx_um"),
                  ],
                  [
-                    InlineKeyboardButton(text="📡 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ", url="https://t.me/BotDuniya"),
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 👥", url="https://t.me/PmPermit"),
+                    InlineKeyboardButton(text="📡 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ" url = "https://t.me/BotDuniya"),
                  ],
                  [
                     InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back"),
