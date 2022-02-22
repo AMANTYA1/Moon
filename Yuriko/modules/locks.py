@@ -11,7 +11,7 @@ from alphabet_detector import AlphabetDetector
 
 import Yuriko.modules.sql.locks_sql as sql
 from Yuriko import dispatcher, DRAGONS, LOGGER
-from AliciaRobot.modules.disable import DisableAbleCommandHandler
+from Yuriko.modules.disable import DisableAbleCommandHandler
 from Yuriko.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
@@ -562,27 +562,33 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
-`Do stickers annoy you? or want to avoid people sharing links? or pictures?`
-`You're in the right place!`
-`The locks module allows you to lock away some common items in the`
-`telegram world; the bot will automatically delete them!`
-✗ /locktypes - `Lists all possible locktypes`
+Do stickers annoy you? or want to avoid people sharing links? or pictures? \
+You're in the right place!
+The locks module allows you to lock away some common items in the \
+telegram world; the bot will automatically delete them!
+
+ ❍ /locktypes*:* Lists all possible locktypes
+ 
 *Admins only:*
-✗ /lock - `<type> Lock items of a certain type (not available in private)`
-✗ /unlock - `<type> Unlock items of a certain type (not available in private)`
-✗ /locks - `The current list of locks in this chat.`
-*Locks can be used to restrict a group's users.*
+ ❍ /lock <type>*:* Lock items of a certain type (not available in private)
+ ❍ /unlock <type>*:* Unlock items of a certain type (not available in private)
+ ❍ /locks*:* The current list of locks in this chat.
+ 
+Locks can be used to restrict a group's users.
 eg:
-`Locking urls will auto-delete all messages with urls, locking stickers will restrict all`
-`non-admin users from sending stickers, etc.`
-`Locking bots will stop non-admins from adding bots to the chat.`
+Locking urls will auto-delete all messages with urls, locking stickers will restrict all \
+non-admin users from sending stickers, etc.
+Locking bots will stop non-admins from adding bots to the chat.
+
 *Note:*
-✗  `Unlocking - `permission` *info* `will allow members (non-admins) to change the group information, such as the description or the group name`
-✗  `Unlocking - `permission` *pin* `will allow members (non-admins) to pinned a message in a group`
+ • Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
+ • Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
+
 *✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
 """
 
-__mod_name__ = "Lᴏᴄᴋꜱ
+__mod_name__ = "Lᴏᴄᴋꜱ"
+
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes, run_async=True)
 LOCK_HANDLER = CommandHandler("lock", lock, pass_args=True, run_async=True)  # , filters=Filters.chat_type.groups)
