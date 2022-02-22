@@ -111,6 +111,7 @@ Lovelybuttons = [
 
 LOVELYX_VIDAA = """https://telegra.ph/file/107b8b2f759c6b5dc4058.mp4"""
 LOVELYX_VIDA = """https://telegra.ph/file/f761ac6d2be8bb44d01ce.mp4"""
+LOVELYX_VIDM = """https://telegra.ph/file/fbbb88279d7de8dd6a128.mp4"""
 
 LOVELY_HELP = """
 *✗ MAIN COMMANDS ✗*
@@ -802,7 +803,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidk"),],
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_lund"),],
                 [InlineKeyboardButton(text="back", callback_data="lovelyx_vida"),],
                 ]
             ),             
@@ -823,8 +824,32 @@ You can also set buttons for notes and filters (refer help menu)""",
             ),             
         )             
         query.message.delete()
+      
+            
+    
+    elif query.data == "lovelyx_lund":
+        query.message.reply_video(
+            LOVELYX_VIDAA, caption="""Filters
+Filters can be used as automated replies/ban/delete when someone use a word or sentence
+For Example if I filter word 'hello' and set reply as 'hi'
+Bot will reply as 'hi' when someone say 'hello'
+You can add filters by sending /addfilter [filter name]
 
-                  
+AI Chatbot
+Want someone to chat in group?
+Daisy has an intelligent chatbot with multilang support
+Let's try it,
+Send `/chatbot` and reply to any of my messages to see the magic""",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                [InlineKeyboardButton("▶️", callback_data="lovelyx_vidk"),],
+                [InlineKeyboardButton(text="back", callback_data="lovelyx_vidu"),],
+                ]
+            ),             
+        )             
+        query.message.delete()
+                
 #🤣🤣🤣🤣
 
 def get_basic(update: Update, context: CallbackContext):
