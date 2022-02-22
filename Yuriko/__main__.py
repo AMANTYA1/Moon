@@ -829,7 +829,7 @@ You can also set buttons for notes and filters (refer help menu)""",
     
     elif query.data == "lovelyx_lund":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption="""Filters
+            LOVELYX_VIDM, caption="""Filters
 Filters can be used as automated replies/ban/delete when someone use a word or sentence
 For Example if I filter word 'hello' and set reply as 'hi'
 Bot will reply as 'hi' when someone say 'hello'
