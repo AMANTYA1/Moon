@@ -162,7 +162,7 @@ USER_SETTINGS = {}
 
 LOVELY_CMDS =  [
        [
-           InlineKeyboardButton(text="👥 Bᴀꜱɪᴄ Cᴏᴍᴍᴀɴᴅꜱ", callback_data="lovelybasic_back"),           
+           InlineKeyboardButton(text="➕ Aʟʟ Cᴏᴍᴍᴀɴᴅꜱ ➕", callback_data="help_back"),           
            InlineKeyboardButton(text="Aᴅᴠᴀɴsᴇᴅ", callback_data="lovelyadvance_back"),
        ],      
        [
@@ -170,7 +170,7 @@ LOVELY_CMDS =  [
            InlineKeyboardButton(text="Iɴʟɪɴᴇ", switch_inline_query_current_chat=""),
        ],
        [ 
-           InlineKeyboardButton(text="➕ Aʟʟ Cᴏᴍᴍᴀɴᴅꜱ ➕", callback_data="help_back"),
+           InlineKeyboardButton(text="👥 Bᴀꜱɪᴄ Cᴏᴍᴍᴀɴᴅꜱ", callback_data="lovelybasic_back"),
            InlineKeyboardButton(text="Mᴀɪɴ Mᴇɴᴜ", callback_data="lovelyx_back"),
        ],
 ]
@@ -856,7 +856,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
 
 
 
-    elif query.data == "lovelyx_tutorials":
+    elif query.data == "lovelyx_umm":
         query.message.edit_text(
             text="""You have came back from the basic tour""",
             parse_mode=ParseMode.MARKDOWN,
