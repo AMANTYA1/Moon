@@ -861,14 +861,21 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
             text="""You have came back from the basic tour""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("🤷Hᴏᴡ Tᴏ Usᴇ Mᴇ", callback_data="lovelyx_tutorials"),
-                  InlineKeyboardButton(text="Aʙᴏᴜᴛ", callback_data="lovelyx_um"),],
-                 [InlineKeyboardButton(text="📡 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ", url="https://t.me/BotDuniya"),]
-                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 👥", url="https://t.me/PmPermit"),], 
-                 [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back"),],
+                [
+                 [
+                    InlineKeyboardButton(text="🤷 Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_tutorials")
+                    InlineKeyboardButton(text="Aʙᴏᴜᴛ Mᴇ 👩‍💻", callback_data="lovelyx_um"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="📡 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ", url="https://t.me/BotDuniya"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 👥", url="https://t.me/PmPermit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back"),
+                 ]
                 ]
-            ),             
-        )           
+            ),
+        )
 
 
 
