@@ -252,8 +252,8 @@ async def night_mode(client, message):
 
 __mod_name__ = "Night Mode"
 
-__help__ =
-"""
+__help__ = """
+
 <b>The Night Mode</b>
 
 Tired managing group all time
