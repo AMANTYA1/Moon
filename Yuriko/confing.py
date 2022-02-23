@@ -3,7 +3,7 @@ from Yuriko import LOGGER
 from Yuriko.utils.logger import log
 
 DEFAULTS = {
-    "DEBUG_MODE": True
+    "DEBUG_MODE": True,
     "MONGODB_URI": "localhost",
     "MONGO_DB": "Aman",
     "LOAD_MODULES": True,
