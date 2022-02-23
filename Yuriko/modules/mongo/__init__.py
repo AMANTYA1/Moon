@@ -1,5 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorClient as AvengerMongoClient
-from Avenger import MONGO_DB_URI
+from Yuriko import MONGO_DB_URI
 
 avengermongo = AvengerMongoClient(MONGO_DB_URI)
 avengerdb = avengermongo.szrose
