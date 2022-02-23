@@ -1,7 +1,7 @@
 import asyncio
 from Yuriko import pbot
 from pyrogram import filters
-from Yuriko.modules.helper_funcs.chat_status import adminsonly
+from Yuriko.utils.permissions import adminsOnly
 from Yuriko.modules.mongo.antichnl_mongo import is_antichnl, antichnl_on, antichnl_off
 
 @pbot.on_message(filters.command("antichannel") & ~filters.channel)
