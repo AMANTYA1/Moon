@@ -122,7 +122,6 @@ async def logo_maker(client, message):
 
 
 @pbot.on_message(filters.command("logohq") & ~filters.edited & ~filters.bot)
-@is_admin
 async def logohq(client, message):
     if message.reply_to_message:
         try:
