@@ -1,43 +1,82 @@
 import asyncio
-from Yuriko import pbot
 from pyrogram import filters
+from Yuriko import pbot as app
+from pyrogram.types import Message
+from Yuriko import eor
 from Yuriko.utils.permissions import adminsOnly
-from Yuriko.modules.mongo.antichnl_mongo import is_antichnl, antichnl_on, antichnl_off
+from Yuriko.utils.errors import capture_err
 
-@pbot.on_message(filters.command("antichannel") & ~filters.channel)
+active_channel = []
+
 @adminsOnly
-async def antic_toggle(_, message):
-    if len(message.command) < 2:
-        return await message.reply_text("Use /antichannel with on or off")
-    status = message.text.split(None, 1)[1].strip()
-    status = status.lower()
-    group_id = message.chat.id
+async def channel_toggle(db, message: Message):
+    status = message.text.split(None, 1)[1].lower()
+    chat_id = message.chat.id
     if status == "on":
-        await antichnl_on(group_id, "low")
-        await message.reply_text("━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━\n ✅ ᴀɴᴛɪᴄʜᴀɴɴᴇʟ ᴇɴᴀʙʟᴇᴅ ✅\n  ɪ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇꜱꜱᴀɢᴇ\n            ᴛʜᴀᴛ ꜱᴇɴᴅ ᴡɪᴛʜ\n            ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇꜱ\n━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━")
-    elif status == "low":
-        await antichnl_on(group_id, "low")
-        await message.reply_text("Antichannel enabled.")
-    elif status == "high":
-        await antichnl_on(group_id, "low")
-        await message.reply_text("Antichannel enabled, High mode is not currently working, So enabled low mode.")
+        if chat_id not in db:
+            db.append(chat_id)
+            text = "**Anti Channel Mode `enabled` ✅. I will delete all message that send with channel names. Dare to leap**"
+            return await eor(message, text=text)
+        await eor(message, text="antichannel Is Already Enabled.")
     elif status == "off":
-        await antichnl_off(group_id)
-        await message.reply_text("━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━\n❎ ᴀɴᴛɪᴄʜᴀɴɴᴇʟ ᴅɪꜱᴀʙʟᴇᴅ ❎\n━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━")
+        if chat_id in db:
+            db.remove(chat_id)
+            return await eor(message, text="antichannel Disabled!")
+        await eor(message, text=f"**Anti Channel Mode Successfully Deactivated In The Chat** {message.chat.id} ❌")
     else:
-        await message.reply_text("Use /antichannel with on or off")
+        await eor(message, text="I undestand `/antichannel on` and `/antichannel off` only")
 
-@pbot.on_message(filters.text & ~filters.linked_channel, group=36)
+
+# Enabled | Disable antichannel
+
+
+@app.on_message(filters.command("antichannel") & ~filters.edited)
+@capture_err
+async def antichannel_status(_, message: Message):
+    if len(message.command) != 2:
+        return await eor(message, text="I undestand `/antichannel on` and `/antichannel off` only")
+    await channel_toggle(active_channel, message)
+
+
+
+@app.on_message(
+    (
+        filters.document
+        | filters.photo
+        | filters.sticker
+        | filters.animation
+        | filters.video
+        | filters.text
+    )
+    & ~filters.private,
+    group=41,
+)
 async def anitchnl(_, message):
   chat_id = message.chat.id
   if message.sender_chat:
     sender = message.sender_chat.id 
-    isantichl, mode = await is_antichnl(chat_id)
-    if not isantichl:
+    if message.chat.id not in active_channel:
         return
     if chat_id == sender:
         return
     else:
         await message.delete()
+        ti = await message.reply_text("**A anti-channel message detected. I deleted it..!**")
+        await asyncio.sleep(7)
+        await ti.delete()        
 
-
+__Mod_Name__ = "Anti-Channel"
+__Help__ = """
+your groups to stop anonymous channels sending messages into your chats.
+**Type of messages**
+        - document
+        - photo
+        - sticker
+        - animation
+        - video
+        - text
+        
+**Admin Commands:**
+ - /antichannel [on / off] - Anti- channel  function 
+**Note** : If linked_channel  send any containing characters in this type when on  function no del    
+ """
