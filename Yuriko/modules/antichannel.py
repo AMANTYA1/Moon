@@ -3,12 +3,10 @@ from pyrogram import filters
 from Yuriko import pbot as app
 from pyrogram.types import Message
 from Yuriko import eor
-#from Yuriko.utils.permissions import adminsOnly
 from Yuriko.utils.errors import capture_err
 
 active_channel = []
 
-#@adminsOnly
 async def channel_toggle(db, message: Message):
     status = message.text.split(None, 1)[1].lower()
     chat_id = message.chat.id
