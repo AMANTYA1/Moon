@@ -1,8 +1,8 @@
 import asyncio
-from Avenger import pbot
+from Yuriko import pbot
 from pyrogram import filters
-from Avenger.modules.helper_funcs.chat_status import adminsonly
-from Avenger.modules.mongo.antichnl_mongo import is_antichnl, antichnl_on, antichnl_off
+from Yuriko.modules.helper_funcs.chat_status import adminsonly
+from Yuriko.modules.mongo.antichnl_mongo import is_antichnl, antichnl_on, antichnl_off
 
 @pbot.on_message(filters.command("antichannel") & ~filters.channel)
 @adminsonly
@@ -14,7 +14,7 @@ async def antic_toggle(_, message):
     group_id = message.chat.id
     if status == "on":
         await antichnl_on(group_id, "low")
-        await message.reply_text("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n ✅ ᴀɴᴛɪᴄʜᴀɴɴᴇʟ ᴇɴᴀʙʟᴇᴅ ✅\n  ɪ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇꜱꜱᴀɢᴇ\n            ᴛʜᴀᴛ ꜱᴇɴᴅ ᴡɪᴛʜ\n            ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇꜱ\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
+        await message.reply_text("━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━\n ✅ ᴀɴᴛɪᴄʜᴀɴɴᴇʟ ᴇɴᴀʙʟᴇᴅ ✅\n  ɪ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ᴍᴇꜱꜱᴀɢᴇ\n            ᴛʜᴀᴛ ꜱᴇɴᴅ ᴡɪᴛʜ\n            ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇꜱ\n━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━")
     elif status == "low":
         await antichnl_on(group_id, "low")
         await message.reply_text("Antichannel enabled.")
@@ -23,7 +23,7 @@ async def antic_toggle(_, message):
         await message.reply_text("Antichannel enabled, High mode is not currently working, So enabled low mode.")
     elif status == "off":
         await antichnl_off(group_id)
-        await message.reply_text("━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━\n❎ ᴀɴᴛɪᴄʜᴀɴɴᴇʟ ᴅɪꜱᴀʙʟᴇᴅ ❎\n━━━━━    Aᴠᴇɴɢᴇʀ    ━━━━━")
+        await message.reply_text("━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━\n❎ ᴀɴᴛɪᴄʜᴀɴɴᴇʟ ᴅɪꜱᴀʙʟᴇᴅ ❎\n━━━━━    𝘠𝘶𝘳𝘪𝘬𝘰    ━━━━━")
     else:
         await message.reply_text("Use /antichannel with on or off")
 
@@ -41,11 +41,3 @@ async def anitchnl(_, message):
         await message.delete()
 
 
-__help__ = """
-*ANTI-CHANNEL MODULE*
-*Powered by* @BotsClubOfficial
-❂ /antichannel on : Turn On Antichannel Function
-❂ /antichannel off : Turn Off Antichannel Function
-"""
-
-__mod_name__ = "ᴀ-ᴄʜᴀɴɴᴇʟ"
