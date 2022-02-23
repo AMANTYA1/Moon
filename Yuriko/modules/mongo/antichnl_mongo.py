@@ -1,4 +1,4 @@
-from Avenger.modules.mongo import anitcdb
+from Yuriko.modules.mongo import anitcdb
 
 async def is_antichnl(group_id):
     data = await anitcdb.find_one({"group_id": group_id})
