@@ -2,7 +2,7 @@ import asyncio
 from pyrogram import filters
 from Yuriko import pbot as app
 from pyrogram.types import Message
-from Rose import eor
+from Yuriko import eor
 from Yuriko.utils.errors import capture_err
 
 active_channel = []
