@@ -888,6 +888,25 @@ Licensed under the GNU Affero General Public Lisence v3.0
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_ukm")]]
             ),             
         )
+            
+
+    elif query.data == "lovelyx_umm":
+        query.message.reply_text(
+            text="""*Info & About*
+
+In here you can find what is Daisy and how to set her up
+
+Click buttons for help""", 
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+              [
+                [InlineKeyboardButton("🤷Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", callback_data="lovelyx_tutorials"),],
+                [InlineKeyboardButton(text="🙋Aʙᴏᴜᴛ ᴍᴇ", callback_data="lovelyx_um"),],
+                ]
+            ),
+    
+       )             
+        query.message.delete()
                 
 #🤣🤣🤣🤣
 
