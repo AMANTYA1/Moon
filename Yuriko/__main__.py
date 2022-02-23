@@ -900,8 +900,8 @@ Click buttons for help""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton("🤷Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", callback_data="lovelyx_tutorials"),],
-                [InlineKeyboardButton(text="🙋Aʙᴏᴜᴛ ᴍᴇ", callback_data="lovelyx_um"),],
+                [InlineKeyboardButton("🤷Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", callback_data="lovelyx_tutorials"),
+                 InlineKeyboardButton(text="🙋Aʙᴏᴜᴛ ᴍᴇ", callback_data="lovelyx_um"),],
                 [InlineKeyboardButton(text="Back", callback_data="lovelyx_back"),],
                 ]
             ),
