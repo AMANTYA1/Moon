@@ -33,7 +33,6 @@ def is_admin(func):
 
 
 @pbot.on_message(filters.command("logo") & ~filters.edited & ~filters.bot)
-@is_admin
 async def logo_maker(client, message):
     if message.reply_to_message:
         try:
