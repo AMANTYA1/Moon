@@ -885,7 +885,7 @@ Licensed under the GNU Affero General Public Lisence v3.0
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_ukm")]]
+                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_umm")]]
             ),             
         )
             
@@ -902,6 +902,7 @@ Click buttons for help""",
               [
                 [InlineKeyboardButton("🤷Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", callback_data="lovelyx_tutorials"),],
                 [InlineKeyboardButton(text="🙋Aʙᴏᴜᴛ ᴍᴇ", callback_data="lovelyx_um"),],
+                [InlineKeyboardButton(text="Back", callback_data="lovelyx_back"),],
                 ]
             ),
     
