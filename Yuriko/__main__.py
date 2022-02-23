@@ -857,7 +857,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
 
 
     elif query.data == "lovelyx_ukm":
-        query.message.edit_text(
+        query.message.reply_text(
             text="""You have came back from the basic tour""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -868,7 +868,7 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
                 ]
             ),
         )
-
+        query.message.delete()
 
 
     elif query.data == "lovelyx_um":
@@ -901,7 +901,7 @@ Licensed under the GNU Affero General Public Lisence v3.0
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
+                [[InlineKeyboardButton(text="Back", callback_data="lovelyx_ukm")]]
             ),             
         )
                 
