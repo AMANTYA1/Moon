@@ -100,7 +100,7 @@ Lovelybuttons = [
         InlineKeyboardButton(text="Hᴇʟᴘ", callback_data="lovelyx_")
      ],
      [
-        InlineKeyboardButton(text="Iɴғᴏ & Aʙᴏᴜᴛ", callback_data="lovelyx_ukm"),         
+        InlineKeyboardButton(text="Iɴғᴏ & Aʙᴏᴜᴛ", callback_data="lovelyx_um"),         
      ],
      [  
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/PmPermit"),
@@ -852,22 +852,6 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
                 ]
             ),             
         )             
-        query.message.delete()
-
-
-
-    elif query.data == "lovelyx_ukm":
-        query.message.reply_text(
-            text="""You have came back from the basic tour""",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-              [
-                [InlineKeyboardButton(text="🤷 Hᴏᴡ Tᴏ Uꜱᴇ Mᴇ", callback_data="lovelyx_pro"),
-                 InlineKeyboardButton(text="Aʙᴏᴜᴛ Mᴇ 👩‍💻", callback_data="lovelyx_um")]
-                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back")]
-                ]
-            ),
-        )
         query.message.delete()
 
 
