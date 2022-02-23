@@ -5,7 +5,7 @@ from Yuriko.utils.permissions import adminsOnly
 from Yuriko.modules.mongo.antichnl_mongo import is_antichnl, antichnl_on, antichnl_off
 
 @pbot.on_message(filters.command("antichannel") & ~filters.channel)
-@adminsonly
+@adminsOnly
 async def antic_toggle(_, message):
     if len(message.command) < 2:
         return await message.reply_text("Use /antichannel with on or off")
