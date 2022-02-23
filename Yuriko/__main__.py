@@ -894,7 +894,7 @@ Licensed under the GNU Affero General Public Lisence v3.0
         query.message.reply_text(
             text="""*Info & About*
 
-In here you can find what is Daisy and how to set her up
+In here you can find what is Yuriko and how to set her up
 
 Click buttons for help""", 
             parse_mode=ParseMode.MARKDOWN,
