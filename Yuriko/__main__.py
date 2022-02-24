@@ -815,7 +815,7 @@ You can also set buttons for notes and filters (refer help menu)""",
 
 
     elif query.data == "lovelyx_vidk":
-        query.message.reply_text(
+        query.message.edit_text(
             text="""You have came back from the basic tour""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
