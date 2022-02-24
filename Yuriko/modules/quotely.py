@@ -4,10 +4,9 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Yuriko import pbot as app, arq
-from Yuriko.utils.errors import capture_err
-
-
+from Zaid import arq
+from Zaid.utils.errors import capture_err
+from Zaid import pbot as app
 
 
 async def quotify(messages: list):
@@ -36,16 +35,16 @@ def isArgInt(message: Message) -> bool:
 
 @app.on_message(filters.command("q"))
 @capture_err
-async def quotly_func(_, message: Message):
+async def quotly_func(client, message: Message):
     if not message.reply_to_message:
-        await message.reply_text("Reply to a message to quote it.")
-        return
+        return await message.reply_text(
+            "Reply to a message to quote it."
+        )
     if not message.reply_to_message.text:
-        await message.reply_text(
+        return await message.reply_text(
             "Replied message has no text, can't quote it."
         )
-        return
-    m = await message.reply_text("Quoting Messages")
+    m = await message.reply_text("Quoting Messages Please wait....")
     if len(message.command) < 2:
         messages = [message.reply_to_message]
 
@@ -53,10 +52,9 @@ async def quotly_func(_, message: Message):
         arg = isArgInt(message)
         if arg[0]:
             if arg[1] < 2 or arg[1] > 10:
-                await m.edit("Argument must be between 2-10.")
-                return
+                return await m.edit("Argument must be between 2-10.")
             count = arg[1]
-            messages = await app.get_messages(
+            messages = await client.get_messages(
                 message.chat.id,
                 [
                     i
@@ -69,11 +67,10 @@ async def quotly_func(_, message: Message):
             )
         else:
             if getArg(message) != "r":
-                await m.edit(
+                return await m.edit(
                     "Incorrect Argument, Pass **'r'** or **'INT'**, **EX:** __/q 2__"
                 )
-                return
-            reply_message = await app.get_messages(
+            reply_message = await client.get_messages(
                 message.chat.id,
                 message.reply_to_message.message_id,
                 replies=1,
@@ -87,20 +84,27 @@ async def quotly_func(_, message: Message):
     try:
         sticker = await quotify(messages)
         if not sticker[0]:
-            await message.rely_text(sticker[1])
-            await m.delete()
-            return
+            await message.reply_text(sticker[1])
+            return await m.delete()
         sticker = sticker[1]
         await message.reply_sticker(sticker)
         await m.delete()
         sticker.close()
     except Exception as e:
-        await message.reply_text(
+        await m.edit(
             "Something wrong happened while quoting messages,"
             + " This error usually happens when there's a "
             + " message containing something other than text."
         )
-        await m.delete()
         e = format_exc()
         print(e)
-        return
+
+
+__mod_name__ = "Quotly"
+
+__help__ = """
+✗ /q <reply to text> - `create quote`
+✗ /qr <reply to text> - `Create quote but different from /q` 
+
+**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!**
+"""
