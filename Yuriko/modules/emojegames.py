@@ -1,6 +1,6 @@
 from telethon.tl.types import InputMediaDice
 
-from AliciaRobot.events import register
+from Yuriko.events import register
 
 
 @register(pattern="^/dice(?: |$)(.*)")
