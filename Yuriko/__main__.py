@@ -775,7 +775,7 @@ Again thanks for using me
     
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption="""Soon All setup"""
+            LOVELYX_VIDAA, caption="""Soon All setup""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
