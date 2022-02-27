@@ -797,11 +797,12 @@ Again thanks for using me
     
     elif query.data == "lovelyx_vidu":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption="""Setting up notes
-You can save message/media/audio or anything as notes
-to get a note simply use # at the beginning of a word
-See the image..
-You can also set buttons for notes and filters (refer help menu)""",
+            LOVELYX_VIDAA, caption="""**Hey, Welcome to Yuriko configuration Tutorial**
+
+**Before we go, I need admin permissions in this chat to work properly**
+1) Click Manage Group
+2) Goto Administrators and add @Kigo_omfobot as Admin
+3) Giving full permissions make KIGO fully useful""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -869,17 +870,17 @@ KIGO was online since 2020 and helped many admins to keep their groups effective
    - Fast: KIGO can do things faster in groups
    - Independent: KIGO is Maintained by You, No gbans, No sudo powers. All power belongs to you.
 
-[♚ Special Credits](https://telegra.ph/Terms-and-Conditions-02-27-4)
+[♚ Special Credits](https://telegra.ph/Unsupported-User-02-27-3)
 
 [Source 💫 Code](https://github.com/KIGO-OMFO)
 
 [♕ TeamFriday](https://t.me/kigo_omfo)
 
-[📄 Terms And Conditions](https://telegra.ph/Unsupported-User-02-27-3)
+[📄 Terms And Conditions](https://telegra.ph/Terms-and-Conditions-02-27-4)
 
 Licensed under the GNU Affero General Public Lisence v3.0
 
-© 2021 - 2022 @. All Rights Reserved""",
+© 2021 - 2022 @kigo_omfo. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
