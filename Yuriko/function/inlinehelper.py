@@ -64,7 +64,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/dad7863c0db4ac921982d.jpg",
+            thumb_url="https://telegra.ph/file/9f1559d490d769b5089c3.jpg",
             reply_markup=buttons,
         )
     ]
@@ -77,12 +77,12 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/YurikoRobot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/Kigo_omfobot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Yuriko](https://github.com/AMANTYA1):**
+**[KIGO](https://github.com/AMANTYA1):**
 +-------------------------+
 **System Stats:**
  **MainBot:** `{bot_state}`
@@ -95,7 +95,7 @@ async def alive_function(answers):
  **RedisDB:** `6.2.5`
  **SQL:** `1.3.20`
  **Platform:** `{sys.platform}`
- **Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/TeamDeeCode)
+ **Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/Kigo_omfobot)
 +-------------------------+
 **Database Stats:**
  **DB 1 [Main]**: `Running`
@@ -105,19 +105,19 @@ async def alive_function(answers):
  **DB 5 [Temp]**: `Running`
  **DB 6 [Temp]**: ´Running`
 +-------------------------+
-**Status: Yuriko ready to use :-)**
+**Status: KIGO ready to use :-)**
 Note: Music Player and autofilters can be unstable sometimes
 +-------------------------+
-**Bot:** @YurikoRobot
-**Support:** @PmPermit
-**Updates:** @BotDuniya
+**Bot:** @Kigo_omfobot
+**Support:** @OmFoXD
+**Updates:** @kigo_omfo
 +-------------------------+
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Yuriko's System Stats",
-            thumb_url="https://telegra.ph/file/dad7863c0db4ac921982d.jpg",
+            thumb_url="https://telegra.ph/file/9f1559d490d769b5089c3.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
