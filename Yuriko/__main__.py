@@ -797,7 +797,7 @@ Again thanks for using me
     
     elif query.data == "lovelyx_vidu":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption="""**Hey, Welcome to Yuriko configuration Tutorial**
+            LOVELYX_VIDAA, caption="""**Hey, Welcome to KIGO configuration Tutorial**
 
 **Before we go, I need admin permissions in this chat to work properly**
 1) Click Manage Group
