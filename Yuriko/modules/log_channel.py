@@ -203,7 +203,7 @@ if is_module_loaded(FILENAME):
 ➩ `sending /setlog in the channel`
 ➩ `forwarding the /setlog to the group`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
     __lovely_advance__ = __help__
     __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
