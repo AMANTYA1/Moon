@@ -268,7 +268,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> Yuriko <==="
+        app_details += "\n\n===> KIGO <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
@@ -297,7 +297,7 @@ __help__ = """
 
 ✗ Yuriko - `<query> Yuriko answers the query`
 
-💡 Ex: `Yuriko where is Japan?`
+💡 Ex: `Kigo where is Japan?`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
