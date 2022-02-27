@@ -75,6 +75,6 @@ __help__ = """
 MATCH INFO     
 ✗ /cs - `Gathers match information (globally).`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 __lovely_tools__ = __help__
