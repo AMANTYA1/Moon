@@ -707,7 +707,7 @@ Bot will reply as 'hi' when someone say 'hello'
 You can add filters by sending /filter [filter name]
 ✗ *AI Chatbot*
 Want someone to chat in group?
-Yuriko has an intelligent chatbot with multilang support
+KIGO has an intelligent chatbot with multilang support
 Let's try it,
 Send /chatbot on and reply to any of my messages to see the magic""",
             parse_mode=ParseMode.MARKDOWN,
