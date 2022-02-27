@@ -6,5 +6,5 @@ __help__ = """
 
 `You can check out this` [link](https://timezonedb.com/time-zones)`for the available timezones`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
