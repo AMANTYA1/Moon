@@ -12,6 +12,6 @@ __help__ = """
 ✗ /cancel - `Cancel the process|
 ✗ /restart - `Cancel the process`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 __lovely_advance__ = __help__
