@@ -118,6 +118,6 @@ __help__ = """
 Commands
 ✗ /country `[country name]*:* Gathering info about given country`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 __lovely_tools__ = __help__
