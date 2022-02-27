@@ -98,7 +98,8 @@ LOVELY_MENU = """
 Lovelybuttons = [
      [
         InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Kigo_omfobot?startgroup=true"),
-        InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
+        InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"), 
+        InlineKeyboardButton(text="CREDIT", url="https://telegra.ph/𝙊𝙢𝙛𝙤-02-27"),        
      ],
      [  
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/OmFoXD"),
@@ -282,7 +283,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "**Yuriko is alive use below buttons to explore my features in group or pm!**",
+            "𝙆𝙄𝙂𝙊 𝙞𝙨 𝙖𝙡𝙞𝙫𝙚 𝙪𝙨𝙨 𝙗𝙚𝙡𝙤𝙬 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙩𝙤 𝙚𝙭𝙥𝙡𝙤𝙧𝙚 𝙢𝙮 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙤𝙧 𝙥𝙢!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
