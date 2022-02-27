@@ -102,7 +102,7 @@ Lovelybuttons = [
      ],
      [  
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/OmFoXD"),
-        InlineKeyboardButton(text="🙋Yᴜʀɪᴋᴏ Nᴇᴡs", url="https://t.me/kigo_omfo"),
+        InlineKeyboardButton(text="🙋Kɪɢᴏ Nᴇᴡs", url="https://t.me/kigo_omfo"),
      ],
      [
         InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
