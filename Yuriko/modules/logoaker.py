@@ -6,8 +6,8 @@ from pyrogram import filters
 from Yuriko.function.pluginhelpers import get_text
 from Yuriko import pbot
 
-API1 = "https://single-developers.up.railway.app/logo?name=name"
-API2 = "https://single-developers.up.railway.app/logohq?name=name"
+API1 = "https://single-developers.up.railway.app/logo?name="
+API2 = "https://single-developers.up.railway.app/logohq?name="
 
 
 def is_admin(func):
