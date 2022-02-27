@@ -7,7 +7,7 @@ from Yuriko.function.pluginhelpers import get_text
 from Yuriko import pbot
 
 API1 = "https://single-developers.up.railway.app/logo?name=name"
-API2 = "https://api.single-developers.software/logohq?name="
+API2 = "https://single-developers.up.railway.app/logohq?name=name"
 
 
 def is_admin(func):
@@ -116,7 +116,7 @@ async def logo_maker(client, message):
         try:
             await message.reply_photo(
                 url,
-                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By @Mr_Shadow_Robot**",
+                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By 𝙆𝙄𝙂𝙊**",
             )
         except:
             return
