@@ -584,7 +584,7 @@ Locking bots will stop non-admins from adding bots to the chat.
  • Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
  • Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 
 __mod_name__ = "Lᴏᴄᴋꜱ"
