@@ -277,6 +277,6 @@ Available Commands:
 Note: Format of cc is ccnum|mm|yy|cvv
     Privacy warning: Don't check any of your personal CC's.
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 __lovely_basic__ = __help__
