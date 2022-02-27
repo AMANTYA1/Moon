@@ -106,5 +106,5 @@ __help__ = """
 ✗ /q <reply to text> - `create quote`
 ✗ /qr <reply to text> - `Create quote but different from /q` 
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!**
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
 """
