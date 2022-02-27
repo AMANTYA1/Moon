@@ -96,6 +96,9 @@ LOVELY_MENU = """
 Lovelybuttons = [
      [
         InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Kigo_omfobot?startgroup=true"),
+     ],
+     [
+        
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"), 
         InlineKeyboardButton(text="CREDIT", url="https://telegra.ph/𝙊𝙢𝙛𝙤-02-27"),        
      ],
