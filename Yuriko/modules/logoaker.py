@@ -6,7 +6,7 @@ from pyrogram import filters
 from Yuriko.function.pluginhelpers import get_text
 from Yuriko import pbot
 
-API1 = "https://single-developers.up.railway.app/logo?name=name"
+API1 = "https://api.single-developers.software/logohq?name="
 API2 = "https://single-developers.up.railway.app/logohq?name=name"
 
 
@@ -210,16 +210,3 @@ async def logohq(client, message):
             )
         except:
             return
-
-
-__mod_name__ = "Lᴏɢᴏ"
-
-__help__ = """
-Commands
-✗ /logo - `to get logo.`
-
-✗ /logohq - `to get high quality logo
-
-*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
-"""
-__lovely_tools__ = __help__
