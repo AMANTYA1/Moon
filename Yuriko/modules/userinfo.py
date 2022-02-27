@@ -587,7 +587,7 @@ Examples:
 
  `Come and see` [HP System explained](https://t.me/YurikoLogger/5)
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 __lovely_basic__ = __help__
 
