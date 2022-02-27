@@ -112,7 +112,7 @@ Lovelybuttons = [
 
 
 LOVELYX_VIDAA = """https://telegra.ph/file/107b8b2f759c6b5dc4058.mp4"""
-LOVELYX_VIDA = """https://telegra.ph/file/f761ac6d2be8bb44d01ce.mp4"""
+LOVELYX_VIDA = """https://telegra.ph/file/42cccf592372353af7c10.mp4"""
 LOVELYX_VIDM = """https://telegra.ph/file/fbbb88279d7de8dd6a128.mp4"""
 
 LOVELY_HELP = """
@@ -665,11 +665,11 @@ def lovelyx_about_callback(update, context):
         
     elif query.data == "lovelyx_pro":
         query.message.edit_text(
-            text="""<b>Hey, Welcome to Yuriko configuration Tutorial
+            text="""<b>Hey, Welcome to KIGO configuration Tutorial
 Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
-2) Go to Administrators and add</b> @YurikoRobot <b>as Admin
-3) Giving full permissions make Yuriko fully useful</b>""",
+2) Go to Administrators and add</b> @Kigo_omfobot <b>as Admin
+3) Giving full permissions make KIGO fully useful</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
               [[InlineKeyboardButton(text="previous", callback_data="lovelyx_tutorials"),
@@ -681,7 +681,7 @@ Before we go, I need admin permissions in this chat to work properly
     elif query.data == "lovelyx_help":
         query.message.edit_text(
             text="""*Let's make your group bit effective now
-Congragulations, Yuriko now ready to manage your group
+Congragulations, KIGO now ready to manage your group
 Here are some essentialt to try on
 ✗ Admin tools
 Basic Admin tools help you to protect and powerup your group
@@ -780,8 +780,8 @@ Again thanks for using me
 
 **Before we go, I need admin permissions in this chat to work properly**
 1) Click Manage Group
-2) Goto Administrators and add @YurikoRobot as Admin
-3) Giving full permissions make Yuriko fully useful""", 
+2) Goto Administrators and add @Kigo_omfobot as Admin
+3) Giving full permissions make KIGO fully useful""", 
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
@@ -857,15 +857,15 @@ Send `/chatbot` and reply to any of my messages to see the magic""",
         query.message.reply_text(
             text="""*About Me*
 
-@YurikoRobot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
+@Kigo_omfobot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
 
-Yuriko project is developed by @BotDuniya with the help of many open source projects
+KIGO project is developed by  with the help of many open source projects
 
-Yuriko was online since 2020 and helped many admins to keep their groups effectively 
+KIGO was online since 2020 and helped many admins to keep their groups effectively 
 
-*Why YURIKO:*
+*Why KIGO:*
    - Simple: Yuriko brings you the best tools with a simple easy to use manner
-   - Featured: Yuriko is the most featured group management bot ever made
+   - Featured: KIGO is the most featured group management bot ever made
    - Fast: Yuriko can do things faster in groups
    - Independent: Yuriko is Maintained by You, No gbans, No sudo powers. All power belongs to you.
 
@@ -879,7 +879,7 @@ Yuriko was online since 2020 and helped many admins to keep their groups effecti
 
 Licensed under the GNU Affero General Public Lisence v3.0
 
-© 2021 - 2022 @BotDuniya. All Rights Reserved""",
+© 2021 - 2022 @. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
