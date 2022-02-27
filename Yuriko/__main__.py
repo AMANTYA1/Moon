@@ -652,7 +652,7 @@ def lovelyx_about_callback(update, context):
                     InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/Kigo_omfobot?startgroup=true"),
                  ],
                  [
-                    InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vida"),
+                    InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_va"),
                  ],
                  [
                     InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_umm"),
@@ -774,7 +774,7 @@ Again thanks for using me
        )
             
 
-    elif query.data == "lovelyx_vida":
+    elif query.data == "lovelyx_va":
         query.message.reply_video(
             LOVELYX_VIDA, caption="""**Hey, Welcome to Yuriko configuration Tutorial**
 
@@ -806,7 +806,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             reply_markup=InlineKeyboardMarkup(
                 [
                 [InlineKeyboardButton("▶️", callback_data="lovelyx_lund"),],
-                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_vida"),],
+                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_va"),],
                 ]
             ),             
         )             
@@ -820,7 +820,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("Go Video Tutorial Again", callback_data="lovelyx_vida"),],
+                [InlineKeyboardButton("Go Video Tutorial Again", callback_data="lovelyx_va"),],
                 [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_tutorials"),],
                 ]
             ),             
