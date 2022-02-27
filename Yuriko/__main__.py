@@ -111,7 +111,7 @@ Lovelybuttons = [
 
 
 
-LOVELYX_VIDAA = """https://telegra.ph/file/107b8b2f759c6b5dc4058.mp4"""
+LOVELYX_VIDAA = """https://telegra.ph/file/42cccf592372353af7c10.mp4"""
 LOVELYX_VIDA = """https://telegra.ph/file/42cccf592372353af7c10.mp4"""
 LOVELYX_VIDM = """https://telegra.ph/file/fbbb88279d7de8dd6a128.mp4"""
 
@@ -285,7 +285,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "𝙔𝙪𝙧𝙞𝙠𝙤 𝙞𝙨 𝙖𝙡𝙞𝙫𝙚 𝙪𝙨𝙨 𝙗𝙚𝙡𝙤𝙬 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙩𝙤 𝙚𝙭𝙥𝙡𝙤𝙧𝙚 𝙢𝙮 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙤𝙧 𝙥𝙢!",
+            "𝙆𝙄𝙂𝙊 𝙞𝙨 𝙖𝙡𝙞𝙫𝙚 𝙪𝙨𝙨 𝙗𝙚𝙡𝙤𝙬 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙩𝙤 𝙚𝙭𝙥𝙡𝙤𝙧𝙚 𝙢𝙮 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙤𝙧 𝙥𝙢!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -652,7 +652,7 @@ def lovelyx_about_callback(update, context):
                     InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/Kigo_omfobot?startgroup=true"),
                  ],
                  [
-                    InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_va"),
+                    InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vidu"),
                  ],
                  [
                     InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_umm"),
@@ -748,7 +748,7 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
 - Watch your group, if someone is spamming your group, you can use the report feature of your Telegram Client.
 - Do not spam commands, buttons, or anything in bot PM.
 *NOTE:* Terms and Conditions might change anytime
-*Updates Channel: @BotDuniya """,
+*Updates Channel: @kigo_omfo """,
           parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -763,7 +763,7 @@ Send /help in bot pm to access help menu
 There are many handy tools to try out. 
 And also if you have any suggessions about me, Don't forget to tell them to devs
 Again thanks for using me
-✗ By using @YurikoRobot you are agreed to our terms & conditions""",
+✗ By using @Kigo_omfobot you are agreed to our terms & conditions""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -806,7 +806,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             reply_markup=InlineKeyboardMarkup(
                 [
                 [InlineKeyboardButton("▶️", callback_data="lovelyx_lund"),],
-                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_va"),],
+                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_tutorials"),],
                 ]
             ),             
         )             
@@ -820,7 +820,7 @@ You can also set buttons for notes and filters (refer help menu)""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                [InlineKeyboardButton("Go Video Tutorial Again", callback_data="lovelyx_va"),],
+                [InlineKeyboardButton("Go Video Tutorial Again", callback_data="lovelyx_vidu"),],
                 [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_tutorials"),],
                 ]
             ),             
@@ -866,16 +866,16 @@ KIGO was online since 2020 and helped many admins to keep their groups effective
 *Why KIGO:*
    - Simple: Yuriko brings you the best tools with a simple easy to use manner
    - Featured: KIGO is the most featured group management bot ever made
-   - Fast: Yuriko can do things faster in groups
-   - Independent: Yuriko is Maintained by You, No gbans, No sudo powers. All power belongs to you.
+   - Fast: KIGO can do things faster in groups
+   - Independent: KIGO is Maintained by You, No gbans, No sudo powers. All power belongs to you.
 
-[♚ Special Credits](https://telegra.ph/Unsupported-User-02-22-2)
+[♚ Special Credits](https://telegra.ph/Terms-and-Conditions-02-27-4)
 
-[Source 💫 Code](https://github.com/FriDayXD/yuriko)
+[Source 💫 Code](https://github.com/KIGO-OMFO)
 
-[♕ TeamFriday](https://t.me/FriDayNetwork)
+[♕ TeamFriday](https://t.me/kigo_omfo)
 
-[📄 Terms And Conditions](https://telegra.ph/Terms-And-Conditions-02-22)
+[📄 Terms And Conditions](https://telegra.ph/Unsupported-User-02-27-3)
 
 Licensed under the GNU Affero General Public Lisence v3.0
 
@@ -893,7 +893,7 @@ Licensed under the GNU Affero General Public Lisence v3.0
         query.message.reply_text(
             text="""*Info & About*
 
-In here you can find what is Yuriko and how to set her up
+In here you can find what is KIGO and how to set her up
 
 Click buttons for help""", 
             parse_mode=ParseMode.MARKDOWN,
