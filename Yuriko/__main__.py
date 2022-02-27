@@ -92,24 +92,24 @@ LOVELY_MENU = """
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ────────────────────────
-✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: 𝘽𝙤𝙩 𝘿𝙪𝙣𝙞𝙮𝙖!*
+✗ * Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 
 Lovelybuttons = [
      [
-        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Yurikorobot?startgroup=true"),
+        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Kigo_omfobot?startgroup=true"),
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
      [  
-        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PmPermit"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/OmFoXD"),
         InlineKeyboardButton(text="Hᴇʟᴘ", callback_data="lovelyx_"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url="https://t.me/BotDuniya"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url="https://t.me/kigo_omfo"),
      ], 
 ]
 
 
 
-LOVELYX_VIDAA = """https://telegra.ph/file/c8994e597d83de768f1ba.mp4"""
+LOVELYX_VIDAA = """https://telegra.ph/file/42cccf592372353af7c10.mp4"""
 
 
 LOVELY_HELP = """
@@ -134,7 +134,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
-LOVELY_HELPX = """Hey there! My name is *Yuriko*
+LOVELY_HELPX = """Hey there! My name is *KIGO*
 *✗ MAIN COMMANDS ✗*
 
 ✗ /start - `Starts me! Your probably already used this.`
@@ -445,8 +445,8 @@ def lovelybasic_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true")]
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/kigo_omfo")],
+                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add KIGO", url="http://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
@@ -512,7 +512,7 @@ def lovelyadvance_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
                     [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back")]
                   ]
                 ),
@@ -639,14 +639,14 @@ def lovelyx_about_callback(update, context):
 
     elif query.data == "lovelyx_tutorials":
         query.message.reply_text(
-            text="**Hi I'm Yuriko, one of the fastest and most features for your groups"
+            text="**Hi I'm KIGO, one of the fastest and most features for your groups"
                  "\n\nYou can also Play Music groups by using me!**",
         parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Add me to Group", url="http://t.me/YurikoRobot?startgroup=true"),
+                    InlineKeyboardButton(text="Add me to Group", url="http://t.me/Kigo_omfobot?startgroup=true"),
                  ],
                  [
                     InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vida"),
@@ -662,10 +662,10 @@ def lovelyx_about_callback(update, context):
         
     elif query.data == "lovelyx_pro":
         query.message.edit_text(
-            text="""<b>Hey, Welcome to Yuriko configuration Tutorial
+            text="""<b>Hey, Welcome to KIGO configuration Tutorial
 Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
-2) Go to Administrators and add</b> @YurikoRobot <b>as Admin
+2) Go to Administrators and add</b> @Kigo_omfobot <b>as Admin
 3) Giving full permissions make Yuriko fully useful</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -678,7 +678,7 @@ Before we go, I need admin permissions in this chat to work properly
     elif query.data == "lovelyx_help":
         query.message.edit_text(
             text="""*Let's make your group bit effective now
-Congragulations, Yuriko now ready to manage your group
+Congragulations, KIGO now ready to manage your group
 Here are some essentialt to try on
 ✗ Admin tools
 Basic Admin tools help you to protect and powerup your group
@@ -745,8 +745,8 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
 - Watch your group, if someone is spamming your group, you can use the report feature of your Telegram Client.
 - Do not spam commands, buttons, or anything in bot PM.
 *NOTE:* Terms and Conditions might change anytime
-*Updates Channel: @BotDuniya """,
-          parse_mode=ParseMode.MARKDOWN,
+*Updates Channel: @kigo_omfo""",
+            parse_mode=ParseMode.MARKDOWN
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
@@ -798,7 +798,7 @@ def get_basic(update: Update, context: CallbackContext):
       )
             return
         update.effective_message.reply_text(
-            "Use below buttons to explore features or to close menu",
+            "𝙐𝙨𝙚 𝙗𝙚𝙡𝙤𝙬 𝙗𝙪𝙩𝙩𝙤𝙣𝙨 𝙩𝙤 𝙚𝙭𝙥𝙡𝙤𝙧𝙚 𝙢𝙮 𝙖𝙬𝙨𝙤𝙢𝙚 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨 𝙞𝙣 𝙥𝙢 𝙤𝙧 𝙜𝙧𝙤𝙪𝙥",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
