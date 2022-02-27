@@ -90,7 +90,7 @@ LOVELY_MENU = """
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ────────────────────────
-✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: 𝘽𝙤𝙩 𝘿𝙪𝙣𝙞𝙮𝙖!*
+✗ *Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 
 Lovelybuttons = [
@@ -101,11 +101,11 @@ Lovelybuttons = [
         InlineKeyboardButton(text="Iɴғᴏ & Aʙᴏᴜᴛ", callback_data="lovelyx_umm"),         
      ],
      [  
-        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/PmPermit"),
-        InlineKeyboardButton(text="🙋Yᴜʀɪᴋᴏ Nᴇᴡs", url="https://t.me/BotDuniya"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/OmFoXD"),
+        InlineKeyboardButton(text="🙋Yᴜʀɪᴋᴏ Nᴇᴡs", url="https://t.me/kigo_omfo"),
      ],
      [
-        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="https://t.me/Yurikorobot?startgroup=true"),
+        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
      ], 
 ]
 
@@ -116,12 +116,9 @@ LOVELYX_VIDA = """https://telegra.ph/file/f761ac6d2be8bb44d01ce.mp4"""
 LOVELYX_VIDM = """https://telegra.ph/file/fbbb88279d7de8dd6a128.mp4"""
 
 LOVELY_HELP = """
-*✗ MAIN COMMANDS ✗*
+*Welcome to help menu*
 
-✗ /start - `Starts me! Your probably already used this.`
-✗ /help - `Click this I ll let you know about myself!`
-✗ /settings - `in PM: will send you your settings for all supported modules.`
-✗ *In A Group: Will Redirect You To Pm With All That Chats Settings.*)"""
+Select All commands for full help or select catagory for more help documentation on selected fields)"""
 
 LOVELY_BASICC = """This are some *Basic commands* which will help you to manage group easily by Yuriko"""
 
@@ -137,7 +134,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
-LOVELY_HELPX = """Hey there! My name is *Yuriko*
+LOVELY_HELPX = """Hey there! My name is *KIGO*
 *✗ MAIN COMMANDS ✗*
 
 ✗ /start - `Starts me! Your probably already used this.`
@@ -160,8 +157,11 @@ USER_SETTINGS = {}
 
 LOVELY_CMDS =  [
        [
-           InlineKeyboardButton(text="➕ Aʟʟ Cᴏᴍᴍᴀɴᴅꜱ ➕", callback_data="help_back"),           
+           InlineKeyboardButton(text="➕ Aʟʟ Cᴏᴍᴍᴀɴᴅꜱ ➕", callback_data="help_back"),      
+       ],
+       [     
            InlineKeyboardButton(text="Aᴅᴠᴀɴsᴇᴅ", callback_data="lovelyadvance_back"),
+           InlineKeyboardButton(text="Exᴛʀᴀ", callback_data="lovelytools_back"),
        ],      
        [
            InlineKeyboardButton(text="Exᴛʀᴀ", callback_data="lovelytools_back"),
@@ -448,8 +448,8 @@ def lovelybasic_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
-                    [InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true")]
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/kigo_omfo")],
+                    [InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add Yuriko", url="http://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
@@ -515,7 +515,7 @@ def lovelyadvance_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
                     [InlineKeyboardButton(text="« Bᴀᴄᴋ", callback_data="lovelyadvance_back")]
                   ]
                 ),
@@ -576,7 +576,7 @@ def lovelytools_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
                     [InlineKeyboardButton(text="Go back", callback_data="lovelytools_back")]
                   ]
                 ),
@@ -642,14 +642,14 @@ def lovelyx_about_callback(update, context):
 
     elif query.data == "lovelyx_tutorials":
         query.message.reply_text(
-            text="**Hi I'm Yuriko, one of the fastest and most features for your groups"
+            text="**Hi I'm KIGO, one of the fastest and most features for your groups"
                  "\n\nYou can also Play Music groups by using me!**",
         parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/YurikoRobot?startgroup=true"),
+                    InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/Kigo_omfobot?startgroup=true"),
                  ],
                  [
                     InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vida"),
