@@ -1,7 +1,7 @@
 __mod_name__ = "Sᴛʀɪɴɢ-Gᴇɴ"
 
 __help__ = """
-*Yuriko String GENRATOR*
+*KIGO String GENRATOR*
 
 ✨ Available Commands ✨
 
