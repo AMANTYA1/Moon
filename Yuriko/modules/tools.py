@@ -1,7 +1,7 @@
 __mod_name__ = "Tᴏᴏʟꜱ"
 
 __help__ = """
-*Yuriko Info bot*
+*KIGO Info bot*
 
 ✗  /sg <reply> - `To check history name`
 
@@ -43,5 +43,5 @@ __help__ = """
 
 ✗  /tgt - `Get Telegraph Link of Replied Text` 
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
