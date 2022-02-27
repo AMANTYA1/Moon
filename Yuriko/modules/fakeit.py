@@ -74,5 +74,5 @@ Commands:
 ✗ /fakegen - `Generates Fake Information`
 ✗ /picgen - `generate a fake pic`
  
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
