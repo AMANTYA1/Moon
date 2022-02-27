@@ -95,7 +95,7 @@ LOVELY_MENU = """
 
 Lovelybuttons = [
      [
-        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Kigo_omfobot?startgroup=true"),
+        InlineKeyboardButton(text="✨Aᴅᴅ ᴍᴇ✨", url="https://t.me/Kigo_omfobot?startgroup=true"),
      ],
      [
         
