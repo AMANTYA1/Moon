@@ -117,5 +117,5 @@ __help__ = """
 
 ✗ /tagall or @all 'reply to message or add another message To mention all members in your group without exception.'
 
-*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
