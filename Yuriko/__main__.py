@@ -769,7 +769,7 @@ Again thanks for using me
     
     elif query.data == "lovelyx_umm":
         query.message.edit_text(
-            text=""*About Me*
+            text="" About Me
 
 @innexiaBot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
 
