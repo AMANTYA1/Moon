@@ -515,7 +515,7 @@ def lovelyadvance_button(update, context):
                 reply_markup=InlineKeyboardMarkup(
                   [
                     [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back"), InlineKeyboardButton(text="Add KIGO", url="http://t.me/Kigo_omfobot?startgroup=true")]]
+                    [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back"), InlineKeyboardButton(text="Add KIGO", url="http://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
