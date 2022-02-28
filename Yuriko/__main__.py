@@ -800,11 +800,11 @@ INNEXIA was online since 2019 and helped many admins to keep their groups effect
     
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption=""**Hey, Welcome to Yuriko configuration Tutorial**
-**Before we go, I need admin permissions in this chat to work properly**
+            LOVELYX_VIDAA, caption=""" Hey, Welcome to INNEXIA configuration Tutorial
+Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
 2) Goto Administrators and add @innexiaBot as Admin
-3) Giving full permissions make Yuriko fully useful"",
+3) Giving full permissions make INNEXIA fully useful""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
