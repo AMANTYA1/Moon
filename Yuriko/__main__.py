@@ -278,7 +278,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "*Lovely is alive* use below buttons to explore my features in group or pm!",
+            "INNEXIA is alive use below buttons to explore my features in group or pm!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
