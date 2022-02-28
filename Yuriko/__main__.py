@@ -769,7 +769,7 @@ Again thanks for using me
     
     elif query.data == "lovelyx_umm":
         query.message.edit_text(
-            text="" About Me
+            text=""" About Me
 
 @innexiaBot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
 
@@ -790,7 +790,7 @@ INNEXIA was online since 2019 and helped many admins to keep their groups effect
 [📄 Terms And Conditions](https://telegra.ph/Term-And-Conditions-02-28)
 
 <b>Licensed under the GNU Affero General Public Lisence v3.0</b>
-© 2020 - 2021 @innexiaBot. All Rights Reserved"",
+© 2020 - 2021 @innexiaBot. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
