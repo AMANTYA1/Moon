@@ -819,7 +819,9 @@ Before we go, I need admin permissions in this chat to work properly
 In here you can find what is INNEXIA and how to set her up
 
 Click buttons for help""",
-            [[InlineKeyboardButton(text="Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", callback_data="lovelyx_tutorials")],
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Hᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", callback_data="lovelyx_tutorials")],
                 [InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="lovelyx_umm"),
                 InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back")]]
             ),
