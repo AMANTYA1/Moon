@@ -790,7 +790,7 @@ INNEXIA was online since 2019 and helped many admins to keep their groups effect
 [📄 Terms And Conditions](https://telegra.ph/Term-And-Conditions-02-28)
 
 <b>Licensed under the GNU Affero General Public Lisence v3.0</b>
-© 2020 - 2021 @innexiaBot. All Rights Reserved,
+© 2020 - 2021 @innexiaBot. All Rights Reserved"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
