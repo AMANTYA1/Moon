@@ -787,7 +787,7 @@ Why KIGO:
 
 [📄 Terms And Conditions](https://telegra.ph/Term-And-Conditions-02-28)
 
-**Licensed under the GNU Affero General Public Lisence v3.0**
+Licensed under the GNU Affero General Public Lisence v3.0
 © 2022 - 2022 @Kigo_omfobot. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
