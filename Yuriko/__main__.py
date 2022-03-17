@@ -132,7 +132,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
-LOVELY_HELPX = """Hey there! My name is *Yuriko*
+LOVELY_HELPX = """Hey there! My name is *KIGO*
 *✗ MAIN COMMANDS ✗*
 
 ✗ /start - `Starts me! Your probably already used this.`
