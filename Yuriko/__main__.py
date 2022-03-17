@@ -37,8 +37,6 @@ from Yuriko import (
 from Yuriko.modules import ALL_MODULES
 from Yuriko.modules.helper_funcs.chat_status import is_user_admin
 from Yuriko.modules.helper_funcs.misc import paginate_modules
-from Yuriko.modules.resources.messages import Messages as MSG
-from Yuriko.modules.resources.buttons import Buttons as BTN
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -92,18 +90,18 @@ LOVELY_MENU = """
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ────────────────────────
-✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: 𝘽𝙤𝙩 𝘿𝙪𝙣𝙞𝙮𝙖!*
+✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Kɪɢᴏ!*
 """
 
 Lovelybuttons = [
      [
-        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Yurikorobot?startgroup=true"),
+        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Kigo_omfobot?startgroup=true"),
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
      [  
-        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PmPermit"),
+        InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/godzilla_chatting"),
         InlineKeyboardButton(text="Hᴇʟᴘ", callback_data="lovelyx_"),
-        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url="https://t.me/BotDuniya"),
+        InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url="https://t.me/INSANE_BOTS"),
      ], 
 ]
 
@@ -445,8 +443,8 @@ def lovelybasic_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add Yuriko", url="http://t.me/YurikoRobot?startgroup=true")]
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/INSANE_BOTS"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add KIGO", url="http://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
@@ -512,7 +510,7 @@ def lovelyadvance_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/INSANE_BOTS"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
                     [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back")]
                   ]
                 ),
@@ -573,7 +571,7 @@ def lovelytools_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniya"), InlineKeyboardButton(text="Support", url="https://t.me/PmPermit")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/INSANE_BOTS"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
                     [InlineKeyboardButton(text="Go back", callback_data="lovelytools_back")]
                   ]
                 ),
@@ -639,14 +637,14 @@ def lovelyx_about_callback(update, context):
 
     elif query.data == "lovelyx_tutorials":
         query.message.reply_text(
-            text="**Hi I'm Yuriko, one of the fastest and most features for your groups"
+            text="**Hi I'm KIGO, one of the fastest and most features for your groups"
                  "\n\nYou can also Play Music groups by using me!**",
         parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Add me to Group", url="http://t.me/YurikoRobot?startgroup=true"),
+                    InlineKeyboardButton(text="Add me to Group", url="http://t.me/Kigo_omfobot?startgroup=true"),
                  ],
                  [
                     InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vida"),
@@ -662,11 +660,11 @@ def lovelyx_about_callback(update, context):
         
     elif query.data == "lovelyx_pro":
         query.message.edit_text(
-            text="""<b>Hey, Welcome to Yuriko configuration Tutorial
+            text="""<b>Hey, Welcome to KIGO configuration Tutorial
 Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
-2) Go to Administrators and add</b> @YurikoRobot <b>as Admin
-3) Giving full permissions make Yuriko fully useful</b>""",
+2) Go to Administrators and add</b> @Kigo_omfobot <b>as Admin
+3) Giving full permissions make KIGO fully useful</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
               [[InlineKeyboardButton(text="previous", callback_data="lovelyx_tutorials"),
@@ -678,7 +676,7 @@ Before we go, I need admin permissions in this chat to work properly
     elif query.data == "lovelyx_help":
         query.message.edit_text(
             text="""*Let's make your group bit effective now
-Congragulations, Yuriko now ready to manage your group
+Congragulations, KIGO now ready to manage your group
 Here are some essentialt to try on
 ✗ Admin tools
 Basic Admin tools help you to protect and powerup your group
@@ -745,8 +743,8 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
 - Watch your group, if someone is spamming your group, you can use the report feature of your Telegram Client.
 - Do not spam commands, buttons, or anything in bot PM.
 *NOTE:* Terms and Conditions might change anytime
-*Updates Channel: @BotDuniya """,
-          parse_mode=ParseMode.MARKDOWN,
+*Updates Channel: @INSANE_BOTS""",
+            parse_mode=ParseMode.MARKDOWN,,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
@@ -760,7 +758,7 @@ Send /help in bot pm to access help menu
 There are many handy tools to try out. 
 And also if you have any suggessions about me, Don't forget to tell them to devs
 Again thanks for using me
-✗ By using @YurikoRobot you are agreed to our terms & conditions""",
+✗ By using @Kigo_omfobot you are agreed to our terms & conditions""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
