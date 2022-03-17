@@ -6,7 +6,7 @@
 from Yuriko import pbot as app
 from Yuriko.mongo.captcha import captchas
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Yuriko.plugins.antlangs import *
+from Yuriko.modules.antlangs import *
 import random
 from Yuriko.modules.captcha import *
 
