@@ -81,12 +81,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 LOVELY_MENU =  """
-*👋 Hello {} !* there My name is *Innexia*.
+*👋 Hello {} !* there My name is *KIGO*.
 I can help manage your groups with
 useful features, feel free to add me to 
 your groups!
-────────────────────────
-✗ * Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
 
 Lovelybuttons = [
