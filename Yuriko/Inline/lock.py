@@ -1,5 +1,5 @@
 
-from Rose import bot as app
+from Yuriko import pbot as app
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
