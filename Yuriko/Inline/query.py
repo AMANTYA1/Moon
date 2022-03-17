@@ -3,12 +3,12 @@
 
 # This file is part of @szrosebot (Telegram Bot)
 
-from  Rose import bot as app
-from Rose.mongo.captcha import captchas
+from Yuriko import pbot as app
+from Yuriko.mongo.captcha import captchas
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Rose.plugins.antlangs import *
+from Yuriko.plugins.antlangs import *
 import random
-from Rose.plugins.captcha import *
+from Yuriko.plugins.captcha import *
 
 db = {}
 
