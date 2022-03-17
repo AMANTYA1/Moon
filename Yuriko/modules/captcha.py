@@ -4,7 +4,7 @@
 # This file is part of @szrosebot (Telegram Bot)
 
 import asyncio
-from  Yuriko import pbot as app
+from Yuriko import pbot as app
 from Yuriko.mongo.captcha import captchas
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
@@ -13,7 +13,7 @@ from EmojiCaptcha import Captcha as emoji_captcha
 import random
 from captcha.image import ImageCaptcha
 from . antlangs import *
-from Yuriko.Inline.query import *
+#from Yuriko.Inline.query import *
 
 db = {}
 
