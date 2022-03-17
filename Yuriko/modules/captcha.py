@@ -13,7 +13,7 @@ from EmojiCaptcha import Captcha as emoji_captcha
 import random
 from captcha.image import ImageCaptcha
 from . antlangs import *
-#from Yuriko.Inline.query import *
+from Yuriko.Inline.query import *
 
 db = {}
 
