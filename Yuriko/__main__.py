@@ -779,7 +779,7 @@ Before we go, I need admin permissions in this chat to work properly
         query.message.delete() 
     
     elif query.data == "lovelyx_vko":
-        query.message.edit_text(
+        query.message.reply_text(
             text=""" info & About
 
 In here you can find what is KIGO and how to set her up
