@@ -8,7 +8,7 @@ from Yuriko.mongo.captcha import captchas
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Yuriko.plugins.antlangs import *
 import random
-from Yuriko.plugins.captcha import *
+from Yuriko.modules.captcha import *
 
 db = {}
 
