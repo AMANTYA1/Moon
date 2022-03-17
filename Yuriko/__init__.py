@@ -9,6 +9,7 @@ import telegram.ext as tg
 from inspect import getfullargspec
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
+from motor.motor_asyncio import AsyncIOMotorClient
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.sessions import MemorySession
@@ -16,7 +17,7 @@ from pyrogram.types import Message
 from pyrogram import Client, errors
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
 from pyrogram.types import Chat, User
-
+import pymongo
 
 StartTime = time.time()
 
@@ -241,6 +242,12 @@ pbot = Client(
 apps = []
 apps.append(pbot)
 
+myclient = pymongo.MongoClient(MONGO_DB_URI)
+dbn = myclient["Null"]
+
+# MongoDB client
+mongo_client = AsyncIOMotorClient(MONGO_DB_URI)
+db = mongo_client.wbb
 
 async def get_entity(client, entity):
     entity_client = client
