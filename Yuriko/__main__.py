@@ -280,7 +280,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "**Yuriko is alive use below buttons to explore my features in group or pm!**",
+            "**KIGO is alive use below buttons to explore my features in group or pm!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -744,7 +744,7 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
 - Do not spam commands, buttons, or anything in bot PM.
 *NOTE:* Terms and Conditions might change anytime
 *Updates Channel: @INSANE_BOTS""",
-            parse_mode=ParseMode.MARKDOWN,,
+            parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
