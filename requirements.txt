@@ -94,3 +94,5 @@ fuzzysearch
 img2pdf
 multicolorcaptcha
 git+https://github.com/python-telegram-bot/ptbcontrib.git
+captcha
+EmojiCaptcha
