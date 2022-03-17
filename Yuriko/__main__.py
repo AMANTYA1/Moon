@@ -775,11 +775,11 @@ KIGO project is developed by @Shubhanshutya with the help of many open source pr
 
 KIGO was online since 2022 and helped many admins to keep their groups effectively 
 
-**Why KIGO:**
-   - **Simple:** KIGO brings you the best tools with a simple easy to use manner
-   - **Featured:** KIGO is the most featured group management bot ever made
-   - **Fast:** KIGO can do things faster in groups
-   - **Independent:** KIGO is Maintained by volunteers, No gbans, No sudo powers. All power belongs to you.
+Why KIGO:
+   - Simple: KIGO brings you the best tools with a simple easy to use manner
+   - Featured: KIGO is the most featured group management bot ever made
+   - Fast: KIGO can do things faster in groups
+   - Independent: KIGO is Maintained by volunteers, No gbans, No sudo powers. All power belongs to you.
 
 [💾 Source Code ](https://github.com/AMANTYA1/Yuriko)
 
