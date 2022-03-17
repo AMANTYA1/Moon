@@ -781,10 +781,6 @@ Why KIGO:
    - Fast: KIGO can do things faster in groups
    - Independent: KIGO is Maintained by volunteers, No gbans, No sudo powers. All power belongs to you.
 
-[💾 Source Code ](https://github.com/AMANTYA1/Yuriko)
-
-[♕ Team KIGO](https://github.com/KIGO-OMFO) 
-
 [📄 Terms And Conditions](https://telegra.ph/Term-And-Conditions-02-28)
 
 Licensed under the GNU Affero General Public Lisence v3.0
