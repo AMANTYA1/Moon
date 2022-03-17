@@ -6,7 +6,7 @@
 import codecs
 import pickle
 from typing import Dict, List, Union
-from Yuriko.mongo import db
+from Yuriko.mono import db
 
 restart_stagedb = db.restart_stage
 captchadb = db.captcha
