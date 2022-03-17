@@ -654,10 +654,10 @@ def lovelyx_about_callback(update, context):
         
     elif query.data == "lovelyx_pro":
         query.message.edit_text(
-            text="""<b>Hey, Welcome to Lovely configuration Tutorial
+            text="""<b>Hey, Welcome to KIGO configuration Tutorial
 Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
-2) Go to Administrators and add</b> @innexiaBot <b>as Admin
+2) Go to Administrators and add</b> @Kigo_omfobot <b>as Admin
 3) Giving full permissions make Lovely fully useful</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
