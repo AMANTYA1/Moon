@@ -98,7 +98,7 @@ Lovelybuttons = [
      ],
      [  
         InlineKeyboardButton(text="🙋Uᴘᴅᴀᴛᴇ", url="https://t.me/kigo_omfo"),
-        InlineKeyboardButton(text="👥Sᴜᴘᴘᴏʀᴛ", url="https://t.me/OmFoXD")
+        InlineKeyboardButton(text="👥Sᴜᴘᴘᴏʀᴛ", url="https://t.me/godzilla_chatting")
      ], 
      [
        InlineKeyboardButton(text="✨Aᴅᴅ ᴍᴇ✨", url="https://t.me/Kigo_omfobot?startgroup=true"),
@@ -278,7 +278,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "INNEXIA is alive use below buttons to explore my features in group or pm!",
+            "KIGO is alive use below buttons to explore my features in group or pm!",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -378,8 +378,8 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
-                    [InlineKeyboardButton(text="Go back", callback_data="help_back"), InlineKeyboardButton(text="Add INNEXIA", url="https://t.me/innexiaBot?startgroup=true")]
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Go back", callback_data="help_back"), InlineKeyboardButton(text="Add KIGO", url="https://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
@@ -444,8 +444,8 @@ def lovelybasic_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add INNEXIA", url="https://t.me/innexiaBot?startgroup=true")]
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add KIGO", url="https://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
@@ -506,8 +506,8 @@ def lovelyadvance_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back"), InlineKeyboardButton(text="Add INNEXIA", url="https://t.me/innexiaBot?startgroup=true")]
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back"), InlineKeyboardButton(text="Add KIGO", url="https://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
@@ -567,8 +567,8 @@ def lovelytools_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/OmFoXD")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelytools_back"), InlineKeyboardButton(text="Add INNEXIA", url="https://t.me/innexiaBot?startgroup=true")]
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/kigo_omfo"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Go back", callback_data="lovelytools_back"), InlineKeyboardButton(text="Add KIGO", url="https://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
             )
@@ -633,14 +633,14 @@ def lovelyx_about_callback(update, context):
 
     elif query.data == "lovelyx_tutorials":
         query.message.reply_text(
-            text="Hi I'm INNEXIA, one of the fastest and most features for your groups"
+            text="Hi I'm KIGO, one of the fastest and most features for your groups"
                  "\n\nYou can also Play Music groups by using me!",
         parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🔥Add me to Group🔥", url="https://t.me/innexiaBot?startgroup=true"),
+                    InlineKeyboardButton(text="🔥Add me to Group🔥", url="https://t.me/Kigo_omfobot?startgroup=true"),
                  ],
                  [
                     InlineKeyboardButton(text="Video Tutorial", callback_data="lovelyx_vida"),
@@ -740,7 +740,7 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
 - Do not spam commands, buttons, or anything in bot PM.
 *NOTE:* Terms and Conditions might change anytime
 *Updates Channel:* @kigo_omfo
-*Support Chat:* @OmFoXD""",
+*Support Chat:* @godzilla_chatting""",
           parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -755,7 +755,7 @@ Send /help in bot pm to access help menu
 There are many handy tools to try out. 
 And also if you have any suggessions about me, Don't forget to tell them to devs
 Again thanks for using me
-✗ By using @innexiaBot you are agreed to our terms & conditions""",
+✗ By using @Kigo_omfobot you are agreed to our terms & conditions""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -771,17 +771,17 @@ Again thanks for using me
         query.message.edit_text(
             text=""" About Me
 
-@innexiaBot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
+@Kigo_omfobot is one of the most powerful group management bot exist in telegram trusted by millions of users & tens thousands of groups all over the world
 
-INNEXIA project is developed by @Shubhanshutya with the help of many open source projects
+KIGO project is developed by @Shubhanshutya with the help of many open source projects
 
-INNEXIA was online since 2019 and helped many admins to keep their groups effectively 
+KIGO was online since 2022 and helped many admins to keep their groups effectively 
 
-<b>Why INNEXIA:</b>
-   - <b>Simple:</b> Innexia brings you the best tools with a simple easy to use manner
-   - <b>Featured:</b> INNEXIA is the most featured group management bot ever made
-   - <b>Fast:</b> INNEXIA can do things faster in groups
-   - <b>Independent:</b> INNEXIA is Maintained by volunteers, No gbans, No sudo powers. All power belongs to you.
+**Why KIGO:**
+   - **Simple:** KIGO brings you the best tools with a simple easy to use manner
+   - **Featured:** KIGO is the most featured group management bot ever made
+   - **Fast:** KIGO can do things faster in groups
+   - **Independent:** KIGO is Maintained by volunteers, No gbans, No sudo powers. All power belongs to you.
 
 [💾 Source Code ](https://github.com/AMANTYA1/Yuriko)
 
@@ -789,8 +789,8 @@ INNEXIA was online since 2019 and helped many admins to keep their groups effect
 
 [📄 Terms And Conditions](https://telegra.ph/Term-And-Conditions-02-28)
 
-<b>Licensed under the GNU Affero General Public Lisence v3.0</b>
-© 2020 - 2021 @innexiaBot. All Rights Reserved""",
+**Licensed under the GNU Affero General Public Lisence v3.0**
+© 2022 - 2022 @Kigo_omfobot. All Rights Reserved""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -800,11 +800,11 @@ INNEXIA was online since 2019 and helped many admins to keep their groups effect
     
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption=""" Hey, Welcome to INNEXIA configuration Tutorial
+            LOVELYX_VIDAA, caption=""" Hey, Welcome to KIGO configuration Tutorial
 Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
-2) Goto Administrators and add @innexiaBot as Admin
-3) Giving full permissions make INNEXIA fully useful""",
+2) Goto Administrators and add @Kigo_omfobot as Admin
+3) Giving full permissions make KIGO fully useful""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
@@ -816,7 +816,7 @@ Before we go, I need admin permissions in this chat to work properly
         query.message.edit_text(
             text=""" info & About
 
-In here you can find what is INNEXIA and how to set her up
+In here you can find what is KIGO and how to set her up
 
 Click buttons for help""",
             parse_mode=ParseMode.MARKDOWN,
