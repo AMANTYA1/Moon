@@ -22,7 +22,7 @@ chatbotdb = rdb.chatbot
 from Yuriko import  MONGO_DB_URI
 
 try:
-    client = MongoClient(DB_URI)
+    client = MongoClient(MONGO_DB_URI)
 except PyMongoError as f:
     exiter(1)
 main_db = client["maindb"]
