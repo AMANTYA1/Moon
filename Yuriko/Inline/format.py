@@ -3,7 +3,7 @@
 
 # This file is part of @szrosebot (Telegram Bot)
 
-from Rose import pbot as app
+from Yuriko import pbot as app
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
