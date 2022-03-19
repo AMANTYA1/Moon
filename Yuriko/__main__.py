@@ -500,7 +500,7 @@ def lovelyadvance_button(update, context):
                 + LOVELY_ADVANCE[module].__lovely_advance__
             )
             query.message.edit_text(
-                text=text,
+                text=LOVELY_HELPX,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
