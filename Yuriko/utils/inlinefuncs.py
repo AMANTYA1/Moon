@@ -122,7 +122,7 @@ async def alive_function(answers):
        )
 
     msg = f"""
-**[Yuriko Robot ❤️](https://t.me/YurikoRobot):**
+**[KIGO Robot 🔥](https://t.me/Kigo_omfobot):**
 +-------------------------+
 **System Stats:**
  **MainBot:** `{bot_state}`
@@ -145,18 +145,18 @@ async def alive_function(answers):
  **DB 5 [Temp]**: `Running`
  **DB 6 [Temp]**: ´Running`
 +-------------------------+
-**Status: Yuriko ready to use :-)**
+**Status: KIGO ready to use :-)**
 Note: Music Player and autofilters can be unstable sometimes
 +-------------------------+
-**Bot:** @YurikoRobot
-**Support:** @DeCodeSupport
-**Updates:** @DeeCodeBots
+**Bot:** @Kigo_omfobot
+**Support:** @godzilla_chatting
+**Updates:** @INSANE_BOTS
 +-------------------------+
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Yuriko-2.0 System Stats",
+            description="Check KIGO-1.0 System Stats",
             thumb_url="https://telegra.ph/file/dad7863c0db4ac921982d.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
