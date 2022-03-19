@@ -115,7 +115,7 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/YurikoRobot"),
+        InlineKeyboardButton("Main bot", url="https://t.me/Kigo_omfobot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
@@ -135,7 +135,7 @@ async def alive_function(answers):
  **RedisDB:** `6.2.5`
  **SQL:** `1.3.20`
  **Platform:** `{sys.platform}`
- **Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/TeamDeeCode)
+ **Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/Kigo_omfobot)
 +-------------------------+
 **Database Stats:**
  **DB 1 [Main]**: `Running`
