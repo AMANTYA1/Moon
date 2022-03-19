@@ -600,6 +600,7 @@ dispatcher.add_handler(UNBAN_BUTTON_HANDLER)
 dispatcher.add_handler(SNIPE_HANDLER)
 dispatcher.add_handler(BANME_HANDLER)
 
+__lovely_advance__ = __help__
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,
