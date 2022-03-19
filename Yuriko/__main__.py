@@ -481,11 +481,6 @@ def lovelybasic_button(update, context):
     except BadRequest:
         pass
 
-@app.on_callback_query(filters.regex("stats_callback"))
-async def stats_callbacc(_, CallbackQuery):
-    text = await bot_sys_stats()
-    await app.answer_callback_query(CallbackQuery.id, text, show_alert=True)
-
 def lovelyadvance_button(update, context):
     query = update.callback_query
     mod_match = re.match(r"lovelyadvance_module\((.+?)\)", query.data)
@@ -608,6 +603,11 @@ def lovelytools_button(update, context):
 
     except BadRequest:
         pass
+
+@app.on_callback_query(filters.regex("stats_callback"))
+async def stats_callbacc(_, CallbackQuery):
+    text = await bot_sys_stats()
+    await app.answer_callback_query(CallbackQuery.id, text, show_alert=True)
 
 def lovelyx_about_callback(update, context):
     query = update.callback_query
