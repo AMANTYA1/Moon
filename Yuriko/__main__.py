@@ -500,7 +500,7 @@ def lovelyadvance_button(update, context):
                 + LOVELY_ADVANCE[module].__lovely_advance__
             )
             query.message.edit_text(
-                text=LOVELY_HELPX,
+                text=text,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
@@ -542,6 +542,7 @@ def lovelyadvance_button(update, context):
 
     except BadRequest:
         pass
+
 def lovelytools_button(update, context):
     query = update.callback_query
     mod_match = re.match(r"lovelytools_module\((.+?)\)", query.data)
