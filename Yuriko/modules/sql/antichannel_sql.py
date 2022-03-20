@@ -1,8 +1,7 @@
 import threading
 
-from sqlalchemy import Boolean
+from sqlalchemy import Boolean, Column
 from sqlalchemy.sql.sqltypes import String
-from sqlalchemy import Column
 
 from Yuriko.modules.sql import BASE, SESSION
 
@@ -29,7 +28,7 @@ def enable_antichannel(chat_id: int):
     with ANTICHANNEL_SETTING_LOCK:
         chat = SESSION.query(AntiChannelSettings).get(str(chat_id))
         if not chat:
-            chat = AntiChannelSettings(chat_id, True)
+            chat = AntiChannelSettings(str(chat_id), True)
 
         chat.setting = True
         SESSION.add(chat)
@@ -40,7 +39,7 @@ def disable_antichannel(chat_id: int):
     with ANTICHANNEL_SETTING_LOCK:
         chat = SESSION.query(AntiChannelSettings).get(str(chat_id))
         if not chat:
-            chat = AntiChannelSettings(chat_id, False)
+            chat = AntiChannelSettings(str(chat_id), False)
 
         chat.setting = False
         SESSION.add(chat)
@@ -63,3 +62,4 @@ def migrate_chat(old_chat_id, new_chat_id):
             SESSION.add(chat)
 
         SESSION.commit()
+from Yuriko.modules.sql import BASE, SESSION
