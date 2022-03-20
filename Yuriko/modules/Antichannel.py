@@ -1,147 +1,58 @@
-# Copyright (C) 2022 szsupunma
-# Copyright (C) 2021 @szrosebot
+import html
 
-# This file is part of @szrosebot (Telegram Bot)
+from telegram import Update
+from telegram.ext import CallbackContext
+from telegram.ext.filters import Filters
 
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton,  Message
-from Yuriko import *
-from Yuriko import pbot as app
-from pyrogram import filters
-from Yuriko.utils.permissions import adminsOnly
-from Yuriko.utils.filter_groups import *
-import pymongo
-
-myclient = pymongo.MongoClient(MONGO_DB_URI)
-dbx = myclient["supun"]
-anitcdb = dbx['ANTICHANNEL']
-
-
-
-@app.on_message(filters.command("antichannel"))
-@adminsOnly("can_change_info")
-async def antic_toggle(_, message):
-    if len(message.command) < 2:
-        return await message.reply_text("I undestand `/antichannel on` and `/antichannel off` only")
-    status = message.text.split(None, 1)[1].strip()
-    status = status.lower()
-    group_id = str(message.chat.id)
-    if not message.from_user:
-        return
-    if status == "on":
-        lol = await message.reply_text("`Processing...`")
-        s = anitcdb.find_one({f"antichnl": group_id})
-        if not s:
-            anitcdb.insert_one({f"antichnl": group_id})
-            await lol.edit(f"**Anti Channel Mode enabled** ✅.\n\n `I will delete all message when someone send messages with channel names`")
-            return        
-        else:  
-             return await lol.edit("**Anti Channel Mode Already Activated In This Chat**")
-    elif status == "off":        
-        lel = await message.reply_text("`Processing...`")
-        r = anitcdb.find_one({f"antichnl": group_id})
-        if not r:
-            anitcdb.delete_one({f"antichnl": group_id})
-            await lel.edit(f"**Anti Channel Mode Successfully Deactivated In The Chat** {message.chat.id} ❌")
-            return   
-        else:          
-           return await lel.edit("**Anti Channel Was Not Activated In This Chat**")
-    else:
-        await message.reply_text("I undestand `/antichannel on` and `/antichannel off` only")
-
-@app.on_message(filters.sticker & filters.media & filters.text & ~filters.linked_channel, group=channel)
-async def anitchnl(_, message):
-  try:
-    chat_id = message.chat.id
-    n = anitcdb.find_one({"antichnl": chat_id})
-  except:
-    return
-  if n:
-    if message.sender_chat:
-      try:
-        sender_id = message.sender_chat.id
-      except:
-        return
-      if chat_id == sender_id:
-        return
-      else:
-        try:
-            await message.delete()
-            await app.ban_chat_member(chat_id, sender_id)
-            await message.reply_text(f"""
-**A anti-channel message detected. I deleted it..!**
-
-• Channel Id =  {sender_id}  
-• Channel Name = {message.sender_chat.title}     
-            """,reply_markup=InlineKeyboardMarkup(
-                    [
-                        InlineKeyboardButton(
-                            "❕ Unban", callback_data=f"unban_{chat_id}_{sender_id}"
-                        )
-                    ]),
-                    )  
-            await app.unban_member(chat_id, sender_id) 
-            await app.delete_channel(sender_id)    
-        except Exception :
-            return
-
-
- 
-@app.on_callback_query(filters.regex("^unban_."))
-async def cb_handler(bot, query):
-    cb_data = query.data
-    an_id = cb_data.split("_")[-1]
-    chat_id = cb_data.split("_")[-2]
-    user = await bot.get_chat_member(chat_id, query.from_user.id)
-    if user.status not in ["creator", "administrator"]:
-         return await query.answer("You can't do this need admin power 😶", show_alert=True)
-    await bot.resolve_peer(an_id)
-    res = await query.message.chat.unban_member(an_id)
-    chat_data = await bot.get_chat(an_id)
-    mention = f"@{chat_data.username}" if chat_data.username else chat_data.title
-    if res:
-        await query.message.reply_text(
-                f"{mention} **has been unbanned by** {query.from_user.mention}"
-            )
-        await query.message.edit_reply_markup(reply_markup=None)
-
-__mod_name__ = "Anti-Function "
-__help__ = """
-**Anti-Function**:
-
-Group's Anti-Function is also an very essential fact to consider in group management
-Anti-Function is the inbuilt toolkit in Rose for avoid spammers, and to improve Anti-Function of your group"""
-__helpbtns__ = (
-        [[
-            InlineKeyboardButton
-                (
-                    "Anti-Channel", callback_data="_anc"
-                ),            
-            InlineKeyboardButton
-                (
-                    "Anti-language", callback_data="_anl"
-                )
-        ],
-        [
-            InlineKeyboardButton
-                (
-                    "Anti-porn", callback_data="_anp"
-                ),  
-            InlineKeyboardButton
-                (
-                    "Anti-spam", callback_data="_ans"
-                )
-        ],
-        [       
-            InlineKeyboardButton           
-                (
-                    "Anti-spoiler", callback_data="_anss"
-                ),
-            InlineKeyboardButton
-                (
-                    "Anti-service", callback_data="_anssx"
-                )    
-        ],
-        [
-            InlineKeyboardButton('Anti-Flood', callback_data='_fld')
-        ]]
+from Yuriko.modules.helper_funcs.anonymous import AdminPerms, user_admin
+from Yuriko.modules.helper_funcs.decorators import emikocmd, emikomsg
+from Yuriko.modules.sql.antichannel_sql import (
+    antichannel_status,
+    disable_antichannel,
+    enable_antichannel,
 )
+
+
+@emikocmd(command="antichannel", group=100)
+@user_admin(AdminPerms.CAN_RESTRICT_MEMBERS)
+def set_antichannel(update: Update, context: CallbackContext):
+    message = update.effective_message
+    chat = update.effective_chat
+    args = context.args
+    if len(args) > 0:
+        s = args[0].lower()
+        if s in ["yes", "on"]:
+            enable_antichannel(chat.id)
+            message.reply_html(
+                "Enabled antichannel in {}".format(html.escape(chat.title))
+            )
+        elif s in ["off", "no"]:
+            disable_antichannel(chat.id)
+            message.reply_html(
+                "Disabled antichannel in {}".format(html.escape(chat.title))
+            )
+        else:
+            message.reply_text("Unrecognized arguments {}".format(s))
+        return
+    message.reply_html(
+        "Antichannel setting is currently {} in {}".format(
+            antichannel_status(chat.id), html.escape(chat.title)
+        )
+    )
+
+
+@emikomsg(Filters.chat_type.groups, group=110)
+def eliminate_channel(update: Update, context: CallbackContext):
+    message = update.effective_message
+    chat = update.effective_chat
+    bot = context.bot
+    if not antichannel_status(chat.id):
+        return
+    if (
+        message.sender_chat
+        and message.sender_chat.type == "channel"
+        and not message.is_automatic_forward
+    ):
+        message.delete()
+        sender_chat = message.sender_chat
+        bot.ban_chat_sender_chat(sender_chat_id=sender_chat.id, chat_id=chat.id)
