@@ -280,18 +280,18 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "**KIGO is alive use below buttons to explore my features in group or pm!**",
+            "𝙃𝙚𝙮 𝙩𝙝𝙚𝙧𝙚\nIn order to set me up, use /settings  or press the underlying button..",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Open in private chat",
+                            text="📖 KIGO command",
                             url="t.me/{}?start".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Explore here", callback_data="lovelyx_back"
+                            text="⚙ Settings", callback_data="lovelyx_king"
                         ),
                     ],
                 ]
@@ -780,6 +780,28 @@ Again thanks for using me
             ),             
         )
         query.message.delete()
+
+    elif query.data == "lovelyx_king":
+        query.message.edit_text(
+       text="""Where do you want to open the settings menu?""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="👤Open in private chat",
+                            url="t.me/{}?start".format(context.bot.username),
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="👥open here", callback_data="lovelyx_back"
+                        ),
+                    ],
+                ]
+            ),
+        )
                   
 #🤣🤣🤣🤣
 
@@ -903,18 +925,18 @@ def get_help(update: Update, context: CallbackContext):
 
             return
         update.effective_message.reply_text(
-            "Use below buttons to explore my awesome features in pm or group.",
+            "𝙃𝙚𝙮 𝙩𝙝𝙚𝙧𝙚\nIn order to set me up, use /settings  or press the underlying button..",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Open in private chat",
+                            text="📖 KIGO command",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Open here", callback_data="help_back"
+                            text="⚙ Settings", callback_data="lovelyx_king"
                         ),
                     ],
                 ]
