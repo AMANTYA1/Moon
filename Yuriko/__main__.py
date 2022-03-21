@@ -98,9 +98,12 @@ Lovelybuttons = [
         InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="https://t.me/Kigo_omfobot?startgroup=true"),
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
+     [
+        InlineKeyboardButton(text="Sɪᴍᴘʟᴇ Hᴇʟᴘ", callback_data="lovelyx_prom"),       
+        InlineKeyboardButton(text="Hᴇʟᴘ", callback_data="lovelyx_"),  
+     ],
      [  
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/godzilla_chatting"),
-        InlineKeyboardButton(text="Hᴇʟᴘ", callback_data="lovelyx_"),
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url="https://t.me/INSANE_BOTS"),
      ], 
 ]
@@ -118,7 +121,7 @@ LOVELY_HELP = """
 ✗ /settings - `in PM: will send you your settings for all supported modules.`
 ✗ *In A Group: Will Redirect You To Pm With All That Chats Settings.*)"""
 
-LOVELY_BASICC = """This are some *Basic commands* which will help you to manage group easily by KIGO"""
+LOVELY_BASICC = """This are some *Basic commands* which will help you to manage group easily by Yuriko"""
 
 LOVELY_ADVANCEE = """*Advanced commands*
 Advanced commands will help you to secure your group easily and also you will know here some awesome features"""
@@ -802,6 +805,336 @@ Again thanks for using me
                 ]
             ),
         )
+    elif query.data == "lovelyx_omfo":
+        query.message.edit_text(
+       text="""Where do you want to open the settings menu?""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="👤Open in private chat",
+                            url="t.me/{}?start=help".format(context.bot.username),
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="👥open here", callback_data="lovelyx_prom"
+                        ),
+                    ],
+                ]
+            ),
+        )
+
+    elif query.data == "lovelyx_prom":
+        query.message.edit_text(
+            text="**Welcome to the Simple help menu!**",
+        parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="💁🏻‍♂️basic Commands", callback_data="lovelyx_basic"),
+                    InlineKeyboardButton(text="👨🏻‍🎓 Expert Commands", callback_data="lovelyx_experd"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="🙋🏻‍♂️ Advanced", callback_data="lovelyx_advnce"),
+                    InlineKeyboardButton(text="💆🏻‍♂️ Pro Guides", callback_data="lovelyx_peru"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="🔹Full help🔹", callback_data="help_back"),
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "lovelyx_basic":
+        query.message.edit_text(
+            text="""✗ Base Commands
+
+👮🏻 Available to Admins&Moderators
+🕵🏻 Available to Admins\n
+👮🏻 /reload updates the Admins list and their privileges\n
+🕵🏻 /settings lets you manage all the Bot settings in a group
+
+👮🏻  /ban lets you ban a user from the group without giving him the possibility to join again using the link of the group
+
+👮🏻  /mute puts a user in read-only mode. He can read but he can't send any messages
+
+👮🏻  /kick bans a user from the group, giving him the possibility to join again with the link of the group
+
+👮🏻  /unban lets you remove a user from group's blacklist, giving them the possibility to join again with the link of the group
+
+👮🏻  /info gives information about a user
+👮🏻  /myinfo is the same of /info, but sends infos in idk🤣
+
+◽️ /Admins gives the complete List of group Staff
+
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="Back", callback_data="lovelyx_prom")]]
+            ),
+        )
+    elif query.data == "lovelyx_experd":
+        query.message.edit_text(
+            text="""Advanced Commands
+
+🕵🏻 Available to Admins
+👮🏻 Available to Admins&Moderators
+🛃 Available to Admins&Cleaners
+
+WARN MANAGEMENT
+👮🏻  /warn adds a warn to the user
+👮🏻  /unwarn removes a warn to the user
+👮🏻  /warns lets you see and manage user warns
+🕵🏻  /delwarn deletes the message and add a warn to the user
+
+🛃 /del deletes the selected message
+🛃 /tban tban is ban for time
+Ex 💡 :- /tban 1m
+
+🕵🏻 /feedback to feedback of kigo
+  ➡️ Example: /feedback null bo!
+
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="Back", callback_data="lovelyx_prom")]]
+            ),
+        )
+    elif query.data == "lovelyx_advnce":
+        query.message.edit_text(
+            text="""Expert commands
+
+👥 Available to all users
+👮🏻 Available to Admins&Moderators
+🕵🏻 Available to Admins
+
+👥 /makeqr ,  to make qr .
+
+Pinned Messages
+🕵🏻 /pin [message] sends the message through the Bot and pins it.
+🕵🏻 /pin pins the message in reply.
+🕵🏻 /repin removes and pins again the current pinned message, with notification!
+👥 /pinned refers to the current pinned message.
+
+🕵🏻  /list sends in private chat the list of users of the group with the number of messages sent by them.
+🕵🏻 /logo to get logo
+
+🕵🏻  /write to get hand written logo.
+
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="Back", callback_data="lovelyx_prom")]]
+            ),
+        )
+
+    elif query.data == "lovelyx_peru":
+        query.message.edit_text(
+            text="**Pro Guides**\nIn this menu you will find some guides for very advanced KIGO Help functions**",
+        parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Bᴀɴ/Mᴜᴛᴇ", callback_data="lovelyx_ban"),
+                    InlineKeyboardButton(text="Lᴏᴄᴋs", callback_data="lovelyx_loh"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Nᴏᴛᴇs", callback_data="lovelyx_not"),
+                    InlineKeyboardButton(text="Iɴғᴏ&Aғᴋ", callback_data="lovelyx_akk"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_prom"),
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "lovelyx_ban":
+        query.message.edit_text(
+            text="""*User Commands:*
+
+✗ /kickme - `kicks the user who issued the command`
+
+*Admins Commands Only:*
+
+✗ /ban - `bans a user. (via handle, or reply)`
+
+✗ /sban - `Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)`
+
+✗ /tban - `bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
+
+✗ /unban - `unbans a user. (via handle, or reply)`
+
+✗ /kick - `kicks a user out of the group, (via handle, or reply)`
+
+✗ /mute - `silences a user. Can also be used as a reply, muting the replied to user.`
+
+✗ /tmute - `mutes a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.`
+
+✗ /unmute - `unmutes a user. Can also be used as a reply, muting the replied to user.`
+
+✗ /zombies - `searches deleted accounts`
+
+✗ /zombies - `removes deleted accounts from the group.`
+
+✗ /snipe - `Make me send a message to a specific chat.`
+
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="Back", callback_data="lovelyx_peru")]]
+            ),
+        )
+    elif query.data == "lovelyx_loh":
+        query.message.edit_text(
+            text="""Do stickers annoy you? or want to avoid people sharing links? or pictures? \
+You're in the right place!
+
+The locks module allows you to lock away some common items in the \
+telegram world; the bot will automatically delete them!
+
+ ❍ /locktypes*:* Lists all possible locktypes
+ 
+*Admins only:*
+ ❍ /lock <type>*:* Lock items of a certain type (not available in private)
+ ❍ /unlock <type>*:* Unlock items of a certain type (not available in private)
+ ❍ /locks*:* The current list of locks in this chat.
+ 
+Locks can be used to restrict a group's users.
+
+eg:
+Locking urls will auto-delete all messages with urls, locking stickers will restrict all \
+non-admin users from sending stickers, etc.
+Locking bots will stop non-admins from adding bots to the chat.
+
+*Note:*
+ • Unlocking permission *info* will allow members (non-admins) to change the group information, such as the description or the group name
+
+ • Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
+
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="Back", callback_data="lovelyx_peru")]]
+            ),
+        )
+    elif query.data == "lovelyx_not":
+        query.message.edit_text(
+            text="""✗ /get - `<notename> get the note with this notename`
+
+✗ `<notename> same as /get`
+
+✗ /notes - `or /saved list all saved notes in this chat`
+
+✗ /number - `Will pull the note of that number in the list`
+
+`If you would like to retrieve the contents of a note without any formatting, use` `/get <notename> noformat`. `This can`
+`be useful when updating a current note`
+
+*Admins only:*
+
+✗ /save -  `<notename> <notedata> saves notedata as a note with name notename`
+
+*A button can be added to a note by using standard markdown link syntax - the link should just be prepended with a*
+`buttonurl: ` *section, as such:* `[somelink](buttonurl:example.com)`. *Check* `/markdownhelp` *for more info*
+
+✗ /save - `<notename> save the replied message as a note with name notename`
+
+ `Separate diff replies by` `%%%` `to get random notes`
+
+ *Example:*
+ `/save notename
+ Reply 1
+ %%%
+ Reply 2
+ %%%
+ Reply 3`
+✗ /clear - `<notename> clear note with this name`
+
+✗ /removeallnotes - `removes all notes from the group`
+
+ *Note:* `Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.`
+
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="Back", callback_data="lovelyx_peru")]]
+            ),
+        )
+    elif query.data == "lovelyx_akk":
+        query.message.edit_text(
+            text="""*ID:*
+✗ /id - `get the current group id. If used by replying to a message, gets that user's id.`
+
+✗ /gifid - `reply to a gif to me to tell you its file ID.`
+ 
+*Self addded information:* 
+
+✗ /setme - `<text> will set your info.`
+
+✗ /me - `will get your or another user's info.`
+
+Examples:
+
+✗ /setme - `I am a` *DᴇCᴏᴅᴇ* `Member.`
+
+✗ /me - `@username(defaults to yours if no user specified)`
+ 
+*Information others add on you:* 
+
+✗ /bio - `will get your or another user's bio. This cannot be set by yourself.`
+
+✗ /setbio - `<text> while replying, will save another user's bio`
+
+*Examples:*
+
+✗ /bio - `@username(defaults to yours if not specified).`
+
+✗ /setbio - `This user is a` *DᴇCᴏᴅᴇ* `Member (reply to the user)`
+ 
+*Overall Information about you:*
+
+✗ /info - `get information about a user.`
+ 
+*json Detailed info:*
+
+✗ /json - `Get Detailed info about any message.`
+ 
+*AFk:*
+
+`When marked as AFK, any mentions will be replied to with a message stating that you're not available!`
+
+✗ /afk - `<reason> Mark yourself as AFK.`
+
+  brb - `<reason> Same as the afk command, but not a command.` 
+
+*What is that health thingy?*
+
+ `Come and see` [HP System explained](https://t.me/YurikoLogger/5)
+
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="Back", callback_data="lovelyx_peru")]]
+            ),
+        )
                   
 #🤣🤣🤣🤣
 
@@ -936,7 +1269,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="⚙ Settings", callback_data="lovelyx_king"
+                            text="⚙ Settings", callback_data="lovelyx_prom"
                         ),
                     ],
                 ]
