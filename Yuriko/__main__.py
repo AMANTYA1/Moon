@@ -121,7 +121,7 @@ LOVELY_HELP = """
 ✗ /settings - `in PM: will send you your settings for all supported modules.`
 ✗ *In A Group: Will Redirect You To Pm With All That Chats Settings.*)"""
 
-LOVELY_BASICC = """This are some *Basic commands* which will help you to manage group easily by Yuriko"""
+LOVELY_BASICC = """This are some *Basic commands* which will help you to manage group easily by KIGO"""
 
 LOVELY_ADVANCEE = """*Advanced commands*
 Advanced commands will help you to secure your group easily and also you will know here some awesome features"""
