@@ -1,4 +1,4 @@
-__mod_name__ = "Fʟᴏᴏᴅ"
+__mod_name__ = "Fʟᴏᴏᴅ's"
 
 __help__ = """
 *Blue text cleaner* removed any made up commands that people send in your chat.
