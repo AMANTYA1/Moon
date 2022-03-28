@@ -91,7 +91,8 @@ Lovelybuttons = [
      [
         InlineKeyboardButton(text="💕Sᴜᴍᴍᴏɴ Mᴇ💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
      ],
-        InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
+     [
+        InlineKeyboardButton(text="🕵🏻Tᴜᴛᴏʀɪᴀʟ🕵🏻", callback_data="lovelyx_tutorials"),         
      ],
      [
         InlineKeyboardButton(text="💁Sɪᴍᴘʟᴇ Hᴇʟᴘ", callback_data="lovelyx_prom"),       
