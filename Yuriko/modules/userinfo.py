@@ -468,8 +468,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n [✦Updates](https://t.me/The_Godfather_Network) | [✦Support](https://t.me/GodfatherSupport)\n\n"
-            + "╘══「 by [Null](https://t.me/XtheAnonymous) 」\n",
+            + f"\n\n [✦Updates](https://t.me/BotDuniyaX) | [✦Support](https://t.me/godzilla_chatting)\n\n"
+            + "╘══「 by [Null](https://t.me/Shubhanshutya) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
