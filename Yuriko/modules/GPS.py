@@ -35,9 +35,11 @@ async def _(event):
         await event.reply("I can't find that")
 
 
-__mod_name__ = "Logomaker"
+__mod_name__ = "Gᴘs"
 
 __help__ = """ /gps to find any location in gps 
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Kɪɢᴏ!**.
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**.
 """
+
+__lovely_advance__ = __help__
