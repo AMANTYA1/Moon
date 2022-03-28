@@ -82,20 +82,15 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 LOVELY_MENU = """
-*👋 Hello {} !*
-
-✗ *I'Aᴍ Aɴ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-✗ *Aᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ  Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ  I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ  Fᴇᴀᴛᴜʀᴇꜱ!*
-────────────────────────
-× *Uᴘᴛɪᴍᴇ:* `{}`
-× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-────────────────────────
-✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Kɪɢᴏ!*
+Hey there! My name is KIGO.
+I can help manage your groups with useful features, 
+feel free to add me to your groups!
 """
 
 Lovelybuttons = [
      [
         InlineKeyboardButton(text="💕Sᴜᴍᴍᴏɴ Mᴇ💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
+     ],
         InlineKeyboardButton(text="Tutorial", callback_data="lovelyx_tutorials"),         
      ],
      [
