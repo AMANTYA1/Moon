@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/YurikoLogger/5"),
+                                "Health", url="https://t.me/BotDuniyaXD/22"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/YurikoLogger/6")
+                                "Disaster", url="https://t.me/BotDuniyaXD/21")
                         ],
                     ]
                 ),
@@ -588,7 +588,7 @@ __help__ = """
 
 Examples:
 
-✗ /setme - `I am a` *DᴇCᴏᴅᴇ* `Member.`
+✗ /setme - `I am a` *KIGO* `Member.`
 
 ✗ /me - `@username(defaults to yours if no user specified)`
  
@@ -622,7 +622,7 @@ Examples:
 
 *What is that health thingy?*
 
- `Come and see` [HP System explained](https://t.me/YurikoLogger/5)
+ `Come and see` [HP System explained](https://t.me/BotDuniyaXD/22)
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
