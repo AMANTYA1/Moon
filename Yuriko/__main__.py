@@ -100,7 +100,7 @@ Lovelybuttons = [
      ],
      [  
         InlineKeyboardButton(text="🚑Sᴜᴘᴘᴏʀᴛ", url="https://t.me/godzilla_chatting"),
-        InlineKeyboardButton(text="📣Uᴘᴅᴀᴛᴇ", url="https://t.me/INSANE_BOTS"),
+        InlineKeyboardButton(text="📣Uᴘᴅᴀᴛᴇ", url="https://t.me/BotDuniyaXD"),
      ], 
 ]
 
@@ -442,7 +442,7 @@ def lovelybasic_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/INSANE_BOTS"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniyaXD"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
                     [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add KIGO", url="http://t.me/Kigo_omfobot?startgroup=true")]
                   ]
                 ),
@@ -504,7 +504,7 @@ def lovelyadvance_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/INSANE_BOTS"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniyaXD"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
                     [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back")]
                   ]
                 ),
@@ -566,7 +566,7 @@ def lovelytools_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                   [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/INSANE_BOTS"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
+                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniyaXD"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
                     [InlineKeyboardButton(text="Go back", callback_data="lovelytools_back")]
                   ]
                 ),
