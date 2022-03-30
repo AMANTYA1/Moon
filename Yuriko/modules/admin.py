@@ -976,6 +976,7 @@ RMCHATPIC_HANDLER = CommandHandler("delgpic", rmchatpic, filters=Filters.chat_ty
 SETCHAT_TITLE_HANDLER = CommandHandler("setgtitle", setchat_title, filters=Filters.chat_type.groups, run_async=True)
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist, run_async=True)
+ADMINLIST_HANDLR = DisableAbleCommandHandler("staff", adminlist, run_async=True)
 
 PIN_HANDLER = CommandHandler("pin", pin, filters=Filters.chat_type.groups, run_async=True)
 UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.chat_type.groups, run_async=True)
@@ -997,6 +998,7 @@ dispatcher.add_handler(SETCHATPIC_HANDLER)
 dispatcher.add_handler(RMCHATPIC_HANDLER)
 dispatcher.add_handler(SETCHAT_TITLE_HANDLER)
 dispatcher.add_handler(ADMINLIST_HANDLER)
+dispatcher.add_handler(ADMINLIST_HANDLR)
 dispatcher.add_handler(PIN_HANDLER)
 dispatcher.add_handler(UNPIN_HANDLER)
 dispatcher.add_handler(PINNED_HANDLER)
@@ -1032,6 +1034,7 @@ __handlers__ = [
     RMCHATPIC_HANDLER,
     SETCHAT_TITLE_HANDLER,
     ADMINLIST_HANDLER,
+    ADMINLIST_HANDLR,
     PIN_HANDLER,
     UNPIN_HANDLER,
     PINNED_HANDLER,
