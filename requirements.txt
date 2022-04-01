@@ -1,4 +1,5 @@
 future
+pytimeparse
 emoji
 aiogram<3.0
 tswift
