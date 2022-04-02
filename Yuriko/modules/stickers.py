@@ -574,28 +574,21 @@ def delsticker(update, context):
             "Please reply to sticker message to del sticker"
         )
 
-__mod_name__ = "Sᴛɪᴄᴋᴇʀꜱ"
+__mod_name__ = "Sᴛɪᴄᴋᴇʀs"
 
 __help__ = """
-*Help Menu For Stickers Tools*
+*Help menu for stickers tools*
 
-✗ /stickerid - `reply to a sticker to me to tell you its file ID.`
+❂ /stickerid*:* reply to a sticker to me to tell you its file ID.
+❂ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
+❂ /kang*:* reply to a sticker to add it to your pack.
+❂ /delsticker*:* Reply to your anime exist sticker to your pack to delete it.
+❂ /stickers*:* Find stickers for given term on combot sticker catalogue
+❂ /tiny*:* To make small sticker
+❂ /kamuii <1-8> *:* To deepefying stiker
+❂ /mmf <reply with text>*:* To draw a text for sticker or pohots
 
-✗ /getsticker - `reply to a sticker to me to upload its raw PNG file.`
-
-✗ /kang - `reply to a sticker to add it to your pack.`
-
-✗ /delsticker - `Reply to your anime exist sticker to your pack to delete it.`
-
-✗ /stickers - `Find stickers for given term on combot sticker catalogue`
-
-✗ /tiny - ` To make small sticker`
-
-✗ /kamuii - `To deepefying stiker`
-
-✗ /mmf - `To draw a text for sticker or pohots`
-
-*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
 """
 
 
