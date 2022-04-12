@@ -53,7 +53,7 @@ async def cbots(client, message: Message, _):
     & ~filters.forwarded
     & ~filters.private
     & ~filters.edited,
-    group=cbot)
+    group=62)
 async def szcbot(_, message: Message):
     chat_id = message.chat.id
     if not message.reply_to_message:
