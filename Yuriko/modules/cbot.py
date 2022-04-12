@@ -29,11 +29,11 @@ async def cbots(client, message: Message, _):
     user_id = message.from_user.id
     user = await bot.get_chat_member(group_id, user_id)
     if len(message.command) < 2:
-        return await message.reply_text(_["chatb1"])
+        return await message.reply_text("try on or off")
     status = message.text.split(None, 1)[1].strip()
     status = status.lower()
     args = get_arg(message)
-    sex = await message.reply_text(_["antil2"])
+    sex = await message.reply_text("wait")
     lower_args = args.lower()
     if lower_args == "on":
         chatb.insert_one({f"chatbot": group_id})#default AI is Afflicate+
