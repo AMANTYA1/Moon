@@ -32,7 +32,7 @@ cryptg
 cryptography
 Pillow
 CurrencyConverter
-googletrans==4.0.0rc1
+googletrans==3.1.0a0
 google-trans-new
 jikanpy
 speedtest-cli
