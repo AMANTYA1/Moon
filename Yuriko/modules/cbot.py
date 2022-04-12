@@ -28,8 +28,6 @@ async def cbots(client, message: Message, _):
     chat_id = message.chat.id
     user_id = message.from_user.id
     user = await bot.get_chat_member(group_id, user_id)
-    if not user.status == "creator" or user.status == "administrator":
-        return
     if len(message.command) < 2:
         return await message.reply_text(_["chatb1"])
     status = message.text.split(None, 1)[1].strip()
