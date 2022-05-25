@@ -16,15 +16,15 @@ class Config(object):
 
     API_ID = 123456  # integer value, dont use ""
     API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "excrybaby"
-    SUPPORT_CHAT = "emikosupport"  # Your own group for support, do not add the @
+    TOKEN = "5111979095:AAEoo2X5LnsN6Q1n6pWbXmuIGbD8vKTYo5E"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1920507972  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Shubhanshutya"
+    SUPPORT_CHAT = "godzilla_chatting"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001432609692
+        -1001781944400
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001150905176
+        -1001781944400
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
@@ -50,6 +50,8 @@ class Config(object):
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
+    STRICT_GBAN = True
+    ALLOW_CHATS = True
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     STRICT_GBAN = True
     WORKERS = (
