@@ -32,7 +32,7 @@ def is_admin(func):
     return oops
 
 
-@pbot.on_message(filters.command("logo") & ~filters.edited & ~filters.bot)
+@pbot.on_message(filters.command("slogo") & ~filters.edited & ~filters.bot)
 async def logo_maker(client, message):
     if message.reply_to_message:
         try:
@@ -214,9 +214,11 @@ __mod_name__ = "LᴏɢᴏMᴀᴋᴇʀ"
 
 __help__ = """
 
-✗ /logo - `<text/name> Create a logo with random view.`
+✗ /slogo - `<text/name> Create a simple logo with random view.`
 
 ✗ /wlogo - `<text/name> Create a logo with wide view only.`
+
+✗ /slogo - `<text/name> Create a simple  wide view logo.`
 
  *Image Editor :*
 
