@@ -37,9 +37,3 @@ async def lego(event):
  except Exception as e:
    await event.reply(f'Error Report @godzilla_chatting, {e}')
 
-
-
-
-file_help = os.path.basename(__file__)
-file_help = file_help.replace(".py", "")
-file_helpo = file_help.replace("_", " ")
