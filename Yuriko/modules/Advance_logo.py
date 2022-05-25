@@ -210,10 +210,10 @@ async def makelogo(event):
                   
             fname2 = "logobycoder.png"
             blueimg.save(fname2, "png")
-            await bot.send_file(event.chat_id, fname2, caption="Made By @TGN_Ro_bot")
+            await bot.send_file(event.chat_id, fname2, caption="Made By @Kigo_omfobot")
             if os.path.exists(fname2):
                os.remove(fname2)
     
 
         except Exception as e:
-            await msg.edit(f"Please Try Again! \nif you're getting Error again and again then Report @GodfatherSupport")
+            await msg.edit(f"Please Try Again! \nif you're getting Error again and again then Report @godzilla_chatting")
