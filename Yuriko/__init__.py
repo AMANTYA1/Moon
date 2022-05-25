@@ -72,7 +72,7 @@ if ENV:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     INFOPIC = bool(os.environ.get("INFOPIC", True))
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "YurikoRobot")
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
@@ -82,9 +82,9 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
+    DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI", "")
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     ARQ_API = os.environ.get("ARQ_API", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
     LOAD = os.environ.get("LOAD", "").split()
@@ -102,7 +102,7 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "godzilla_chatting")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     LASTFM_API_KEY = os.environ.get("LASTFM_API_KEY", None)
@@ -158,36 +158,40 @@ else:
     URL = Config.URL
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
-    API_ID = Config.API_ID
-    API_HASH = Config.API_HASH
+    API_ID = "2857558"
+    API_HASH = "1038be815e038592fa2b483c13dd6c4b"
 
-    DB_URI = Config.SQLALCHEMY_DATABASE_URI
-    MONGO_DB_URI = Config.MONGO_DB_URI
+    DB_URL = "postgres://ivsnctpi:uZ2ywNAb1KWa7zhocG09xoRbHfcDFfGw@fanny.db.elephantsql.com/ivsnctpi"
+    MONGO_DB_URI = "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
     ARQ_API_URL = "https://arq.hamker.in"
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
-    TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
-    OPENWEATHERMAP_ID = Config.OPENWEATHERMAP_ID
+    TEMP_DOWNLOAD_DIRECTORY = "./"
+    OPENWEATHERMAP_ID = "-xyz"
     NO_LOAD = Config.NO_LOAD
-    HEROKU_API_KEY = Config.HEROKU_API_KEY
-    HEROKU_APP_NAME = Config.HEROKU_APP_NAME
+    ERROR_LOG = -1001501915559
+    HEROKU_API_KEY = "bfc37ec4-f73d-45e1-b392-4141ef1974d6"
+    HEROKU_APP_NAME = "null"
     DEL_CMDS = Config.DEL_CMDS
     STRICT_GBAN = Config.STRICT_GBAN
     WORKERS = Config.WORKERS
-    REM_BG_API_KEY = Config.REM_BG_API_KEY
+    REM_BG_API_KEY = None
     BAN_STICKER = Config.BAN_STICKER
     ALLOW_EXCL = Config.ALLOW_EXCL
     CASH_API_KEY = Config.CASH_API_KEY
-    TIME_API_KEY = Config.TIME_API_KEY
+    TIME_API_KEY = "7KH0ZPYX5HAJ"
     WALL_API = Config.WALL_API
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
-    SPAMWATCH_API = Config.SPAMWATCH_API
+    SPAMWATCH_API = "2GoYVYezU8pUt2_UvL3bIiuIleY0o22ND3oX1Pt38gZeK4iXXH8U2DbPDl_CanVE"
+    SESSION_STRING = "1BVtsOL8Bu0-1HWP9xFITfMlJX3bOb4Uy8gI9eQedGAKSnTAwSi-oDtuz0mNwF1Gn7D9tgImKr0rsi0d-u6ykxVGu4nbDGYMQvOwKUpAdcyfjpsg5SJ23iWrBP6WmTMbua_UrZ8jB4R8KZy-r3KcIP0Y4ntKbk1gwsJL8G6fBIYFDsQiPug1T5FoqASWn16vTwBQWAP9sTH-bLygtCNl761-rN2Y-7cb5sQEoz5rKLW7xvvB2xL4eKd8aNaVqwP99Ganma_l-KPTh9TuTXV55NMPtGYld5JTzlv1CEZ0PogEPVYlCD3INoGlFTinWfphrlqqgwXw2V5PqBBvrvj_Ww2_lesJqOsY="
     INFOPIC = Config.INFOPIC
-    BOT_USERNAME = "YurikoRobot"
-    LASTFM_API_KEY = Config.LASTFM_API_KEY
-    CF_API_KEY = Config.CF_API_KEY
+    BOT_USERNAME = "Toxicity_X_Bot"
+    BOT_ID = "2100341884"
+    STRING_SESSION = "1BVtsOL8Bu0-1HWP9xFITfMlJX3bOb4Uy8gI9eQedGAKSnTAwSi-oDtuz0mNwF1Gn7D9tgImKr0rsi0d-u6ykxVGu4nbDGYMQvOwKUpAdcyfjpsg5SJ23iWrBP6WmTMbua_UrZ8jB4R8KZy-r3KcIP0Y4ntKbk1gwsJL8G6fBIYFDsQiPug1T5FoqASWn16vTwBQWAP9sTH-bLygtCNl761-rN2Y-7cb5sQEoz5rKLW7xvvB2xL4eKd8aNaVqwP99Ganma_l-KPTh9TuTXV55NMPtGYld5JTzlv1CEZ0PogEPVYlCD3INoGlFTinWfphrlqqgwXw2V5PqBBvrvj_Ww2_lesJqOsY="
+    LASTFM_API_KEY = None
+    CF_API_KEY = None
 
     try:
         BL_CHATS = {int(x) for x in Config.BL_CHATS or []}
