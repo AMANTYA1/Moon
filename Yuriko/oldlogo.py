@@ -8,7 +8,7 @@ from Yuriko import telethn as bot
 async def lego(event):
  quew = event.pattern_match.group(1)
  if not quew:
-       await event.reply('Provide Some Text To Draw!')
+       await event.reply("**Invalid Command Syntax**\n\n`/blogo [name]`")
        return
  else:
        pass
