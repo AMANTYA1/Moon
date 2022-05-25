@@ -148,7 +148,7 @@ async def logohq(client, message):
                 return
         if not text:
             try:
-                await msg.edit("**Invalid Command Syntax**\n\n`/slogo [name]`")
+                await msg.edit("**Invalid Command Syntax**\n\n`/slogohq [name]`")
                 return
             except:
                 return
@@ -185,7 +185,7 @@ async def logohq(client, message):
             return
         if not text:
             try:
-                await msg.edit("**Invalid Command Syntax**\n\n`/slogo [name]`")
+                await msg.edit("**Invalid Command Syntax**\n\n`/slogohq [name]`")
                 return
             except:
                 return
@@ -221,6 +221,8 @@ __help__ = """
 ✗ /slogo - `<text/name> Create a simple logo with random view.`
 
 ✗ /wlogo - `<text/name> Create a logo with wide view only.`
+
+✗ /blogo - `<text/name> Create border logo with your name.`
 
 ✗ /slogo - `<text/name> Create a simple  wide view logo.`
 
