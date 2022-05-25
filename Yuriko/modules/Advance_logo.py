@@ -3,7 +3,7 @@ import requests
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import random
-from Yuriko.Kigo import Null
+from Yuriko.kigo import Null
 from Yuriko import telethn as bot
 
 @Null(pattern="^/logo ?(.*)")
