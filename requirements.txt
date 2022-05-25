@@ -15,7 +15,6 @@ requests
 python-telegram-bot==13.11.0
 sqlalchemy==1.4.29
 psycopg2-binary
-git+https://github.com/python-telegram-bot/ptbcontrib.git
 feedparser
 faker
 hachoir
@@ -62,7 +61,7 @@ lyrics_extractor
 asyncio
 cloudscraper
 dateparser
-pymongo
+pymongo[srv]
 dnspython
 secureme
 apscheduler
