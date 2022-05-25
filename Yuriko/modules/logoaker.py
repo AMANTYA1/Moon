@@ -59,7 +59,7 @@ async def logo_maker(client, message):
                 return
         if not text:
             try:
-                await msg.edit("**Invalid Command Syntax**\n\n`/logo [name]`")
+                await msg.edit("**Invalid Command Syntax**\n\n`/slogo [name]`")
                 return
             except:
                 return
@@ -96,7 +96,7 @@ async def logo_maker(client, message):
             return
         if not text:
             try:
-                await msg.edit("**Invalid Command Syntax**\n\n`/logo [name]`")
+                await msg.edit("**Invalid Command Syntax**\n\n`/slogo [name]`")
                 return
             except:
                 return
@@ -148,7 +148,7 @@ async def logohq(client, message):
                 return
         if not text:
             try:
-                await msg.edit("**Invalid Command Syntax**\n\n`/logo [name]`")
+                await msg.edit("**Invalid Command Syntax**\n\n`/slogo [name]`")
                 return
             except:
                 return
@@ -185,7 +185,7 @@ async def logohq(client, message):
             return
         if not text:
             try:
-                await msg.edit("**Invalid Command Syntax**\n\n`/logo [name]`")
+                await msg.edit("**Invalid Command Syntax**\n\n`/slogo [name]`")
                 return
             except:
                 return
