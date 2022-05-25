@@ -4,8 +4,8 @@ alphabet_detector
 beautifulsoup4
 bleach
 nudepy
-cachetools
 lxml
+loguru
 wget
 gtts
 configparser
@@ -18,7 +18,6 @@ pykeyboard
 wikipedia
 feedparser
 future
-git+https://github.com/Itz-fork/py-trans.git
 git+https://github.com/python-telegram-bot/ptbcontrib.git
 gitpython
 markdown2
@@ -26,7 +25,6 @@ multicolorcaptcha
 pillow>=4.2.0
 psutil
 psycopg2-binary
-pyYAML>=5.1.2
 pyrate-limiter
 python-telegram-bot==13.11
 faker
@@ -141,9 +139,7 @@ bing_image_downloader
 pytz
 jikanpy
 tswift
-better_profanity
-textblob 
-fontTools
+textblob
 odmantic
 tzlocal
 fuzzysearch
@@ -151,5 +147,4 @@ img2pdf
 multicolorcaptcha
 hiredis	
 pretty_errors	
-requests_html	
-html-telegraph-poster	
+requests_html		
