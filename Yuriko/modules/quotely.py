@@ -71,8 +71,12 @@ async def quotly(event):
 __mod_name__ = "Quotly"
 
 __help__ = """
+
 ✗ /q <reply to text> - `create quote`
+
 ✗ /qr <reply to text> - `Create quote but different from /q` 
+
+✗ /qs <reply to text> - `Create quote but defferent type q`
 
 **✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
 """
