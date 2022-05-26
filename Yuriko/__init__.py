@@ -161,14 +161,14 @@ else:
     API_ID = "2857558"
     API_HASH = "1038be815e038592fa2b483c13dd6c4b"
 
-    DB_URI = "postgresql://ivsnctpi:uZ2ywNAb1KWa7zhocG09xoRbHfcDFfGw@fanny.db.elephantsql.com/ivsnctpi"
+    DB_URI = "postgresql://sksvndcp:Xe5mIjRVTCQSKv8EFi8a-ce_9wcZH2tj@jelani.db.elephantsql.com/sksvndcp"
     MONGO_DB_URI = "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
     ARQ_API_URL = "https://arq.hamker.in"
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     TEMP_DOWNLOAD_DIRECTORY = "./"
-    OPENWEATHERMAP_ID = "-xyz"
+    OPENWEATHERMAP_ID = "7181b8a4580be607eddacd56777bf64b"
     NO_LOAD = Config.NO_LOAD
     ERROR_LOG = -1001501915559
     HEROKU_API_KEY = "bfc37ec4-f73d-45e1-b392-4141ef1974d6"
