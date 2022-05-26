@@ -124,7 +124,7 @@ __help__ = """
 
 ➥ `/tagowner - `it will tag group owner`
 
-*Tagalll Cancle Cmd* - `/cancel`
+Tagalll Cancle Cmd - `/cancel`
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
