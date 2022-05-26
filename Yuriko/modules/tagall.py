@@ -128,3 +128,5 @@ Tagalll Cancle Cmd - `/cancel`
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+
+__lovely_advance__ = __help__
