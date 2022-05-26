@@ -122,7 +122,7 @@ __help__ = """
 
 ➥ `/tagadmins - it will tag members only`
 
-➥ `/tagowner - `it will tag group owner`
+➥ `/tagowner - it will tag group owner`
 
 Tagalll Cancle Cmd - `/cancel`
 
