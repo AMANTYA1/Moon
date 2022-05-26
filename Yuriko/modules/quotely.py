@@ -76,7 +76,7 @@ __help__ = """
 
 ✗ /qr <reply to text> - `Create quote but different from /q` 
 
-✗ /qs <reply to text> - `Create quote but defferent type q`
+✗ /sq <reply to text> - `Create quote but defferent type q`
 
 **✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
 """
