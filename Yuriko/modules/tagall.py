@@ -109,13 +109,22 @@ async def cancel_spam(event):
     return await event.respond("__Stopped Mention.__")
 
 
-__mod_name__ = "Tᴀɢ-Aʟʟ"
+__mod_name__ = "Mᴇɴᴛɪᴏɴ"
 __help__ = """
-`Yuriko Can Be a Mention Bot for your group.`
 
-`Only admins can tag all.  here is a list of commands`
+➥ `/tagbot - to see bots in your group`
 
-✗ /tagall or @all 'reply to message or add another message To mention all members in your group without exception.'
+➥ `/tagon - it will tag online members in group`
+
+➥ `/tagoff - it will tag offline members in group`
+
+➥ `/tagall - it will tag all members of group`
+
+➥ `/tagadmins - it will tag members only`
+
+➥ `/tagowner - `it will tag group owner`
+
+*Tagalll Cancle Cmd* - `/cancel`
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
