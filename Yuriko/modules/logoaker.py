@@ -222,8 +222,6 @@ __help__ = """
 
 ✗ /wlogo - `<text/name> Create a logo with wide view only.`
 
-✗ /blogo - `<text/name> Create border logo with your name.`
-
 ✗ /slogo - `<text/name> Create a simple  wide view logo.`
 
  *Image Editor :*
