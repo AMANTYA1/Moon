@@ -112,17 +112,17 @@ async def cancel_spam(event):
 __mod_name__ = "Mᴇɴᴛɪᴏɴ"
 __help__ = """
 
-➥ `/tagbot - to see bots in your group`
+➥ /tagbot - `to see bot's in your group`
 
-➥ `/tagon - it will tag online members in group`
+➥ /tagon - `it will tag online members in group`
 
-➥ `/tagoff - it will tag offline members in group`
+➥ /tagoff - `it will tag offline members in group`
 
-➥ `/tagall - it will tag all members of group`
+➥ /tagall - `it will tag all members of group`
 
-➥ `/tagadmins - it will tag members only`
+➥ /tagadmins - `it will tag members only`
 
-➥ `/tagowner - it will tag group owner`
+➥ /tagowner - `it will tag group owner`
 
 Tagalll Cancle Cmd - `/cancel`
 
