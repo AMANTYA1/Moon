@@ -11,7 +11,7 @@ async def makelogo(event):
         quew = event.pattern_match.group(1).strip()
             
         if not quew:
-           await event.reply("**Invalid Command Syntax**\n\n`/slogo [name]`")
+           await event.reply("**Invalid Command Syntax**\n\n`/logo [name]`")
            return
         else:
            pass
