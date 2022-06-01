@@ -1193,7 +1193,7 @@ Examples:
 ʜᴇʀᴇ ɪꜱ ᴛʜᴇ [💾ʀᴇᴘᴏꜱɪᴛᴏʀʏ](https://github.com/AMANTYA1/Yuriko).                  
                  
 
-ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀʟɪᴄɪᴀ, ʟᴇᴛ ᴜꜱ ᴋɴᴏᴡ ᴀᴛ @Shubhanshutya""",
+ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ KIGO, ʟᴇᴛ ᴜꜱ ᴋɴᴏᴡ ᴀᴛ @Shubhanshutya""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
