@@ -152,7 +152,7 @@ async def makelogo(event):
             
 
             allFonts = [
-            "KRDEV010.TTF", "Kruti-Dev-014.ttf", "KRDEV011.TTF", "Kruti-Dev-03.ttf",
+            "Chanakya Regular.ttf",
             ]
             randFont = random.choice(allFonts)
             response = requests.get(randBg)
