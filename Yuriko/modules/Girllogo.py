@@ -6,7 +6,7 @@ import random
 from Yuriko.kigo import Yuriko
 from Yuriko import telethn as bot
 
-@Yuriko(pattern="^/logo ?(.*)")
+@Yuriko(pattern="^/hlogo ?(.*)")
 async def makelogo(event):
         quew = event.pattern_match.group(1).strip()
             
@@ -152,15 +152,7 @@ async def makelogo(event):
             
 
             allFonts = [
-            "font(1).otf", "font(2).otf", "font(3).otf", "font(4).otf","font(5).otf","font(6).otf", "font(7).otf", "font(8).otf",
-            "font(9).otf", "font(10).otf", "font(11).otf","font(12).otf", "font(13).otf", "font(14).otf", "font(15).otf", "font(16).otf",
-            "font(17).otf", "font(18).otf",
-            "tfont(1).ttf", "tfont(2).ttf", "tfont(3).ttf", "tfont(4).ttf", "tfont(5).ttf","tfont(6).ttf", "tfont(7).ttf", "tfont(8).ttf",
-            "tfont(9).ttf", "tfont(10).ttf", "tfont(11).ttf", "tfont(12).ttf", "tfont(13).ttf","tfont(14).ttf", "tfont(15).ttf", "tfont(16).ttf",
-            "tfont(17).ttf", "tfont(18).ttf", "tfont(19).ttf", "tfont(20).ttf", "tfont(21).ttf", "tfont(22).ttf", "tfont(23).ttf", "tfont(24).ttf",
-            "tfont(25).ttf", "tfont(26).ttf", "tfont(27).ttf", "tfont(28).ttf", "tfont(29).ttf", "tfont(30).ttf", "tfont(31).ttf", "tfont(32).ttf",
-            "tfont(33).ttf", "tfont(34).ttf", "tfont(35).ttf", "tfont(36).ttf","tfont(37).ttf", "tfont(38).ttf", "tfont(39).ttf", "tfont(40).ttf",
-            "tfont(41).ttf", "tfont(42).ttf",  
+            "KRDEV010.TTF", "Kruti-Dev-014.ttf", "KRDEV011.TTF", "Kruti-Dev-03.ttf",
             ]
             randFont = random.choice(allFonts)
             response = requests.get(randBg)
