@@ -1,7 +1,7 @@
 
-from AliciaRobot import telethn as client
-from AliciaRobot.events import register
-from AliciaRobot import LOGGER
+from Yuriko import telethn as client
+from Yuriko.events import register
+from Yuriko import LOGGER
 
 
 if 1 == 1:
