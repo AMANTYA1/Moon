@@ -6,12 +6,12 @@ import random
 from Yuriko.kigo import Yuriko
 from Yuriko import telethn as bot
 
-@Yuriko(pattern="^/nlogo ?(.*)")
+@Yuriko(pattern="^/glogo ?(.*)")
 async def makelogo(event):
         quew = event.pattern_match.group(1).strip()
             
         if not quew:
-           await event.reply("**Invalid Command Syntax**\n\n`/logo [name]`")
+           await event.reply("**Invalid Command Syntax**\n\n`/glogo [name]`")
            return
         else:
            pass
@@ -28,33 +28,33 @@ async def makelogo(event):
             
             bg = [ 
 
-               "https://telegra.ph/file/9541cdc6293af1f9c6f0f.jpg",
+               "https://telegra.ph/file/889af581df669d3f183b9.jpg",
 
-               "https://telegra.ph/file/78365f4c13507fafdadff.jpg",
+               "https://telegra.ph/file/9d65663d6208159dd8be4.jpg",
 
-               "https://telegra.ph/file/d0d3b3e43b24d57c1eb3d.jpg",
+               "https://telegra.ph/file/731767cc4bbcfdc699ee9.jpg",
 
-               "https://telegra.ph/file/b9a025cce1d58bc6365a8.jpg",
+               "https://telegra.ph/file/5b93306d798041209da95.jpg",
 
-               "https://telegra.ph/file/35686259565dbd5ec2765.jpg",
+               "https://telegra.ph/file/3300df182f4c3ac5d128e.jpg",
 
-               "https://telegra.ph/file/a67131ccce82e499d1a37.jpg",
+               "https://telegra.ph/file/c2747c9581938f6961ad9.jpg",
 
-               "https://telegra.ph/file/1eeee3354ad14f6ba3fcc.jpg",
+               "https://telegra.ph/file/9d65663d6208159dd8be4.jpg",
 
-               "https://telegra.ph/file/5d4b16821fcb779dd02a9.jpg",
+               "https://telegra.ph/file/3d469bacf9dae31fb3d14.jpg",
 
-               "https://telegra.ph/file/8b1d9a4ecf06a6bafa114.jpg",
+               "https://telegra.ph/file/3300df182f4c3ac5d128e.jpg",
 
-               "https://telegra.ph/file/5bfc583000e4ecd8bce36.jpg",
+               "https://telegra.ph/file/c2747c9581938f6961ad9.jpg",
 
-               "https://telegra.ph/file/924d69f508ba1d67fd4d5.jpg",
+               "https://telegra.ph/file/bc4c284d2ab0b8b7bc934.jpg",
 
-               "https://telegra.ph/file/6b88f57147abfcf543d21.jpg",
+               "https://telegra.ph/file/e41726801097b95ce7f07.jpg",
 
-               "https://telegra.ph/file/806b472f3c2dedc131734.jpg",
+               "https://telegra.ph/file/da5e5d0206be545eeac27.jpg",
 
-               "https://telegra.ph/file/2badb1bcc636d00af70b9.jpg",
+               "https://telegra.ph/file/dd48902679e7612c551e7.jpg",
 
                "https://telegra.ph/file/ed6806a4ba310008a96a5.jpg",
 
@@ -103,48 +103,6 @@ async def makelogo(event):
                "https://telegra.ph/file/13a931844555d6c81607e.jpg",
 
                "https://telegra.ph/file/0b064018f9f215bfe80e7.jpg",
-
-               "https://telegra.ph/file/a94997aed961538c1e337.jpg",
-
-               "https://telegra.ph/file/9306426c58e6e7023f8e1.jpg",
-
-               "https://telegra.ph/file/eef9b1c624ede2e1fc228.jpg",
-
-               "https://telegra.ph/file/9104a1cc8b5723127eb53.jpg",
-
-               "https://telegra.ph/file/f5165e56fea4b88147a92.jpg",
-
-               "https://telegra.ph/file/410adb4ec98240d30a5c4.jpg",
-
-               "https://telegra.ph/file/7875ff3e14eaec152fb2a.jpg",
-
-               "https://telegra.ph/file/e8bc77680f372fdc72500.jpg",
-
-               "https://telegra.ph/file/549ee1b63dfe591407a3b.jpg",
-
-               "https://telegra.ph/file/db60ae3dc5c40c76d17a8.jpg",
-
-               "https://telegra.ph/file/78b19ab4ee0818e656fd1.jpg",
-
-               "https://telegra.ph/file/df38634a97049002eedc0.jpg",
-
-               "https://telegra.ph/file/61f6de393faaaa8b3daf6.jpg",
-
-               "https://telegra.ph/file/494ceb487fc918fee564b.jpg",
-
-               "https://telegra.ph/file/25815bf5d1700c6a4d1ea.jpg",
-
-               "https://telegra.ph/file/df4d965a205a7e6a3e6d7.jpg",
-
-               "https://telegra.ph/file/760635adfcb05cbe336d6.jpg",
-
-               "https://telegra.ph/file/86d2be2aa379bc9077c97.jpg",
-
-               "https://telegra.ph/file/facce3eed4cc3a60a145d.jpg",
-
-               "https://telegra.ph/file/550aa046ab930967bc377.jpg",
-
-               "https://telegra.ph/file/7c1696bc94225779d656a.jpg",
 
             ]
             
