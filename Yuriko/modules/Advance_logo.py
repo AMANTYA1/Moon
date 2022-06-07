@@ -160,7 +160,7 @@ async def makelogo(event):
             "tfont(17).ttf", "tfont(18).ttf", "tfont(19).ttf", "tfont(20).ttf", "tfont(21).ttf", "tfont(22).ttf", "tfont(23).ttf", "tfont(24).ttf",
             "tfont(25).ttf", "tfont(26).ttf", "tfont(27).ttf", "tfont(28).ttf", "tfont(29).ttf", "tfont(30).ttf", "tfont(31).ttf", "tfont(32).ttf",
             "tfont(33).ttf", "tfont(34).ttf", "tfont(35).ttf", "tfont(36).ttf","tfont(37).ttf", "tfont(38).ttf", "tfont(39).ttf", "tfont(40).ttf",
-            "tfont(41).ttf", "tfont(42).ttf",  
+            "tfont(41).ttf", "NEON____.TTF", "tfont(42).ttf",  
             ]
             randFont = random.choice(allFonts)
             response = requests.get(randBg)
