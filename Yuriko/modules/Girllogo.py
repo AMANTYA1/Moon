@@ -6,7 +6,7 @@ import random
 from Yuriko.kigo import Yuriko
 from Yuriko import telethn as bot
 
-@Yuriko(pattern="^/hlogo ?(.*)")
+@Yuriko(pattern="^/nlogo ?(.*)")
 async def makelogo(event):
         quew = event.pattern_match.group(1).strip()
             
@@ -152,7 +152,7 @@ async def makelogo(event):
             
 
             allFonts = [
-            "Chanakya Regular.ttf",
+            "NEON____.TTF",
             ]
             randFont = random.choice(allFonts)
             response = requests.get(randBg)
