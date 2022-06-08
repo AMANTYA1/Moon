@@ -210,7 +210,7 @@ async def logohq(client, message):
             return
 
 
-__mod_name__ = "LᴏɢᴏMᴀᴋᴇʀ"
+__mod_name__ = "Lᴏɢᴏ"
 
 __help__ = """
  𖣘 Kɪɢᴏ Hᴀᴠᴇ Aʀᴇ Mᴀᴋɪɴɢ ᴛʜʀᴇᴇ Tʏᴘᴇs Lᴏɢᴏ 
