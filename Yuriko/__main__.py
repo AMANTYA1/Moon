@@ -152,6 +152,8 @@ DATA_IMPORT = []
 DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
+MOD_BUTTON = {}
+MOD_BUTTONS = {}
 
 LOVELY_CMDS =  [
        [
@@ -216,7 +218,12 @@ for module_name in ALL_MODULES:
 
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+   
+    if hasattr(imported_module, "__button__"):
+        MOD_BUTTON[imported_module.__mod_name__.lower()] = imported_module
 
+    if hasattr(imported_module, "__buttons__"):
+        MOD_BUTTONS[imported_module.__mod_name__.lower()] = imported_module
 
 
 # do not async
@@ -384,7 +391,11 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [   MOD_BUTTON[module].__button__,
+                        MOD_BUTTONS[module].__buttons__,
+                        [InlineKeyboardButton(text="Back", callback_data="help_back")]
+                        
+                    ]
                 ),
             )
 
