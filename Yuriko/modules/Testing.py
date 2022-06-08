@@ -1,4 +1,4 @@
-from AliciaRobot.functions.fun import *
+from Yuriko.functions.fun import *
 
 
 
