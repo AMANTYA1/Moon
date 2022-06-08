@@ -217,12 +217,17 @@ __help__ = """
 Hᴇʀᴇ ʏᴏᴜ sᴇᴇ
 """
 
-__button__ = [ InlineKeyboardButton(text="Lᴏɢᴏ", callback_data="aliciaadmin_"),
-            InlineKeyboardButton(text="Sʟᴏɢᴋ", callback_data="aliciaadminpromote_"),
-            InlineKeyboardButton(text="Gʟᴏɢᴏ", callback_data="aliciaadminpurge_"),
+__button__ = [ InlineKeyboardButton(text="Lᴏɢᴏ", callback_data="aliciafun_"),
+            InlineKeyboardButton(text="Sʟᴏɢᴋ", callback_data="aliciafunemoji_"),
+            InlineKeyboardButton(text="Gʟᴏɢᴏ", callback_data="aliciafungames_"),
 
 ] 
-__buttons__ = [InlineKeyboardButton(text="Wʀɪᴛᴇ", callback_data="aliciaadminban_"), 
+__buttons__ = [InlineKeyboardButton(text="Wʀɪᴛᴇ", callback_data="aliciafuncouple_"), 
 ]
 
 __lovely_basic__ = __help__
+
+dispatcher.add_handler(fun_callback_handler)
+dispatcher.add_handler(fun_emoji_callback_handler)
+dispatcher.add_handler(fun_games_callback_handler)
+dispatcher.add_handler(fun_couple_callback_handler)
