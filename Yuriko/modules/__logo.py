@@ -213,23 +213,15 @@ async def logohq(client, message):
 __mod_name__ = "LᴏɢᴏMᴀᴋᴇʀ"
 
 __help__ = """
-
-✗ /logo - `<text/name> Create a logo with your name`
-
-✗ /logo Null ; Robot :  use ; for write in next line
-
-✗ /slogo - `<text/name> Create a simple logo with random view.`
-
-✗ /wlogo - `<text/name> Create a logo with wide view only.`
-
-✗ /glogo - ` <text/name>  Create a logo with photo girls.
-
-✗ /slogo - `<text/name> Create a simple  wide view logo.`
-
- *Image Editor :*
-
-✗  /edit - `<reply photo> to edit image.`
-
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ**
-
+ 𖣘 Kɪɢᴏ Hᴀᴠᴇ Aʀᴇ Mᴀᴋɪɴɢ ᴛʜʀᴇᴇ Tʏᴘᴇs Lᴏɢᴏ 
+Hᴇʀᴇ ʏᴏᴜ sᴇᴇ
 """
+
+__button__ = [ InlineKeyboardButton(text="Lᴏɢᴏ", callback_data="aliciaadmin_"),
+            InlineKeyboardButton(text="Sʟᴏɢᴋ", callback_data="aliciaadminpromote_"),
+            InlineKeyboardButton(text="Gʟᴏɢᴏ", callback_data="aliciaadminpurge_"),
+
+] 
+__buttons__ = [InlineKeyboardButton(text="Wʀɪᴛᴇ", callback_data="aliciaadminban_"), 
+]
+
