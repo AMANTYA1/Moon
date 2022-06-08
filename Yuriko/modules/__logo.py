@@ -1,6 +1,15 @@
 import functools
 
 import requests
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
+from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from pyrogram import filters
 
 from Yuriko.function.pluginhelpers import get_text
