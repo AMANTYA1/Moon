@@ -225,3 +225,4 @@ __button__ = [ InlineKeyboardButton(text="Lᴏɢᴏ", callback_data="aliciaadmin
 __buttons__ = [InlineKeyboardButton(text="Wʀɪᴛᴇ", callback_data="aliciaadminban_"), 
 ]
 
+__lovely_basic__ = __help__
