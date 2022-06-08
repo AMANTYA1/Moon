@@ -144,7 +144,7 @@ def alicia_fun_karma_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(fun)")
+                    InlineKeyboardButton(text="Back", callback_data="help_module(testing)")
                  ]
                 ]
             ),
