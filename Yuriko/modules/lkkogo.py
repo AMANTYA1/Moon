@@ -221,25 +221,3 @@ async def logohq(client, message):
         except:
             return
 
-
-__mod_name__ = "Lᴏɢᴏ"
-
-__help__ = """
- 𖣘 Kɪɢᴏ Hᴀᴠᴇ Aʀᴇ Mᴀᴋɪɴɢ ᴛʜʀᴇᴇ Tʏᴘᴇs Lᴏɢᴏ 
-Hᴇʀᴇ ʏᴏᴜ sᴇᴇ
-"""
-
-__button__ = [ InlineKeyboardButton(text="Lᴏɢᴏ", callback_data="aliciafun_"),
-            InlineKeyboardButton(text="Sʟᴏɢᴋ", callback_data="aliciafunemoji_"),
-            InlineKeyboardButton(text="Gʟᴏɢᴏ", callback_data="aliciafungames_"),
-
-] 
-__buttons__ = [InlineKeyboardButton(text="Wʀɪᴛᴇ", callback_data="aliciafuncouple_"), 
-]
-
-__lovely_basic__ = __help__
-
-dispatcher.add_handler(fun_callback_handler)
-dispatcher.add_handler(fun_emoji_callback_handler)
-dispatcher.add_handler(fun_games_callback_handler)
-dispatcher.add_handler(fun_couple_callback_handler)
