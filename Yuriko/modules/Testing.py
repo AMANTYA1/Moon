@@ -1,4 +1,4 @@
-from Yuriko.functions.fun import *
+from Yuriko.button.fun import *
 
 
 
