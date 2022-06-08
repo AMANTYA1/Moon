@@ -14,6 +14,9 @@ from pyrogram import filters
 
 from Yuriko.function.pluginhelpers import get_text
 from Yuriko import pbot
+from Yuriko.button.logo import *
+
+
 
 API1 = "https://single-developers.up.railway.app/logo?name="
 API2 = "https://single-developers.up.railway.app/logohq?name="
