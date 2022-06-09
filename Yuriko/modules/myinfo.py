@@ -17,7 +17,7 @@ yuriko4 = "https://telegra.ph/file/be79f8ea71eb69a8f8515.jpg"
 @register(pattern="/myinfo")
 async def proboyx(event):
   button = [[custom.Button.inline("CHECK",data="information")]]
-  on = await aasf.send_message(event.chat, f"**❦ Hᴇʏ {(event.sender.first_name)}**\n\n**❦ I Aᴍ [KIGO](https://t.me/Kigo_omfobot)**\n**❦ I Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ [𝐈𝐧𝐬𝐚𝐧𝐞 𝐁𝐨𝐭𝐬 ](https://t.me/INSANE_BOTS)**", file=yuriko1, buttons=button)
+  on = await aasf.send_message(event.chat, f"**❦ Hᴇʏ {(event.sender.first_name)}**\n\n**❦ I Aᴍ [KIGO](https://t.me/Kigo_omfobot)**\n**❦ I Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ [BotDuniya](https://t.me/BOTDUNIYAXD)**", file=yuriko1, buttons=button)
 
   await asyncio.sleep(edit_time)
   ok = await aasf.edit_message(event.chat_id, on, file=yuriko2, buttons=button) 
@@ -63,3 +63,7 @@ __help__ = """
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
+
+__lovely_tools__ = __help__
