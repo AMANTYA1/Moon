@@ -1,4 +1,4 @@
-from Yuriko.button.logo import *
+from Yuriko.button.fun import *
 
 
 
