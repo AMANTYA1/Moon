@@ -138,4 +138,4 @@ _help_ = """
 __button__ = []
 __buttons__ = []
 
-__lovely_tools__ = __help__
+__lovely_tools__ = _help_
