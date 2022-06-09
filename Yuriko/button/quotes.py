@@ -33,7 +33,7 @@ We not promise to update KIGO PERDAY
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(quotely)")
+                    InlineKeyboardButton(text="Back", callback_data="help_back")
                  ]
                 ]
             ),
@@ -56,7 +56,7 @@ KIGO Is Always Try Something this is old-quote
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(quotely)")
+                    InlineKeyboardButton(text="Back", callback_data="help_back")
                  ]
                 ]
             ),
