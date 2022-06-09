@@ -3,8 +3,6 @@ __mod_name__ = "Tᴏᴏʟꜱ"
 __help__ = """
 *KIGO Info bot*
 
-✗  /sg <reply> - `To check history name`
-
 *Converts*
 
 ✗  /encrypt - `Encrypts The Given Text`
@@ -45,3 +43,5 @@ __help__ = """
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
