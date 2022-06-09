@@ -76,3 +76,7 @@ Commands:
  
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
+
+__lovely_tools__ = __help__
