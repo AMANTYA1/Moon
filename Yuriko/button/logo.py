@@ -12,13 +12,13 @@ from Yuriko.__main__ import *
 
 
 # Buttons Function for fun module
-
+LogoXd = """https://telegra.ph/file/c69a68148cf09661549f5.jpg"""
 
 def alicia_fun_callback(update, context):
     query = update.callback_query
     if query.data == "aliciafun_":
-        query.message.edit_text(
-            text=""" Here is the help for the *Logo* module:
+        query.message.reply_photo(
+            Logoxd, caption=""" Here is the help for the *Logo* module:
 
 ✗ /logo - `<text/name> Create a logo with your name`
 
@@ -36,6 +36,7 @@ def alicia_fun_callback(update, context):
                 ]
             ),
         )
+        query.message.delete()
 
 
 def alicia_fun_emoji_callback(update, context):
