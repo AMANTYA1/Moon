@@ -458,10 +458,11 @@ def lovelybasic_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                  [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniyaXD"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelybasic_back"), InlineKeyboardButton(text="Add KIGO", url="http://t.me/Kigo_omfobot?startgroup=true")]
-                  ]
+                    [   MOD_BUTTON[module].__button__,
+                        MOD_BUTTONS[module].__buttons__,
+                        [InlineKeyboardButton(text="Back", callback_data="lovelybasic_back")]
+                        
+                    ]
                 ),
             )
 
@@ -520,10 +521,11 @@ def lovelyadvance_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                  [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniyaXD"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelyadvance_back")]
-                  ]
+                    [   MOD_BUTTON[module].__button__,
+                        MOD_BUTTONS[module].__buttons__,
+                        [InlineKeyboardButton(text="Back", callback_data="lovelyadvance_back")]
+                        
+                    ]
                 ),
             )
 
@@ -582,10 +584,11 @@ def lovelytools_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                  [
-                    [InlineKeyboardButton(text="Updates", url="https://t.me/BotDuniyaXD"), InlineKeyboardButton(text="Support", url="https://t.me/godzilla_chatting")],
-                    [InlineKeyboardButton(text="Go back", callback_data="lovelytools_back")]
-                  ]
+                    [   MOD_BUTTON[module].__button__,
+                        MOD_BUTTONS[module].__buttons__,
+                        [InlineKeyboardButton(text="Back", callback_data="lovelytools_back")]
+                        
+                    ]
                 ),
             )
 
