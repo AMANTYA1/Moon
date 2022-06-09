@@ -78,8 +78,8 @@ Nᴏᴛ Lɪᴋᴇ BGᴍɪ
 
 👇Gᴀᴍᴇ        👇A-Gᴀᴍᴇ
 """
-__button__ = [ InlineKeyboardButton(text="Gᴀᴍᴇ", callback_data="kigogame_"),
-            InlineKeyboardButton(text="A-Gᴀᴍᴇ", callback_data="kigoagame_"),
+__button__ = [ InlineKeyboardButton(text="Gᴀᴍᴇ", callback_data="nullgame_"),
+            InlineKeyboardButton(text="A-Gᴀᴍᴇ", callback_data="gamexd_"),
             
 
 ] 
@@ -87,5 +87,5 @@ __buttons__ = []
 
 __lovely_tools__ = __help__
 
-dispatcher.add_handler(game_callback_handler)
-dispatcher.add_handler(game_kigo_callback_handler)
+dispatcher.add_handler(null_game_callback)
+dispatcher.add_handler(kigo_game_memify_callback)
