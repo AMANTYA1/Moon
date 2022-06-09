@@ -65,15 +65,19 @@ async def _(event):
 __mod_name__ = "Gᴀᴍᴇs"
 
 __help__ = """
-Commands
-✗ /game - `to play gane`
+𖣘 Hᴇʜᴇ Gᴜʏs Sᴏᴍᴇ Gᴀᴍᴅ ʙʏ Kɪɢᴏ 
+Nᴏᴛ Lɪᴋᴇ BGᴍɪ
 
-✗ /dice - `dice game`
-
-✗ /dart - `dart gane`
-
-✗ /ball - `to play ball game`
-
-*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
+👇Gᴀᴍᴇ      👇A-Gᴀᴍᴇ
 """
+__button__ = [ InlineKeyboardButton(text="Gᴀᴍᴇ", callback_data="kigosticker_"),
+            InlineKeyboardButton(text="A-Gᴀᴍᴇ", callback_data="kigostickertransform_"),
+            
+
+] 
+__buttons__ = []
+
 __lovely_tools__ = __help__
+
+dispatcher.add_handler(sticker_callback_handler)
+dispatcher.add_handler(sticker_memify_callback_handler)
