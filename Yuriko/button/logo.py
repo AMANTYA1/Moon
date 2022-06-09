@@ -31,7 +31,7 @@ def alicia_fun_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(logo)")
+                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
                  ]
                 ]
             ),
@@ -55,7 +55,7 @@ def alicia_fun_emoji_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(logo)")
+                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
                  ]
                 ]
             ),
@@ -77,7 +77,7 @@ def alicia_fun_games_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(logo)")
+                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
                  ]
                 ]
             ),
@@ -100,7 +100,7 @@ def alicia_fun_couple_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(logo)")
+                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
                  ]
                 ]
             ),
