@@ -205,6 +205,9 @@ if is_module_loaded(FILENAME):
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
+
     __lovely_advance__ = __help__
     __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
 
