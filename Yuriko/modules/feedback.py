@@ -54,5 +54,7 @@ __help__ = """
  - /feedback : You can give us your feedbacks 
                can can see your feeds here.
 """
+__button__ = []
+__buttons__ = []
 
 __mod_name__ = "Fᴇᴇᴅʙᴀᴄᴋ"
