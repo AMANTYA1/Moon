@@ -1,9 +1,18 @@
 from os import remove
 from random import choice
 
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
 from telethon.tl.functions.users import GetFullUserRequest
 
 from Yuriko.events import register
+from Yuriko.button.quotly import *
 from Yuriko.utils.misc import create_quotly
 
 
@@ -71,12 +80,18 @@ async def quotly(event):
 __mod_name__ = "Quotly"
 
 __help__ = """
+𖣘 Kɪɢᴏ Aʀᴇ Tᴡᴏ Tʏᴘᴇs Oғ Qᴜᴏᴛʟʏ 
 
-✗ /q <reply to text> - `create quote`
-
-✗ /qr <reply to text> - `Create quote but different from /q` 
-
-✗ /sq <reply to text> - `Create quote but defferent type q`
-
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
+👇Qᴜᴏᴛʟʏ    👇Oʟᴅ Qᴜᴏᴛʟʏ
 """
+__button__ = [ InlineKeyboardButton(text="Nᴇᴡ", callback_data="aliciasticker_"),
+            InlineKeyboardButton(text="OLᴅ", callback_data="aliciastickertransform_"),
+            
+
+] 
+__buttons__ = []
+
+__lovely_tools__ = __help__
+
+dispatcher.add_handler(sticker_callback_handler)
+dispatcher.add_handler(sticker_memify_callback_handler)
