@@ -77,12 +77,12 @@ async def quotly(event):
     return message
 
 
-__mod_name__ = "Quotly"
+__mod_name__ = "Qᴜᴏᴛʟʏ"
 
 __help__ = """
 𖣘 Kɪɢᴏ Aʀᴇ Tᴡᴏ Tʏᴘᴇs Oғ Qᴜᴏᴛʟʏ 
 
-👇Qᴜᴏᴛʟʏ    👇Oʟᴅ Qᴜᴏᴛʟʏ
+👇Qᴜᴏᴛʟʏ      👇Oʟᴅ Qᴜᴏᴛʟʏ
 """
 __button__ = [ InlineKeyboardButton(text="Nᴇᴡ", callback_data="aliciasticker_"),
             InlineKeyboardButton(text="OLᴅ", callback_data="aliciastickertransform_"),
