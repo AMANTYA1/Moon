@@ -205,8 +205,9 @@ if is_module_loaded(FILENAME):
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
-__button__ = []
-__buttons__ = []
+    __button__ = []
+    __buttons__ = []
+
     __mod_name__ = "Lᴏɢ Cʜᴀɴɴᴇʟ​"
 
     LOG_HANDLER = CommandHandler("logchannel", logging, run_async=True)
