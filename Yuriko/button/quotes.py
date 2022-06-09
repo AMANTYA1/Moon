@@ -14,7 +14,7 @@ from Yuriko.__main__ import *
 # Buttons Function for admin module
 
  
-def kigo_game_callback(update, context):
+def alicia_sticker_callback(update, context):
     query = update.callback_query
     if query.data == "aliciasticker_":
         query.message.edit_text(
@@ -40,7 +40,7 @@ We not promise to update KIGO PERDAY
         )
 
  
-def kigo_game_memify_callback(update, context):
+def alicia_sticker_memify_callback(update, context):
     query = update.callback_query
     if query.data == "aliciastickermemify_":
         query.message.edit_text(
@@ -66,9 +66,8 @@ KIGO Is Always Try Something this is old-quote
 
 # Handlers start from here 
 
-sticker_callback_handler = CallbackQueryHandler(kigo_game_callback, pattern=r"kigogame_", run_async=True)
-game_kigo_callback_handler = CallbackQueryHandler(kigo_game_kigo_callback, pattern=r"kigoagame_", run_async=True)
-
+sticker_callback_handler = CallbackQueryHandler(alicia_sticker_callback, pattern=r"aliciasticker_", run_async=True)
+sticker_memify_callback_handler = CallbackQueryHandler(alicia_sticker_memify_callback, pattern=r"aliciastickermemify_", run_async=True)
 
 
 
