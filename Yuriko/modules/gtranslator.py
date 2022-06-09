@@ -47,6 +47,8 @@ vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
 
 __mod_name__ = "Tʀᴀɴꜱʟᴀᴛᴏʀ"
 
