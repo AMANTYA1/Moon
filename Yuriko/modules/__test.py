@@ -18,8 +18,6 @@ __buttons__ = [InlineKeyboardButton(text="Wʀɪᴛᴇ", callback_data="aliciafun
 
 __mod_name__ = "Lᴏɢᴏ"
 
-__lovely_basic__ = __help__
-
 dispatcher.add_handler(fun_callback_handler)
 dispatcher.add_handler(fun_emoji_callback_handler)
 dispatcher.add_handler(fun_games_callback_handler)
