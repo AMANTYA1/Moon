@@ -211,6 +211,8 @@ __help__ = """
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
 
 APPROVE = DisableAbleCommandHandler("approve", approve, run_async=True)
 DISAPPROVE = DisableAbleCommandHandler("unapprove", disapprove, run_async=True)
