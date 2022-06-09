@@ -586,6 +586,8 @@ Locking bots will stop non-admins from adding bots to the chat.
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
 
 __mod_name__ = "Lᴏᴄᴋꜱ"
 
