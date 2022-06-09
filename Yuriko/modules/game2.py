@@ -76,7 +76,7 @@ __help__ = """
 𖣘 Hᴇʜᴇ Gᴜʏs Sᴏᴍᴇ Gᴀᴍᴅ ʙʏ Kɪɢᴏ 
 Nᴏᴛ Lɪᴋᴇ BGᴍɪ
 
-👇Gᴀᴍᴇ      👇A-Gᴀᴍᴇ
+👇Gᴀᴍᴇ        👇A-Gᴀᴍᴇ
 """
 __button__ = [ InlineKeyboardButton(text="Gᴀᴍᴇ", callback_data="kigogame_"),
             InlineKeyboardButton(text="A-Gᴀᴍᴇ", callback_data="kigoagame_"),
