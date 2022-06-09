@@ -489,6 +489,9 @@ Note:
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
+
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
     "blacklist",
     blacklist,
