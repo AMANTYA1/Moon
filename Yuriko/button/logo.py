@@ -31,7 +31,7 @@ def alicia_fun_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
+                    InlineKeyboardButton(text="Back", callback_data="help_back")
                  ]
                 ]
             ),
@@ -55,7 +55,7 @@ def alicia_fun_emoji_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
+                    InlineKeyboardButton(text="Back", callback_data="help_back")
                  ]
                 ]
             ),
@@ -77,7 +77,7 @@ def alicia_fun_games_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
+                    InlineKeyboardButton(text="Back", callback_data="help_back")
                  ]
                 ]
             ),
@@ -100,7 +100,7 @@ def alicia_fun_couple_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="help_module(test)")
+                    InlineKeyboardButton(text="Back", callback_data="help_back")
                  ]
                 ]
             ),
@@ -117,8 +117,6 @@ fun_callback_handler = CallbackQueryHandler(alicia_fun_callback, pattern=r"alici
 fun_emoji_callback_handler = CallbackQueryHandler(alicia_fun_emoji_callback, pattern=r"aliciafunemoji_", run_async=True)
 fun_games_callback_handler = CallbackQueryHandler(alicia_fun_games_callback, pattern=r"aliciafungames_", run_async=True)
 fun_couple_callback_handler = CallbackQueryHandler(alicia_fun_couple_callback, pattern=r"aliciafuncouple_", run_async=True)
-#fun_karma_callback_handler = CallbackQueryHandler(alicia_fun_karma_callback, pattern=r"aliciafunkarma_", run_async=True)
-
 
 
 
