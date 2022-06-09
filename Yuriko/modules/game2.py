@@ -1,7 +1,15 @@
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
 from telethon.tl.types import InputMediaDice
 
 from Yuriko.events import register
-
+from Yuriko.button.game import *
 
 @register(pattern="^/dice(?: |$)(.*)")
 async def _(event):
