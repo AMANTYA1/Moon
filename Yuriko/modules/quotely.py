@@ -12,7 +12,7 @@ from telegram.ext import (
 from telethon.tl.functions.users import GetFullUserRequest
 
 from Yuriko.events import register
-from Yuriko.button.quotly import *
+from Yuriko.button.quotes import *
 from Yuriko.utils.misc import create_quotly
 
 
