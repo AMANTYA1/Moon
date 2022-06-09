@@ -265,5 +265,7 @@ Default is 1 hour`
 
 **✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
 """
+__button__ = []
+__buttons__ = []
 
 __lovely_basic__ = __help__
