@@ -75,5 +75,7 @@ __help__ = """ /poto : `To see All dp of users`
  
 **✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**.
 """
+__button__ = []
+__buttons__ = []
 
 __lovely_advance__ = __help__
