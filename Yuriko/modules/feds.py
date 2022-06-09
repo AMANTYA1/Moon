@@ -2403,6 +2403,8 @@ def fed_user_help(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN,
     )
 
+__button__ = []
+__buttons__ = []
 
 __mod_name__ = "Fᴇᴅᴇʀᴀᴛɪᴏɴ"
 
