@@ -233,6 +233,10 @@ __help__ = """
 
 *✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
 """
+__button__ = []
+__buttons__ = []
+
+__lovely_advance__ = __help__
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler(
     "cleanblue", set_blue_text_must_click, run_async=True
