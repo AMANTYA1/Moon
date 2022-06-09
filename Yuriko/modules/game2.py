@@ -87,5 +87,5 @@ __buttons__ = []
 
 __lovely_tools__ = __help__
 
-dispatcher.add_handler(null_game_callback)
-dispatcher.add_handler(kigo_game_memify_callback)
+dispatcher.add_handler(game_callback_handler)
+dispatcher.add_handler(game_memify_callback_handler)
