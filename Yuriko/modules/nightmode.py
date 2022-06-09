@@ -173,3 +173,5 @@ __help__ = """
 
 `Only available for asian countries (India Standard time)`
 """
+__button__ = []
+__buttons__ = []
