@@ -1395,6 +1395,57 @@ def get_help(update: Update, context: CallbackContext):
     else:
         send_help(chat.id, LOVELY_HELP)
 
+def tushar(update: Update, context: CallbackContext):
+    args = context.args
+    uptime = get_readable_time((time.time() - StartTime))
+    if update.effective_chat.type == "private":
+        if len(args) >= 1:
+            if args[0].lower() == "help":
+                send_help(update.effective_chat.id, LOVELY_HELP)
+            elif args[0].lower().startswith("ghelp_"):
+                mod = args[0].lower().split("_", 1)[1]
+                if not HELPABLE.get(mod, False):
+                    return
+                send_help(
+                    update.effective_chat.id,
+                    HELPABLE[mod].__help__,
+                    InlineKeyboardMarkup(
+                        [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                    ),
+                )
+
+            elif args[0].lower().startswith("stngs_"):
+                match = re.match("stngs_(.*)", args[0].lower())
+                chat = dispatcher.bot.getChat(match.group(1))
+
+                if is_user_admin(chat, update.effective_user.id):
+                    send_settings(match.group(1), update.effective_user.id, False)
+                else:
+                    send_settings(match.group(1), update.effective_user.id, True)
+
+            elif args[0][1:].isdigit() and "rules" in IMPORTED:
+                IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
+
+        else:
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_text(
+                LOVELY_HELPX.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
+                reply_markup=InlineKeyboardMarkup(LOVELY_CMDS),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+            )
+    else:
+        update.effective_message.reply_text(
+            LOVELY_HELPX,
+            reply_markup=InlineKeyboardMarkup(
+                LOVELY_CMDS
+            ),
+        )
 
 def send_settings(chat_id, user_id, user=False):
     if user:
@@ -1627,8 +1678,9 @@ def main():
 
     test_handler = CommandHandler("test", test, run_async=True)
     start_handler = CommandHandler("start", start, run_async=True)
+    tushar_handler = CommandHandler("help", tushar, run_async=True)
 
-    help_handler = CommandHandler("help", get_help, run_async=True)
+    help_handler = CommandHandler("kigohelp", get_help, run_async=True)
     help_callback_handler = CallbackQueryHandler(
         help_button, pattern=r"help_.*", run_async=True
     )
@@ -1665,6 +1717,7 @@ def main():
 
     dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
+    dispatcher.add_handler(tushar_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(lovelybasic_handler)
     dispatcher.add_handler(lovelyadvance_handler)
