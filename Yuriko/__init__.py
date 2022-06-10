@@ -163,8 +163,8 @@ else:
 
     DB_URI = "postgresql://sksvndcp:Xe5mIjRVTCQSKv8EFi8a-ce_9wcZH2tj@jelani.db.elephantsql.com/sksvndcp"
     MONGO_DB_URI = "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-    ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
-    ARQ_API_URL = "http://arq.hamker.dev"
+    ARQ_API_KEY = "SMINJX-OXJKOS-KFXZMD-CSLZRO-ARQ"
+    ARQ_API_URL = "https://arq.hamker.dev"
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     TEMP_DOWNLOAD_DIRECTORY = "./"
