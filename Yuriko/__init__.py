@@ -110,7 +110,7 @@ if ENV:
     WELCOME_DELAY_KICK_SEC = os.environ.get("WELCOME_DELAY_KICL_SEC", None)
     BOT_ID = int(os.environ.get("BOT_ID", None))
     ARQ_API_URL = "https://grambuilders.tech"
-    ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
+    ARQ_API_KEY = "SMINJX-OXJKOS-KFXZMD-CSLZRO-ARQ"
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
@@ -164,7 +164,7 @@ else:
     DB_URI = "postgresql://sksvndcp:Xe5mIjRVTCQSKv8EFi8a-ce_9wcZH2tj@jelani.db.elephantsql.com/sksvndcp"
     MONGO_DB_URI = "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
-    ARQ_API_URL = "https://arq.hamker.in"
+    ARQ_API_URL = "http://arq.hamker.dev"
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     TEMP_DOWNLOAD_DIRECTORY = "./"
