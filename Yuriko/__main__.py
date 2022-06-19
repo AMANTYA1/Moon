@@ -91,9 +91,6 @@ Lovelybuttons = [
      [
         InlineKeyboardButton(text="💕Summon me💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
      ],
-     [
-        InlineKeyboardButton(text="💂🏻‍♀️Help💂🏻‍♀️", callback_data="lovelyx_"),         
-     ],
      [       
         InlineKeyboardButton(text="🕵🏻Tutorial🕵🏻", callback_data="lovelyx_tutorials"),  
         InlineKeyboardButton(text="🧑‍🏫About🧑‍🏫", callback_data="lovelyx_me"),  
@@ -102,6 +99,9 @@ Lovelybuttons = [
         InlineKeyboardButton(text="🚑Support", url="https://t.me/godzilla_chatting"),
         InlineKeyboardButton(text="📣Update", url="https://t.me/BotDuniyaXD"),
      ], 
+     [
+        InlineKeyboardButton(text="💂🏻‍♀️Help💂🏻‍♀️", callback_data="lovelyx_"),         
+     ],
 ]
 
 
@@ -157,15 +157,14 @@ MOD_BUTTONS = {}
 
 LOVELY_CMDS =  [
        [
-           InlineKeyboardButton(text="👨🏻‍🎓 All Commands 👨🏻‍🎓", callback_data="help_back"),           
-           InlineKeyboardButton(text="👳‍♂️Simple help👳‍♂️", callback_data="lovelyx_prom"),
+           InlineKeyboardButton(text="👨🏻‍🎓 All Commands 👨🏻‍🎓", callback_data="help_back"),                      
        ],      
        [
-           InlineKeyboardButton(text="🥷🏻Extras🥷🏻", callback_data="lovelytools_back"),
-           InlineKeyboardButton(text="Iɴʟɪɴᴇ ✈︎", switch_inline_query_current_chat=""),
+           InlineKeyboardButton(text="👲🏻Basic commands👲🏻", callback_data="lovelybasic_back"),
+           InlineKeyboardButton(text="👳‍♂️Simple help👳‍♂️", callback_data="lovelyx_prom"),           
        ],
        [ 
-           InlineKeyboardButton(text="👲🏻Basic commands👲🏻", callback_data="lovelybasic_back"),
+           InlineKeyboardButton(text="🥷🏻Extras🥷🏻", callback_data="lovelytools_back"),
            InlineKeyboardButton(text="🤷🏻‍♂️Advanced🤷🏻‍♂️", callback_data="lovelyadvance_back"),
        ],
        [ 
