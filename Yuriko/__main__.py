@@ -89,18 +89,18 @@ feel free to add me to your groups!
 
 Lovelybuttons = [
      [
-        InlineKeyboardButton(text="💕Sᴜᴍᴍᴏɴ Mᴇ💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
+        InlineKeyboardButton(text="💕Summon me💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
      ],
      [
-        InlineKeyboardButton(text="💂🏻‍♀️Hᴇʟᴘ💂🏻‍♀️", callback_data="lovelyx_"),         
+        InlineKeyboardButton(text="💂🏻‍♀️Help💂🏻‍♀️", callback_data="lovelyx_"),         
      ],
      [       
-        InlineKeyboardButton(text="🕵🏻Tᴜᴛᴏʀɪᴀʟ🕵🏻", callback_data="lovelyx_tutorials"),  
-        InlineKeyboardButton(text="🧑‍🏫Aʙᴏᴜᴛ🧑‍🏫", callback_data="lovelyx_me"),  
+        InlineKeyboardButton(text="🕵🏻Tutorial🕵🏻", callback_data="lovelyx_tutorials"),  
+        InlineKeyboardButton(text="🧑‍🏫About🧑‍🏫", callback_data="lovelyx_me"),  
      ],
      [  
-        InlineKeyboardButton(text="🚑Sᴜᴘᴘᴏʀᴛ", url="https://t.me/godzilla_chatting"),
-        InlineKeyboardButton(text="📣Uᴘᴅᴀᴛᴇ", url="https://t.me/BotDuniyaXD"),
+        InlineKeyboardButton(text="🚑Support", url="https://t.me/godzilla_chatting"),
+        InlineKeyboardButton(text="📣Update", url="https://t.me/BotDuniyaXD"),
      ], 
 ]
 
@@ -157,19 +157,19 @@ MOD_BUTTONS = {}
 
 LOVELY_CMDS =  [
        [
-           InlineKeyboardButton(text="👨🏻‍🎓 Aʟʟ Cᴏᴍᴍᴀɴᴅꜱ 👨🏻‍🎓", callback_data="help_back"),           
-           InlineKeyboardButton(text="👳‍♂️Sɪᴍᴘʟᴇ Hᴇʟᴘ👳‍♂️", callback_data="lovelyx_prom"),
+           InlineKeyboardButton(text="👨🏻‍🎓 All Commands 👨🏻‍🎓", callback_data="help_back"),           
+           InlineKeyboardButton(text="👳‍♂️Simple help👳‍♂️", callback_data="lovelyx_prom"),
        ],      
        [
-           InlineKeyboardButton(text="🥷🏻Exᴛʀᴀ🥷🏻", callback_data="lovelytools_back"),
+           InlineKeyboardButton(text="🥷🏻Extras🥷🏻", callback_data="lovelytools_back"),
            InlineKeyboardButton(text="Iɴʟɪɴᴇ ✈︎", switch_inline_query_current_chat=""),
        ],
        [ 
-           InlineKeyboardButton(text="👲🏻Bᴀꜱɪᴄ Cᴏᴍᴍᴀɴᴅꜱ👲🏻", callback_data="lovelybasic_back"),
-           InlineKeyboardButton(text="🤷🏻‍♂️Aᴅᴠᴀɴsᴇᴅ🤷🏻‍♂️", callback_data="lovelyadvance_back"),
+           InlineKeyboardButton(text="👲🏻Basic commands👲🏻", callback_data="lovelybasic_back"),
+           InlineKeyboardButton(text="🤷🏻‍♂️Advanced🤷🏻‍♂️", callback_data="lovelyadvance_back"),
        ],
        [ 
-           InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back"),
+           InlineKeyboardButton(text="☜︎︎︎ Back", callback_data="lovelyx_back"),
        ],
 
 
@@ -799,7 +799,7 @@ Before we go, I need admin permissions in this chat to work properly**
 1) Click Manage Group
 2) Goto Administrators and add @kigo\_omfobot as Admin
 3) Giving full permissions make KIGO fully useful
- **✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+ **✗ Powered🔥 By: Kigo!**""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
@@ -896,7 +896,7 @@ Before we go, I need admin permissions in this chat to work properly**
 
 ◽️ /Admins gives the complete List of group Staff
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+**✗ Powered🔥 By: Kigo!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -925,7 +925,7 @@ Ex 💡 :- /tban 1m
 🕵🏻 /feedback to feedback of kigo
   ➡️ Example: /feedback null bo!
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+**✗ Powered🔥 By: Kigo!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -954,7 +954,7 @@ Pinned Messages
 
 🕵🏻  /write to get hand written logo.
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+**✗ Powered🔥 By: Kigo!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1014,7 +1014,7 @@ Pinned Messages
 
 ✗ /snipe - `Make me send a message to a specific chat.`
 
-*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*""",
+**✗ Powered🔥 By: Kigo!*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1049,7 +1049,7 @@ Locking bots will stop non-admins from adding bots to the chat.
 
  • Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
 
-*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*""",
+*✗ Powered🔥 By: Kigo!*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1094,7 +1094,7 @@ Locking bots will stop non-admins from adding bots to the chat.
 
  *Note:* `Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.`
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**""",
+ **✗ Powered🔥 By: Kigo!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1153,7 +1153,7 @@ Examples:
 
  `Come and see` [HP System explained](https://t.me/YurikoLogger/5)
 
-*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*""",
+ *✗ Powered🔥 By: Kigo!*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1177,7 +1177,7 @@ Examples:
 
 🙋 » /end - to end play song in vc
 
- **✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+ **✗ Powered🔥 By: Kigo!**""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
@@ -1187,32 +1187,30 @@ Examples:
 
     elif query.data == "lovelyx_me":
         query.message.edit_text(
-            text="""ℹ️ ɪ'ᴍ KIGO, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ.
-                 
-❍ ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.
-                 
-❍ ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.
-                 
-❍ ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.
-                 
-❍ ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ.
-                 
-❍ ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ.
-                 
-❍ ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴ'ꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ ꜱᴛᴜꜰꜰꜱ 
-                 
+            text="""ℹ️ I'm KIGO, a powerful group management bot built to help you and manage your group easily. 
 
-ᴍᴇ'ꜱ ʟɪᴄᴇɴꜱᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴꜱᴇ ᴠ3.0
+❍ I can restrict users 
                  
-ʜᴇʀᴇ ɪꜱ ᴛʜᴇ [💾ʀᴇᴘᴏꜱɪᴛᴏʀʏ](https://github.com/AMANTYA1/Yuriko).                  
+❍ I can greet users with customisable welcome messages and even set a group's rules 
                  
+❍ I have an advanced Anti-flood System
 
-ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ Qᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ KIGO, ʟᴇᴛ ᴜꜱ ᴋɴᴏᴡ ᴀᴛ @Shubhanshutya""",
+❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc
+                 
+❍ I have a note keeping system, blacklists and even predetermined replies on certain keywords.
+
+❍ I can check for admin's permission before executing any command and more stuffs
+
+My licensed under the GNU (General public license v3.0)
+                 
+Here is the [💾 Repository](https://github.com/AMANTYA1/Yuriko).                  
+                 
+If you have any question about kigo, let us know at @Shubhanshutya""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton(text="📡 Hᴇʟᴘ", callback_data="lovelyx_"),
-                 InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_back")]
+                [InlineKeyboardButton(text="📡 Help", callback_data="lovelyx_"),
+                 InlineKeyboardButton(text="☜︎︎︎ Back", callback_data="lovelyx_back")]
                 ]
             ),
         )            
@@ -1224,12 +1222,12 @@ Examples:
 Let's stop spammer activities in your group
 Set /antoflood [number]
 then send a time to set the timer or set only stop continues messeges by sending 0
- **✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ!**""",
+ **✗ Powered🔥 By: Kigo!**""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_vida"),
-                 InlineKeyboardButton(text="☕︎ Mᴇɴɪ", callback_data="lovelyx_tutorials")]
+                [InlineKeyboardButton(text="☜︎︎︎ Back", callback_data="lovelyx_vida"),
+                 InlineKeyboardButton(text="☕︎ Menu", callback_data="lovelyx_tutorials")]
                 ]
             ),
         )
