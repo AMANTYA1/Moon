@@ -9,6 +9,7 @@ import telegram.ext as tg
 from inspect import getfullargspec
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
+from redis import StrictRedis
 from motor.motor_asyncio import AsyncIOMotorClient
 from telethon import TelegramClient
 from telethon.sessions import StringSession
@@ -83,6 +84,7 @@ if ENV:
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI", "postgresql://ivsnctpi:uZ2ywNAb1KWa7zhocG09xoRbHfcDFfGw@fanny.db.elephantsql.com/ivsnctpi")
+    REDIS_URL = os.environ.get('REDIS_URL', "redis://Akshay:Akshay_123@redis-11962.c301.ap-south-1-1.ec2.cloud.redislabs.com:11962/Akshay")
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     ARQ_API = os.environ.get("ARQ_API", "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ")
@@ -158,6 +160,7 @@ else:
     URL = Config.URL
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
+    REDIS_URL = "redis://Akshay:Akshay_123@redis-11962.c301.ap-south-1-1.ec2.cloud.redislabs.com:11962/Akshay"
     API_ID = "2857558"
     API_HASH = "1038be815e038592fa2b483c13dd6c4b"
 
