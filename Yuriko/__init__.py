@@ -221,6 +221,7 @@ else:
 from Yuriko.modules.sql import SESSION
 
 defaults = tg.Defaults(run_async=True)
+REDIS = StrictRedis.from_url(REDIS_URL,decode_responses=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 dispatcher = updater.dispatcher
