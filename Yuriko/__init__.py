@@ -164,7 +164,7 @@ else:
     API_ID = "2857558"
     API_HASH = "1038be815e038592fa2b483c13dd6c4b"
 
-    DB_URI = "postgresql://sksvndcp:Xe5mIjRVTCQSKv8EFi8a-ce_9wcZH2tj@jelani.db.elephantsql.com/sksvndcp"
+    DB_URI = "postgresql://uybtrchs:VwwG2Sm7g4hyja_hlYzpHjBkf5ZqQot9@salt.db.elephantsql.com/uybtrchs"
     MONGO_DB_URI = "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     ARQ_API_KEY = "SMINJX-OXJKOS-KFXZMD-CSLZRO-ARQ"
     ARQ_API_URL = "https://arq.hamker.dev"
