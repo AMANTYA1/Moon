@@ -83,7 +83,7 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI", "postgresql://ivsnctpi:uZ2ywNAb1KWa7zhocG09xoRbHfcDFfGw@fanny.db.elephantsql.com/ivsnctpi")
+    DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI", "postgresql://tzepoqoq:z5htlb5cCUJt5Z8a9uO3pI1m4wr9UI7N@chunee.db.elephantsql.com/tzepoqoq")
     REDIS_URL = os.environ.get('REDIS_URL', "redis://Akshay:Akshay_123@redis-11962.c301.ap-south-1-1.ec2.cloud.redislabs.com:11962/Akshay")
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
@@ -164,7 +164,7 @@ else:
     API_ID = "2857558"
     API_HASH = "1038be815e038592fa2b483c13dd6c4b"
 
-    DB_URI = "postgresql://uybtrchs:VwwG2Sm7g4hyja_hlYzpHjBkf5ZqQot9@salt.db.elephantsql.com/uybtrchs"
+    DB_URI = "postgresql://tzepoqoq:z5htlb5cCUJt5Z8a9uO3pI1m4wr9UI7N@chunee.db.elephantsql.com/tzepoqoq"
     MONGO_DB_URI = "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     ARQ_API_KEY = "SMINJX-OXJKOS-KFXZMD-CSLZRO-ARQ"
     ARQ_API_URL = "https://arq.hamker.dev"
@@ -173,7 +173,7 @@ else:
     TEMP_DOWNLOAD_DIRECTORY = "./"
     OPENWEATHERMAP_ID = "7181b8a4580be607eddacd56777bf64b"
     NO_LOAD = Config.NO_LOAD
-    ERROR_LOG = -1001501915559
+    ERROR_LOG = -1001511722668
     HEROKU_API_KEY = "bfc37ec4-f73d-45e1-b392-4141ef1974d6"
     HEROKU_APP_NAME = "null"
     DEL_CMDS = Config.DEL_CMDS
