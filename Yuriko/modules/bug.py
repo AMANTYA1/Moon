@@ -49,7 +49,7 @@ async def bug(_, msg: Message):
     thumb = "https://telegra.ph/file/db6425a997e17f6b6eafc.jpg"
     
     bug_report = f"""
-**#BUG : ** **[Master](https://t.me/Shubhanshutya)**
+**#BUG : ** **[Master](https://t.me/MeCorw)**
 **From User : ** **{mention}**
 **User ID : ** **{user_id}**
 **Group : ** **{chat_username}**
@@ -119,13 +119,13 @@ async def close_send_photo(Client, CallbackQuery):
 
 __help__ = """
    
-` Bug Report Is a module for reporting bugs on KIGO bots`
+` Bug Report Is a module for reporting bugs on Godfather bot`
   
 `So that the bot can be fixed as soon as possible`
     
 `✗ /bug <reason>` - `To Report Bugs`
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: CrowCoder!**
 """
 __button__ = []
 __buttons__ = []
