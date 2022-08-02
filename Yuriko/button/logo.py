@@ -24,7 +24,7 @@ def alicia_fun_callback(update, context):
 
 ✗ /logo Null ; Robot :  use ; for write in next line
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ**  
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: CrowCoder**  
         """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -48,7 +48,7 @@ def alicia_fun_emoji_callback(update, context):
 
 ✗ /wlogo - `<text/name> Create a logo with wide view only.`
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ**
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: CrowCoder**
         """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -70,7 +70,7 @@ def alicia_fun_games_callback(update, context):
 
 ✗ /glogo - ` <text/name>  Create a logo with photo girls.
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ**
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: CrowCoder**
         """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -93,7 +93,7 @@ def alicia_fun_couple_callback(update, context):
 
 ✗ /write - `Any text to make write logo.`
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ**
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: CrowCoder**
                """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
