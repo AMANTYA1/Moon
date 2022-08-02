@@ -90,7 +90,7 @@ async def logo_maker(client, message):
         try:
             await message.reply_photo(
                 url,
-                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By @Mr_Shadow_Robot**",
+                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By @TGN_Ro_bot**",
             )
         except:
             return
@@ -98,7 +98,7 @@ async def logo_maker(client, message):
     else:
         try:
             msg = await client.send_message(
-                message.chat.id, "**Creating The Logo....**"
+                message.chat.id, "**❌Under Maintenance **"
             )
         except:
             return
@@ -127,7 +127,7 @@ async def logo_maker(client, message):
         try:
             await message.reply_photo(
                 url,
-                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By 𝙆𝙄𝙂𝙊**",
+                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By GodfatherBot**",
             )
         except:
             return
@@ -179,7 +179,7 @@ async def logohq(client, message):
         try:
             await message.reply_photo(
                 url,
-                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By 𝙆𝙄𝙂𝙊**",
+                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By GodfatherBot**",
             )
         except:
             return
@@ -187,7 +187,7 @@ async def logohq(client, message):
     else:
         try:
             msg = await client.send_message(
-                message.chat.id, "**Creating The Logo....**"
+                message.chat.id, "**❌Under Maintenance....**"
             )
         except:
             return
@@ -216,7 +216,7 @@ async def logohq(client, message):
         try:
             await message.reply_photo(
                 url,
-                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By 𝙆𝙄𝙂𝙊**",
+                caption=f"**Logo Generated Successfully** As {text}\n\nImage Link => {url}\n\n**By GodfatherBot**",
             )
         except:
             return
