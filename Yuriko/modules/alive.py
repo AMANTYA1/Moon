@@ -23,7 +23,7 @@ file4 = "https://telegra.ph/file/86a25345ea3b0dfe6cb45.jpg"
 file5 = "https://telegra.ph/file/d6c65813b5c8bbe1a4ec6.jpg"
 """ =======================YURIKO====================== """
 
-BUTTON = [[Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/OmFoXD"), Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/DeeCodeBots")]]
+BUTTON = [[Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/The_Godfather_Network"), Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/The_Godfather_Network")]]
 
 
 START_TIME = datetime.utcnow()
@@ -54,11 +54,11 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    pm_caption = "** ♡ I,m Kigo **\n\n"
+    pm_caption = "** ♡ I,m Godfather **\n\n"
     pm_caption += f"**♡ My Uptime :** `{uptime}`\n\n"
     pm_caption += f"**♡ Telethon Version :** `{version.__version__}`\n\n"
     pm_caption += "**♡ My Team :** [Kigo](https://t.me/kigo_omfo)\n"
-    BUTTON = [[Button.url("Support", "https://t.me/OmFoXD"), Button.url("Updates", "https://t.me/kigo_omfo")]]
+    BUTTON = [[Button.url("Support", "https://t.me/The_Godfather_Network"), Button.url("Updates", "https://t.me/The_Godfather_Network")]]
     on = await aasf.send_file(yes.chat_id, file=file1,caption=pm_caption, buttons=BUTTON)
     
 
