@@ -82,22 +82,22 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 LOVELY_MENU = """
-Hey there! My name is **KIGO**.
+Hey there! My name is **Godfather**.
 I can help manage your groups with useful features, 
 feel free to add me to your groups!
 """
 
 Lovelybuttons = [
      [
-        InlineKeyboardButton(text="💕Summon me💕", url="https://t.me/Kigo_omfobot?startgroup=true"),
+        InlineKeyboardButton(text="💕Summon me💕", url="https://t.me/TGN_Ro_bot?startgroup=true"),
      ],
      [       
         InlineKeyboardButton(text="🕵🏻Tutorial🕵🏻", callback_data="lovelyx_tutorials"),  
         InlineKeyboardButton(text="🧑‍🏫About🧑‍🏫", callback_data="lovelyx_me"),  
      ],
      [  
-        InlineKeyboardButton(text="🚑Support", url="https://t.me/godzilla_chatting"),
-        InlineKeyboardButton(text="📣Update", url="https://t.me/BotDuniyaXD"),
+        InlineKeyboardButton(text="🚑Support", url="https://t.me/GodfatherSupport"),
+        InlineKeyboardButton(text="📣Update", url="https://t.me/The_Godfather_Network"),
      ], 
      [
         InlineKeyboardButton(text="💂🏻‍♀️Help💂🏻‍♀️", callback_data="lovelyx_"),         
@@ -128,11 +128,11 @@ Extra tools which are available in bot and tools made for fun are here
 You can choose an option below, by clicking a buttonS"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @Shubhanshutya \
+ You can support the project by contacting @MeCorw \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
-LOVELY_HELPX = """Hey there! My name is *KIGO*
+LOVELY_HELPX = """Hey there! My name is *Godfather*
 *✗ MAIN COMMANDS ✗*
 
 ✗ /start - `Starts me! Your probably already used this.`
@@ -296,7 +296,7 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="📖 KIGO command",
+                            text="📖 Godfather command",
                             url="t.me/{}?start".format(context.bot.username),
                         )
                     ],
@@ -663,7 +663,7 @@ def lovelyx_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="💕Sᴜᴍᴍᴏɴ Mᴇ💕", url="http://t.me/Kigo_omfobot?startgroup=true"),
+                    InlineKeyboardButton(text="💕Sᴜᴍᴍᴏɴ Mᴇ💕", url="http://t.me/TGN_Ro_bot?startgroup=true"),
                  ],
                  [
                     InlineKeyboardButton(text="🎥Vɪᴅᴇᴏ🎥", callback_data="lovelyx_vida"),
@@ -683,8 +683,8 @@ def lovelyx_about_callback(update, context):
             text="""<b>Hey, Welcome to KIGO configuration Tutorial
 Before we go, I need admin permissions in this chat to work properly
 1) Click Manage Group
-2) Go to Administrators and add</b> @Kigo_omfobot <b>as Admin
-3) Giving full permissions make KIGO fully useful</b>""",
+2) Go to Administrators and add</b> @TGN_Ro_bot <b>as Admin
+3) Giving full permissions make Godfather fully useful</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
               [[InlineKeyboardButton(text="☜︎︎︎ Bᴀᴄᴋ", callback_data="lovelyx_tutorials"),
@@ -763,7 +763,7 @@ and Automatically openned at 6am(IST) To Prevent Night Spams.""",
 - Watch your group, if someone is spamming your group, you can use the report feature of your Telegram Client.
 - Do not spam commands, buttons, or anything in bot PM.
 *NOTE:* Terms and Conditions might change anytime
-*Updates Channel: @BotDuniyaXD""",
+*Updates Channel: @The_Godfather_Network""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -792,13 +792,13 @@ Again thanks for using me
     
     elif query.data == "lovelyx_vida":
         query.message.reply_video(
-            LOVELYX_VIDAA, caption="""**Hey, Welcome to KIGO Video Tutorial
+            LOVELYX_VIDAA, caption="""**Hey, Welcome to Godfather Video Tutorial
 
 Before we go, I need admin permissions in this chat to work properly**
 1) Click Manage Group
-2) Goto Administrators and add @kigo\_omfobot as Admin
-3) Giving full permissions make KIGO fully useful
- **✗ Powered🔥 By: Kigo!**""",
+2) Goto Administrators and add @TGN\_Ro\_bot as Admin
+3) Giving full permissions make Godfather fully useful
+ **✗ Powered🔥 By: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
@@ -895,7 +895,7 @@ Before we go, I need admin permissions in this chat to work properly**
 
 ◽️ /Admins gives the complete List of group Staff
 
-**✗ Powered🔥 By: Kigo!**""",
+**✗ Powered🔥 By: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -924,7 +924,7 @@ Ex 💡 :- /tban 1m
 🕵🏻 /feedback to feedback of kigo
   ➡️ Example: /feedback null bo!
 
-**✗ Powered🔥 By: Kigo!**""",
+**✗ Powered🔥 By: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -953,7 +953,7 @@ Pinned Messages
 
 🕵🏻  /write to get hand written logo.
 
-**✗ Powered🔥 By: Kigo!**""",
+**✗ Powered🔥 By: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1013,7 +1013,7 @@ Pinned Messages
 
 ✗ /snipe - `Make me send a message to a specific chat.`
 
-**✗ Powered🔥 By: Kigo!*""",
+**✗ Powered🔥 By: CrowCoder!*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1048,7 +1048,7 @@ Locking bots will stop non-admins from adding bots to the chat.
 
  • Unlocking permission *pin* will allow members (non-admins) to pinned a message in a group
 
-*✗ Powered🔥 By: Kigo!*""",
+*✗ Powered🔥 By: CrowCoder!*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1093,7 +1093,7 @@ Locking bots will stop non-admins from adding bots to the chat.
 
  *Note:* `Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.`
 
- **✗ Powered🔥 By: Kigo!**""",
+ **✗ Powered🔥 By: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1152,7 +1152,7 @@ Examples:
 
  `Come and see` [HP System explained](https://t.me/YurikoLogger/5)
 
- *✗ Powered🔥 By: Kigo!*""",
+ *✗ Powered🔥 By: CrowCoder!*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -1176,7 +1176,7 @@ Examples:
 
 🙋 » /end - to end play song in vc
 
- **✗ Powered🔥 By: Kigo!**""",
+ **✗ Powered🔥 By: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Back", callback_data="lovelyx_tutorials")]]
@@ -1186,7 +1186,7 @@ Examples:
 
     elif query.data == "lovelyx_me":
         query.message.edit_text(
-            text="""ℹ️ I'm KIGO, a powerful group management bot built to help you and manage your group easily. 
+            text="""ℹ️ I'm CrowCoder, a powerful group management bot built to help you and manage your group easily. 
 
 ❍ I can restrict users 
                  
@@ -1204,7 +1204,7 @@ My licensed under the GNU (General public license v3.0)
                  
 Here is the [💾 Repository](https://github.com/AMANTYA1/Yuriko).                  
                  
-If you have any question about kigo, let us know at @Shubhanshutya""",
+If you have any question about kigo, let us know at @MeCorw""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
@@ -1221,7 +1221,7 @@ If you have any question about kigo, let us know at @Shubhanshutya""",
 Let's stop spammer activities in your group
 Set /antoflood [number]
 then send a time to set the timer or set only stop continues messeges by sending 0
- **✗ Powered🔥 By: Kigo!**""",
+ **✗ Powered🔥 By: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
