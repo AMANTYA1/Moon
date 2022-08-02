@@ -116,7 +116,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "**🌗 Night Mode Started !**\n\n`Group Is Closing Till 06:00. Only admins should be able to message`\n\n**Powered By @Kigo_omfobot**",
+                "**🌗 Night Mode Started !**\n\n`Group Is Closing Till 06:00. Only admins should be able to message`\n\n**Powered By @MeCorw**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -141,7 +141,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "**🌗 Night Mode Ended !**\n\n`Group Is Opening. Everyone should be able to message`\n\n**Powered By @Kigo_omfobot**",
+                "**🌗 Night Mode Ended !**\n\n`Group Is Opening. Everyone should be able to message`\n\n**Powered By @MeCorw**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
