@@ -20,13 +20,13 @@ def alicia_sticker_callback(update, context):
         query.message.edit_text(
             text="""Here is the help for the *Quote* module:
 
-We not promise to update KIGO PERDAY
+We not promise to update GodfatherBot PERDAY
 
 ✗ /q <reply to text> - `create quote`
 
 ✗ /qr <reply to text> - `Create quote with reply message sur` 
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: CrowCoder!**
         """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -50,7 +50,7 @@ KIGO Is Always Try Something this is old-quote
  
 ✗ /sq <reply to text> - `Create simple boy like  q`
 
-**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!**""",
+**✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: CrowCoder!**""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
