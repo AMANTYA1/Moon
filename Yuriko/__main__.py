@@ -100,8 +100,9 @@ Lovelybuttons = [
         InlineKeyboardButton(text="📣Update", url="https://t.me/The_Godfather_Network"),
      ], 
      [
-        InlineKeyboardButton(text="💂🏻‍♀️Help💂🏻‍♀️", callback_data="lovelyx_"),         
-     ],
+        InlineKeyboardButton(text="💂🏻‍♀️Help💂🏻‍♀️", callback_data="lovelyx_"),     
+        InlineKeyboardButton(text="🏳️‍🌈Lang", callback_data="lovelxlang_"),
+     ], 
 ]
 
 
@@ -1205,6 +1206,21 @@ My licensed under the GNU (General public license v3.0)
 Here is the [💾 Repository](https://github.com/AMANTYA1/Yuriko).                  
                  
 If you have any question about kigo, let us know at @MeCorw""",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+              [
+                [InlineKeyboardButton(text="📡 Help", callback_data="lovelyx_"),
+                 InlineKeyboardButton(text="☜︎︎︎ Back", callback_data="lovelyx_back")]
+                ]
+            ),
+        )
+
+
+    elif query.data == "lovelyxlang_":
+        query.message.edit_text(
+            text="""ℹ️ I try to Addmultilang in Godgather with the Help by Zaid Robot.  
+         i add hindi,English,etc   
+          let us know at @MeCorw""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
