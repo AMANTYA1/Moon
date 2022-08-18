@@ -57,7 +57,7 @@ async def hmm(yes):
     pm_caption = "** ♡ I,m Godfather **\n\n"
     pm_caption += f"**♡ My Uptime :** `{uptime}`\n\n"
     pm_caption += f"**♡ Telethon Version :** `{version.__version__}`\n\n"
-    pm_caption += "**♡ My Team :** [Kigo](https://t.me/kigo_omfo)\n"
+    pm_caption += "**♡ My Team :** [OMFO](https://t.me/The_Godfather_Networ)\n"
     BUTTON = [[Button.url("Support", "https://t.me/The_Godfather_Network"), Button.url("Updates", "https://t.me/The_Godfather_Network")]]
     on = await aasf.send_file(yes.chat_id, file=file1,caption=pm_caption, buttons=BUTTON)
     
