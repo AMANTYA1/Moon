@@ -1219,8 +1219,7 @@ If you have any question about kigo, let us know at @MeCorw""",
     elif query.data == "lovelyxlang_":
         query.message.edit_text(
             text="""ℹ️ I try to Addmultilang in Godgather with the Help by Zaid Robot.  
-         i add hindi,English,etc   
-          let us know at @MeCorw""",
+i add hindi,English,etc let us know at @MeCorw""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
@@ -1229,7 +1228,6 @@ If you have any question about kigo, let us know at @MeCorw""",
                 ]
             ),
         )            
-  
   
     elif query.data == "lovelyx_beats":
         query.message.reply_video(
@@ -1386,7 +1384,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                 ]
             ),
-        )
+        ) 
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
