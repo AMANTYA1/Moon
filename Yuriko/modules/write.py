@@ -34,7 +34,7 @@ async def writer(event):
     k = await event.reply("On My way 😂..")
     img = Image.open("Yuriko/resources/kertas.jpg")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("Yuriko/resources/test.ttf", 30)
+    font = ImageFont.truetype("Yuriko/resources/Tvs.TTF", 30)
     x, y = 150, 140
     lines = text_set(text)
     line_height = font.getsize("hg")[1]
