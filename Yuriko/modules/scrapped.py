@@ -5,9 +5,7 @@ import asyncio
 from pyrogram.errors import FloodWait
 from pyrogram import filters
 
- 
-SUDO = os.environ["SUDO_USER"]
-SUDO = SUDO.split(" ")
+SUDO = "5101275145"
 ab = map(int, SUDO)
 ab = list(ab)
 
