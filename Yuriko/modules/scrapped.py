@@ -9,8 +9,8 @@ SUDO = "5101275145"
 ab = map(int, SUDO)
 ab = list(ab)
 
-CHATS = os.environ["CHAT"]
-CHATS = CHATS.split(" ")
+
+CHATS = "hackingcourseschat"
 ch = map(int, CHATS)
 ch = list(ch)
 
