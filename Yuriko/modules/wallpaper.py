@@ -27,7 +27,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from Yuriko import pgram as pbot
+from Yuriko import pbot
 
 
 @pbot.on_message(filters.command(["wall", "wallpaper"]))
