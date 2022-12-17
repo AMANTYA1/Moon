@@ -1,56 +1,61 @@
-from random import randint
+"""
+MIT License
 
-import requests as r
-from Yuriko import SUPPORT_CHAT, WALL_API, dispatcher
-from Yuriko.modules.disable import DisableAbleCommandHandler
-from telegram import Update
-from telegram.ext import CallbackContext
+Copyright (c) 2022 Aʙɪsʜɴᴏɪ
 
-# Wallpapers module by @TheRealPhoenix using wall.alphacoders.com
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+import random
+
+import requests
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+
+from Yuriko import pgram as pbot
 
 
-def wall(update: Update, context: CallbackContext):
-    chat_id = update.effective_chat.id
-    msg = update.effective_message
-    args = context.args
-    msg_id = update.effective_message.message_id
-    bot = context.bot
-    query = " ".join(args)
-    if not query:
-        msg.reply_text("Please enter a query!")
-        return
-    caption = query
-    term = query.replace(" ", "%20")
-    json_rep = r.get(
-        f"https://wall.alphacoders.com/api2.0/get.php?auth={WALL_API}&method=search&term={term}",
-    ).json()
-    if not json_rep.get("success"):
-        msg.reply_text(f"An error occurred! Report this @{SUPPORT_CHAT}")
-    else:
-        wallpapers = json_rep.get("wallpapers")
-        if not wallpapers:
-            msg.reply_text("No results found! Refine your search.")
-            return
-        index = randint(0, len(wallpapers) - 1)  # Choose random index
-        wallpaper = wallpapers[index]
-        wallpaper = wallpaper.get("url_image")
-        wallpaper = wallpaper.replace("\\", "")
-        bot.send_photo(
-            chat_id,
-            photo=wallpaper,
-            caption="Preview",
-            reply_to_message_id=msg_id,
-            timeout=60,
+@pbot.on_message(filters.command(["wall", "wallpaper"]))
+async def wall(_, message: Message):
+    try:
+        text = message.text.split(None, 1)[1]
+    except IndexError:
+        text = None
+    if not text:
+        return await message.reply_text("**Invalid Command Syntax**\n\n`/wall [name]`")
+    m = await message.reply_text("`sᴇᴀʀᴄʜɪɴɢ ғᴏʀ ᴡᴀʟʟᴘᴀᴘᴇʀ...`")
+    try:
+        url = requests.get(f"https://api.safone.me/wall?query={text}").json()["results"]
+        ran = random.randint(0, 3)
+        await message.reply_photo(
+            photo=url[ran]["imageUrl"],
+            caption=f"💕 **Request By ʙʏ :**\n👉 {message.from_user.mention}",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton("🤗Link🤗", url=url[ran]["imageUrl"])],
+                ]
+            ),
         )
-        bot.send_document(
-            chat_id,
-            document=wallpaper,
-            filename="wallpaper",
-            caption=caption,
-            reply_to_message_id=msg_id,
-            timeout=60,
+        await m.delete()
+    except Exception:
+        await m.edit_text(
+            f"`No Wallpaper found : `{text}`",
         )
 
 
-WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall, run_async=True)
-dispatcher.add_handler(WALLPAPER_HANDLER)
+# ᴛʜᴀɴᴋs https://github.com/TheAnonymous2005/FallenRobot/blob/master/FallenRobot/modules/wallpaper.py
