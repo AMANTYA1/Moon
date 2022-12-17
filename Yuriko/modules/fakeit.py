@@ -60,8 +60,8 @@ async def _(event):
             with open("FRIDAYOT.jpg", "wb") as f:
                 f.write(response.content)
 
-        captin = f"Fake Image powered by @Kigo_omfobot"
-        fole = "FRIDAYOT.jpg"
+        captin = f"Fake Image powered by @TGN_Ro_bot"
+        fole = "NullT.jpg"
         await tbot.send_file(event.chat_id, fole, caption=captin)
         await event.delete()
         os.system("rm ./FRIDAYOT.jpg ")
@@ -74,7 +74,7 @@ Commands:
 ✗ /fakegen - `Generates Fake Information`
 ✗ /picgen - `generate a fake pic`
  
-*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Kɪɢᴏ Dᴜɴɪʏᴀ!*
+*✗ Pᴏᴡᴇʀᴇᴅ 🔥 Bʏ: Null Dᴜɴɪʏᴀ!*
 """
 __button__ = []
 __buttons__ = []
