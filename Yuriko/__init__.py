@@ -83,7 +83,7 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", None)
     SESSION_STRING = os.environ.get("SESSION_STRING", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI", "postgresql://tzepoqoq:z5htlb5cCUJt5Z8a9uO3pI1m4wr9UI7N@chunee.db.elephantsql.com/tzepoqoq")
+    DB_URI = os.environ.get("SQLALCHEMY_DATABASE_URI", "postgresql://taecoyru:NGhnotb8f1wvd_ERnEWMoCpIdf9LtOah@suleiman.db.elephantsql.com/taecoyru")
     REDIS_URL = os.environ.get('REDIS_URL', "redis://Akshay:Akshay_123@redis-11962.c301.ap-south-1-1.ec2.cloud.redislabs.com:11962/Akshay")
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://Aman:Aman@cluster0.7bsvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
