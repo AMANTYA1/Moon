@@ -82,9 +82,11 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 LOVELY_MENU = """
-Hey there! My name is **Godfather**.
-I can help manage your groups with useful features, 
-feel free to add me to your groups!
+*ʜᴇʏ* {}, 🥀
+*๏ ᴛʜɪs ɪs* {} !
+[➻]{https://telegra.ph/file/59c042545d84fbb996b6f.mp4} ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+──────────────────
+*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
 """
 
 Lovelybuttons = [
