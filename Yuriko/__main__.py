@@ -82,24 +82,22 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 LOVELY_MENU = """
-*ʜᴇʏ* {}, 🥀
-*๏ ᴛʜɪs ɪs* {} !
-[➻]{https://telegra.ph/file/59c042545d84fbb996b6f.mp4} ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-──────────────────
-*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+Hey there! My name is **Moon**.
+I can help manage your groups with useful features, 
+feel free to add me to your groups!
 """
 
 Lovelybuttons = [
      [
-        InlineKeyboardButton(text="💕Summon me💕", url="https://t.me/TGN_Ro_bot?startgroup=true"),
+        InlineKeyboardButton(text="💕Summon me💕", url="https://t.me/MOONxROBOT_BOT?startgroup=true"),
      ],
      [       
         InlineKeyboardButton(text="🕵🏻Tutorial🕵🏻", callback_data="lovelyx_tutorials"),  
         InlineKeyboardButton(text="🧑‍🏫About🧑‍🏫", callback_data="lovelyx_me"),  
      ],
      [  
-        InlineKeyboardButton(text="🚑Support", url="https://t.me/GodfatherSupport"),
-        InlineKeyboardButton(text="📣Update", url="https://t.me/The_Godfather_Network"),
+        InlineKeyboardButton(text="🚑Support", url="https://t.me/VILLA_HERE"),
+        InlineKeyboardButton(text="📣Update", url="https://t.me/VILLA_HERE"),
      ], 
      [
         InlineKeyboardButton(text="💂🏻‍♀️Help💂🏻‍♀️", callback_data="lovelyx_"),     
@@ -666,7 +664,7 @@ def lovelyx_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="💕Sᴜᴍᴍᴏɴ Mᴇ💕", url="http://t.me/TGN_Ro_bot?startgroup=true"),
+                    InlineKeyboardButton(text="💕Sᴜᴍᴍᴏɴ Mᴇ💕", url="http://t.me/MOONxROBOT_BOT?startgroup=true"),
                  ],
                  [
                     InlineKeyboardButton(text="🎥Vɪᴅᴇᴏ🎥", callback_data="lovelyx_vida"),
